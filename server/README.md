@@ -47,9 +47,30 @@ Render の管理画面（Environment）で設定する。
 2. Render で **New > Blueprint** を選び、リポジトリを指定する（[render.yaml](../render.yaml) を読み込む）
 3. 上の環境変数を設定する
 4. デプロイ後、`https://<サービス名>.onrender.com/healthz` が `{"ok":true}` を返すことを確認
-5. microCMS の **API設定 > Webhook > 追加 > カスタム通知** で
+5. microCMS 側から起動できるようにする。方法は2つある（どちらか一方でよい）
+
+   **A. GitHub Actions 連携（推奨）**
+   microCMS の **API設定 > Webhook > 追加 > GitHub Actions** を選び、次を入力する。
+
+   | 項目 | 値 |
+   |---|---|
+   | Webhookの名前 | 任意（例: 収集を実行） |
+   | GitHub token | GitHub の Personal Access Token（下記） |
+   | ユーザー名 | `obake314` |
+   | リポジトリ名 | `LocalPress` |
+   | トリガーイベント名 | `collect` |
+
+   microCMS が `repository_dispatch` を送り、GitHub Actions 経由で `/collect` が叩かれる。
+   Render を直接公開しなくてよく、実行ログも Actions に残る。
+
+   トークンは **Fine-grained personal access token** を推奨。
+   対象リポジトリを `LocalPress` だけに絞り、権限は **Contents: Read and write** を付ける。
+
+   **B. カスタム通知（Render を直接叩く）**
    - 通知先URL: `https://<サービス名>.onrender.com/webhook/microcms`
    - シークレット: `MICROCMS_WEBHOOK_SECRET` と同じ値
+
+   この場合は署名検証付きで Render が直接受ける。GitHub を経由しない分だけ速い。
 
 ## microCMS 側に必要なAPI
 

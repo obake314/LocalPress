@@ -14,6 +14,12 @@ on:
     # 3時間おき（UTC）。RSSは最新数件しか保持しないため1日1回では取りこぼす。
     # 盛岡市はフィードが5件しかなく、更新の多い日は数時間で溢れる。
     - cron: "0 */3 * * *"
+
+  # microCMS の管理画面から起動する。
+  # microCMS の Webhook（GitHub Actions 連携）が repository_dispatch を送ってくる。
+  repository_dispatch:
+    types: [collect]
+
   workflow_dispatch:
 
 concurrency:
@@ -26,6 +32,10 @@ jobs:
     timeout-minutes: 15
 
     steps:
+      - name: 起動元を記録する
+        run: |
+          echo "::notice::起動 (${{ github.event_name }})"
+
       - name: 収集を開始する
         env:
           COLLECT_URL: ${{ secrets.COLLECT_URL }}
