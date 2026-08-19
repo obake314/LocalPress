@@ -1,0 +1,71 @@
+/* 要素そのものに掛ける最小限の既定スタイル */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+body {
+  font-size: var(--text-body);
+  line-height: 1.85;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-feature-settings: 'palt' 1;
+  letter-spacing: -0.03em;
+  line-height: 1.18;
+  font-weight: 700;
+  line-break: strict;
+}
+
+/*
+ * 日本語の大見出しは文節単位で折り返す（対応ブラウザのみ）。
+ * auto-phrase は min-content 幅を「最長の文節」まで押し上げるため、
+ * カード内の小見出し（h3/h4）には掛けない。グリッドが横に膨らむ。
+ */
+h1,
+h2 {
+  word-break: auto-phrase;
+}
+
+p {
+  line-break: strict;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-foreground);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-foreground);
+}
+
+
+.eyebrow{
+  font-size: 16px;
+  line-height:1;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "localpress-collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "collect": "node -e \"import('./collect.mjs').then(m => m.runCollection().then(r => console.log(r)))\""
+  }
+}

@@ -1,0 +1,16 @@
+/* プロジェクト独自の Tailwind ユーティリティ */
+
+/* 見出しの上に置く小さなラベル（eyebrow） */
+@utility eyebrow {
+  font-size: var(--text-eyebrow);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+}
+
+/* 濃色面の上で使う淡い区切り線 */
+@utility hairline {
+  border-color: color-mix(in srgb, #ffffff 14%, transparent);
+}

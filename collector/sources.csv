@@ -1,0 +1,35 @@
+﻿団体コード,自治体名,区分,公式サイトURL,取得方法,フィードURL,フィード形式,フィード掲載件数,フィード最新日,2026-08取得件数,月初まで遡れるか,備考,確認日
+03201,盛岡市,市,https://www.city.morioka.iwate.jp/,RSS,https://www.city.morioka.iwate.jp/news.rss,RSS,5,2026-08-19,5,いいえ（取りこぼしの可能性）,,2026-08-19
+03202,宮古市,市,https://www.city.miyako.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03203,大船渡市,市,https://www.city.ofunato.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03205,花巻市,市,https://www.city.hanamaki.iwate.jp/,RSS,https://www.city.hanamaki.iwate.jp/news.rss,RSS,121,2026-08-19,72,はい,,2026-08-19
+03206,北上市,市,https://www.city.kitakami.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03207,久慈市,市,https://www.city.kuji.iwate.jp/,取得不可,,,,,,,TLS証明書が期限切れでHTTPS取得に失敗する。要問い合わせ,2026-08-19
+03208,遠野市,市,https://www.city.tono.iwate.jp/,RSS,https://www.city.tono.iwate.jp/rss.xml,RSS,15,2022-11-30,0,はい,配信が2022年で止まっている。サイト刷新前の残骸とみられるため実質使えない,2026-08-19
+03209,一関市,市,https://www.city.ichinoseki.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03210,陸前高田市,市,https://www.city.rikuzentakata.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03211,釜石市,市,https://www.city.kamaishi.iwate.jp/,RSS,https://www.city.kamaishi.iwate.jp/category/kubun/news/index.rss,RSS,10,2026-08-19,5,はい,,2026-08-19
+03213,二戸市,市,https://www.city.ninohe.lg.jp/,HTML解析が必要,,,,,,,いただいた一覧の .iwate.jp は存在しない,2026-08-19
+03214,八幡平市,市,https://www.city.hachimantai.lg.jp/,HTML解析が必要,,,,,,,いただいた一覧の .iwate.jp は存在しない,2026-08-19
+03215,奥州市,市,https://www.city.oshu.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03216,滝沢市,市,https://www.city.takizawa.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03301,雫石町,町,https://www.town.shizukuishi.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03302,葛巻町,町,https://www.town.kuzumaki.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03303,岩手町,町,https://www.town.iwate.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03321,紫波町,町,https://www.town.shiwa.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03322,矢巾町,町,https://www.town.yahaba.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03366,西和賀町,町,https://www.town.nishiwaga.lg.jp/,HTML解析が必要,,,,,,,いただいた一覧の .iwate.jp は存在しない,2026-08-19
+03381,金ケ崎町,町,https://www.town.kanegasaki.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03402,平泉町,町,https://www.town.hiraizumi.iwate.jp/,RSS,https://www.town.hiraizumi.iwate.jp/feed/,RSS,10,2026-08-19,10,いいえ（取りこぼしの可能性）,,2026-08-19
+03441,住田町,町,https://www.town.sumita.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03461,大槌町,町,https://www.town.otsuchi.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03482,山田町,町,https://www.town.yamada.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03483,岩泉町,町,https://www.town.iwaizumi.iwate.jp/,HTML解析が必要,,,,,,,こちらが正。.lg.jp ではない,2026-08-19
+03484,田野畑村,村,https://www.vill.tanohata.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03485,普代村,村,https://www.vill.fudai.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03501,軽米町,町,https://www.town.karumai.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03503,野田村,村,https://www.vill.noda.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03506,九戸村,村,https://www.vill.kunohe.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03507,洋野町,町,https://www.town.hirono.iwate.jp/,RSS,https://www.town.hirono.iwate.jp/category/kubun/news/index.rss,RSS,10,2026-08-18,7,はい,,2026-08-19
+03524,一戸町,町,https://www.town.ichinohe.iwate.jp/,HTML解析が必要,,,,,,,,2026-08-19
+03000,岩手県,県,https://www.pref.iwate.jp/,RSS,https://www.pref.iwate.jp/news.rss,RSS,255,2026-08-19,127,はい,,2026-08-19

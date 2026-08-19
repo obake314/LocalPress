@@ -1,0 +1,98 @@
+# 自治体サイトの更新を定期的に収集する。
+#
+# Render の無料プランには Cron Jobs が無いため、実行の号令はここから出す。
+# 実際の収集は Render 上の収集サービス（server/）が行う。
+#
+# 必要な Secrets（Settings > Secrets and variables > Actions）:
+#   COLLECT_URL   … 例 https://localpress-collector.onrender.com
+#   COLLECT_TOKEN … Render に設定した COLLECT_TOKEN と同じ値
+
+name: collect
+
+on:
+  schedule:
+    # 3時間おき（UTC）。RSSは最新数件しか保持しないため1日1回では取りこぼす。
+    # 盛岡市はフィードが5件しかなく、更新の多い日は数時間で溢れる。
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 収集を開始する
+        env:
+          COLLECT_URL: ${{ secrets.COLLECT_URL }}
+          COLLECT_TOKEN: ${{ secrets.COLLECT_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${COLLECT_URL:-}" ] || [ -z "${COLLECT_TOKEN:-}" ]; then
+            echo "::error::COLLECT_URL と COLLECT_TOKEN を Secrets に設定してください"
+            exit 1
+          fi
+
+          base="${COLLECT_URL%/}"
+          echo "BASE=$base" >> "$GITHUB_ENV"
+
+          # Render の無料プランは15分無通信で停止し、復帰に約1分かかる。
+          # 本番のリクエストの前に起こしておく。
+          echo "サービスを起こしています..."
+          curl -sS --max-time 120 --retry 3 --retry-all-errors --retry-delay 10 \
+            -o /dev/null -w "  ヘルスチェック: %{http_code} (%{time_total}秒)\n" "$base/healthz"
+
+          echo "収集を開始します..."
+          code=$(curl -sS --max-time 60 --retry 2 --retry-all-errors \
+            -X POST "$base/collect" \
+            -H "Authorization: Bearer $COLLECT_TOKEN" \
+            -o response.json -w "%{http_code}")
+
+          cat response.json && echo
+
+          if [ "$code" = "409" ]; then
+            echo "::notice::すでに実行中のためスキップしました"
+            echo "SKIP=1" >> "$GITHUB_ENV"
+            exit 0
+          fi
+
+          if [ "$code" != "202" ]; then
+            echo "::error::収集の開始に失敗しました (HTTP $code)"
+            exit 1
+          fi
+
+      - name: 完了を待って結果を確認する
+        if: env.SKIP != '1'
+        run: |
+          set -euo pipefail
+
+          # /collect は即座に 202 を返し、収集は裏で走る。完了するまで見に行く。
+          for i in $(seq 1 40); do
+            sleep 15
+            curl -sS --max-time 30 "$BASE/" -o status.json || continue
+
+            if [ "$(jq -r '.running' status.json)" = "false" ]; then
+              jq '.last' status.json
+
+              if [ "$(jq -r '.last.ok' status.json)" = "false" ]; then
+                echo "::error::収集に失敗しました: $(jq -r '.last.error' status.json)"
+                exit 1
+              fi
+
+              registered=$(jq -r '.last.registered // 0' status.json)
+              failed=$(jq -r '.last.failed // 0' status.json)
+              echo "::notice::${registered} 件を登録しました（失敗 ${failed} 件）"
+              [ "$failed" != "0" ] && echo "::warning::${failed} 件の登録に失敗しています"
+              exit 0
+            fi
+
+            echo "  実行中... (${i}/40)"
+          done
+
+          echo "::error::10分待っても完了しませんでした"
+          exit 1

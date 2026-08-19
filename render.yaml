@@ -1,0 +1,41 @@
+# Render の Blueprint。リポジトリを連携して「New > Blueprint」で読み込む。
+# https://render.com/docs/blueprint-spec
+
+services:
+  # ── 収集サービス（microCMS の Webhook 受け口） ──────────────
+  - type: web
+    name: localpress-collector
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: MICROCMS_SERVICE_DOMAIN
+        sync: false # Render の管理画面で設定する
+      - key: MICROCMS_API_KEY
+        sync: false
+      - key: MICROCMS_WEBHOOK_SECRET
+        sync: false
+      - key: COLLECT_TOKEN
+        sync: false
+
+  # ── サイト本体（静的サイト） ────────────────────────────────
+  # ビルド時に microCMS から取り込むため、同じ環境変数が要る
+  - type: web
+    name: localpress-site
+    runtime: static
+    plan: free
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm content:pull && pnpm build
+    staticPublishPath: ./dist
+    envVars:
+      - key: MICROCMS_SERVICE_DOMAIN
+        sync: false
+      - key: MICROCMS_API_KEY
+        sync: false
+    routes:
+      # SPA なのでどのパスでも index.html を返す
+      - type: rewrite
+        source: /*
+        destination: /index.html

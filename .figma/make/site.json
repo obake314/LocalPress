@@ -1,0 +1,12 @@
+{
+  "language": "ja",
+  "title": "LocalPress — 全国自治体情報プラットフォーム",
+  "description": "全国の自治体が公開するイベント・補助金・入札・公募・政策の情報を横断的に収集・整理し、地域・分野・締切から検索できるプラットフォームです。",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

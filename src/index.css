@@ -1,0 +1,13 @@
+/*
+ * CSS のエントリポイント。実体は src/styles/ 以下に分割している。
+ *   fonts.css     … Web フォントの読み込み
+ *   theme.css     … デザイントークン（@theme）
+ *   base.css      … 要素の既定スタイル
+ *   utilities.css … 独自ユーティリティ（@utility）
+ */
+
+@import './styles/fonts.css';
+@import 'tailwindcss';
+@import './styles/theme.css';
+@import './styles/base.css';
+@import './styles/utilities.css';

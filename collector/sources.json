@@ -1,0 +1,277 @@
+{
+  "$comment": "岩手県33市町村＋県庁の更新情報の取得先。collector/check-feeds.mjs で実地確認した結果。",
+  "checkedAt": "2026-08-19",
+  "summary": {
+    "total": 34,
+    "rss": 7,
+    "html": 26,
+    "unreachable": 1
+  },
+  "sources": [
+    {
+      "code": "03201",
+      "name": "盛岡市",
+      "site": "https://www.city.morioka.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.city.morioka.iwate.jp/news.rss",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 5,
+      "latestAtCheck": "2026-08-19"
+    },
+    {
+      "code": "03202",
+      "name": "宮古市",
+      "site": "https://www.city.miyako.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03203",
+      "name": "大船渡市",
+      "site": "https://www.city.ofunato.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03205",
+      "name": "花巻市",
+      "site": "https://www.city.hanamaki.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.city.hanamaki.iwate.jp/news.rss",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 121,
+      "latestAtCheck": "2026-08-19"
+    },
+    {
+      "code": "03206",
+      "name": "北上市",
+      "site": "https://www.city.kitakami.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03207",
+      "name": "久慈市",
+      "site": "https://www.city.kuji.iwate.jp/",
+      "method": "unreachable",
+      "feed": null,
+      "note": "TLS証明書が期限切れでHTTPS取得に失敗する。要問い合わせ"
+    },
+    {
+      "code": "03208",
+      "name": "遠野市",
+      "site": "https://www.city.tono.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.city.tono.iwate.jp/rss.xml",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 15,
+      "latestAtCheck": "2022-11-30",
+      "note": "配信が2022年で止まっている。サイト刷新前の残骸とみられるため実質使えない"
+    },
+    {
+      "code": "03209",
+      "name": "一関市",
+      "site": "https://www.city.ichinoseki.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03210",
+      "name": "陸前高田市",
+      "site": "https://www.city.rikuzentakata.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03211",
+      "name": "釜石市",
+      "site": "https://www.city.kamaishi.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.city.kamaishi.iwate.jp/category/kubun/news/index.rss",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 10,
+      "latestAtCheck": "2026-08-19"
+    },
+    {
+      "code": "03213",
+      "name": "二戸市",
+      "site": "https://www.city.ninohe.lg.jp/",
+      "method": "html",
+      "feed": null,
+      "note": "いただいた一覧の .iwate.jp は存在しない"
+    },
+    {
+      "code": "03214",
+      "name": "八幡平市",
+      "site": "https://www.city.hachimantai.lg.jp/",
+      "method": "html",
+      "feed": null,
+      "note": "いただいた一覧の .iwate.jp は存在しない"
+    },
+    {
+      "code": "03215",
+      "name": "奥州市",
+      "site": "https://www.city.oshu.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03216",
+      "name": "滝沢市",
+      "site": "https://www.city.takizawa.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03301",
+      "name": "雫石町",
+      "site": "https://www.town.shizukuishi.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03302",
+      "name": "葛巻町",
+      "site": "https://www.town.kuzumaki.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03303",
+      "name": "岩手町",
+      "site": "https://www.town.iwate.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03321",
+      "name": "紫波町",
+      "site": "https://www.town.shiwa.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03322",
+      "name": "矢巾町",
+      "site": "https://www.town.yahaba.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03366",
+      "name": "西和賀町",
+      "site": "https://www.town.nishiwaga.lg.jp/",
+      "method": "html",
+      "feed": null,
+      "note": "いただいた一覧の .iwate.jp は存在しない"
+    },
+    {
+      "code": "03381",
+      "name": "金ケ崎町",
+      "site": "https://www.town.kanegasaki.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03402",
+      "name": "平泉町",
+      "site": "https://www.town.hiraizumi.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.town.hiraizumi.iwate.jp/feed/",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 10,
+      "latestAtCheck": "2026-08-19"
+    },
+    {
+      "code": "03441",
+      "name": "住田町",
+      "site": "https://www.town.sumita.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03461",
+      "name": "大槌町",
+      "site": "https://www.town.otsuchi.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03482",
+      "name": "山田町",
+      "site": "https://www.town.yamada.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03483",
+      "name": "岩泉町",
+      "site": "https://www.town.iwaizumi.iwate.jp/",
+      "method": "html",
+      "feed": null,
+      "note": "こちらが正。.lg.jp ではない"
+    },
+    {
+      "code": "03484",
+      "name": "田野畑村",
+      "site": "https://www.vill.tanohata.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03485",
+      "name": "普代村",
+      "site": "https://www.vill.fudai.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03501",
+      "name": "軽米町",
+      "site": "https://www.town.karumai.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03503",
+      "name": "野田村",
+      "site": "https://www.vill.noda.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03506",
+      "name": "九戸村",
+      "site": "https://www.vill.kunohe.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03507",
+      "name": "洋野町",
+      "site": "https://www.town.hirono.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.town.hirono.iwate.jp/category/kubun/news/index.rss",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 10,
+      "latestAtCheck": "2026-08-18"
+    },
+    {
+      "code": "03524",
+      "name": "一戸町",
+      "site": "https://www.town.ichinohe.iwate.jp/",
+      "method": "html",
+      "feed": null
+    },
+    {
+      "code": "03000",
+      "name": "岩手県",
+      "site": "https://www.pref.iwate.jp/",
+      "method": "rss",
+      "feed": "https://www.pref.iwate.jp/news.rss",
+      "feedFormat": "RSS",
+      "itemsAtCheck": 255,
+      "latestAtCheck": "2026-08-19"
+    }
+  ]
+}

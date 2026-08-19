@@ -1,0 +1,1872 @@
+{
+  "month": "2026-08",
+  "collectedAt": "2026-08-19T12:57:01.992Z",
+  "report": [
+    {
+      "code": "03201",
+      "name": "盛岡市",
+      "fetched": 5,
+      "inMonth": 5,
+      "oldest": "2026-08-05",
+      "covers": false
+    },
+    {
+      "code": "03205",
+      "name": "花巻市",
+      "fetched": 121,
+      "inMonth": 72,
+      "oldest": "2026-07-21",
+      "covers": true
+    },
+    {
+      "code": "03208",
+      "name": "遠野市",
+      "fetched": 15,
+      "inMonth": 0,
+      "oldest": "2022-11-24",
+      "covers": true
+    },
+    {
+      "code": "03211",
+      "name": "釜石市",
+      "fetched": 10,
+      "inMonth": 5,
+      "oldest": "2016-07-01",
+      "covers": true
+    },
+    {
+      "code": "03402",
+      "name": "平泉町",
+      "fetched": 10,
+      "inMonth": 10,
+      "oldest": "2026-08-06",
+      "covers": false
+    },
+    {
+      "code": "03507",
+      "name": "洋野町",
+      "fetched": 10,
+      "inMonth": 7,
+      "oldest": "2022-03-03",
+      "covers": true
+    },
+    {
+      "code": "03000",
+      "name": "岩手県",
+      "fetched": 255,
+      "inMonth": 127,
+      "oldest": "2026-07-16",
+      "covers": true
+    }
+  ],
+  "items": [
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "工事進捗等のお知らせ",
+      "url": "https://www.pref.iwate.jp/kennan/doboku/1101328/index.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "宮古保健所保護動物情報",
+      "url": "https://www.pref.iwate.jp/engan/miya_hoken/hogodoubutsu/1014161.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "クルーズ",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kouwankuukou/kouwan/1073281/index.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "円滑な価格転嫁に向けた環境整備",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/sangyoushinkou/shinjigyou/1062523.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出納局】印刷物定例見積情報《木曜公開分》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1010626/1010632.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出納局】事務用品等定例見積情報《木曜公開分》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1010626/1010631.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【病院・薬局向け募集】薬剤師/薬学生/中高生向け就職・進路セミナー（合同企業研究会）の出展者の募集について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/yakumu/1093151/1101341.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "障がい福祉の仕事の魅力発信動画等制作業務委託に係る企画提案に関する質問への回答について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101288.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和6年能登半島地震で被災された方に県営住宅の一時提供を行います",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/kenchiku/kenei/1071291.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【公募】令和8年度岩手県大船渡保健所犬抑留所管理等業務委託",
+      "url": "https://www.pref.iwate.jp/engan/ofuna_hoken/1014212/1101227.html",
+      "date": "2026-08-19",
+      "summary": "【公募】令和8年度岩手県大船渡保健所犬抑留所管理等業務委託"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度沿岸圏域生活圏へのツキノワグマ出没防止対策研修会",
+      "url": "https://www.pref.iwate.jp/engan/hoken/1101216/index.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度離職者等に対するハロートレーニング（委託訓練）について",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/koyouroudou/oshirase/1062380.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "小売事業者ガス料金支援金（令和8年度実施分）について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/anzenanshin/bosai/kayaku/1100568/1100569.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "人事委員会会議の開催案内",
+      "url": "https://www.pref.iwate.jp/iinkai/jinji/kaigi/1015601.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度自死遺族公開講話・わかちあいの会の開催について",
+      "url": "https://www.pref.iwate.jp/engan/ofuna_hoken/1014195/1101044.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "県民生活センターの消費者トラブル防止啓発動画が第57回岩手広告賞（テレビ広告の部）奨励賞を受賞しました！",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/shouhiseikatsu/event/1101324.html",
+      "date": "2026-08-19",
+      "summary": "これからも、消費者トラブルの啓発に取り組んでいきます！"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【入札公告】岩手県水産技術センター大船渡研究室取水ポンプ可とう管一部更新工事",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/sonota/1101320.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【沿岸広域振興局（宮古）】埠頭保安フェンス（宮古土木センター）《一般競争入札》",
+      "url": "https://www.pref.iwate.jp/engan/1014007/1101316.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "中小企業者工業用LPガス料金支援金（令和8年度実施分）について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/anzenanshin/bosai/kayaku/1100568/1100571.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8・9・10年度物品購入等入札参加資格者名簿について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/sankashikaku/1097277.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【沿岸広域振興局（大船渡）】8月19日公開分定例見積案件情報",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1092502.html",
+      "date": "2026-08-19",
+      "summary": ""
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "【期間延長】家庭用指定ごみ袋以外の袋の使用について",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e3%80%90%e6%9c%9f%e9%96%93%e5%bb%b6%e9%95%b7%e3%80%91%e5%ae%b6%e5%ba%ad%e7%94%a8%e6%8c%87%e5%ae%9a%e3%81%94%e3%81%bf%e8%a2%8b%e4%bb%a5%e5%a4%96%e3%81%ae%e8%a2%8b%e3%81%ae%e4%bd%bf%e7%94%a8%e3%81%ab-39884/",
+      "date": "2026-08-19",
+      "summary": "指定ごみ袋以外の袋を使用できる期間が、令和８年１２月３１日まで延長されました。 令和８年８月現在、多くの店舗では販売状況に改善傾向が見られるものの、一部の店舗では依然として品薄や欠品が続いていることから、当面の措置として延長されたものです。 一関地区広域行政組合の指定ごみ袋については、メーカーからの製品供給は例年並みの供給が続いておりますが、品薄に対する不安の高まりなどから、購入が集中し、指定ごみ袋が品切れとなっている店舗が多くなっている状態です。 このような状況を受け、一関地区広域行政組合管理者から、指定ごみ袋を入手できない場合の臨時的な対応として、代替ごみ袋でも家庭ごみの収集対象とすることが示されましたので、お知らせいたします。"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "宮沢賢治生誕130年記念公演「銀河鉄道の夜」 ～賢治さんと星のお話～",
+      "url": "https://www.city.hanamaki.iwate.jp/miyazawakenji/ihatov/1004850/1025913.html",
+      "date": "2026-08-19",
+      "summary": "【宮沢賢治イーハトーブ館】宮沢賢治生誕130年記念イベント「銀河鉄道の夜」～賢治さんと星のお話～が開催されます（9月19日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "企画展「村上康成 絵本原画展」開催のお知らせ",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/bunka/1019887/yorozutetsugoro/1021503/1002110/1025649.html",
+      "date": "2026-08-19",
+      "summary": "【再掲】萬鉄五郎記念美術館｜絵本作家・村上康成さんのギャラリートーク＆サイン会を開催します（8月2日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻北中学校",
+      "url": "https://www.city.hanamaki.iwate.jp/kosodate_kyoiku/kyoiku/sho_chugakko/website/1007131/index.html",
+      "date": "2026-08-19",
+      "summary": "花巻北中学校のホームページを更新しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市大迫学校給食センター調理等業務委託プロポーザル選定委員会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1003039/1025920/index.html",
+      "date": "2026-08-19",
+      "summary": "花巻市大迫学校給食センター調理等業務委託プロポーザル選定委員会を8月21日に開催します"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市行政評価委員会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1006109/1009949/index.html",
+      "date": "2026-08-19",
+      "summary": "花巻市行政評価委員会(7月29日、8月4日)の開催結果を公開しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市いじめ問題対策連絡協議会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1003039/1018187/index.html",
+      "date": "2026-08-19",
+      "summary": "花巻市いじめ問題対策連絡協議会(7月15日)の開催結果を公開しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "【ふるさと納税・シティプロモーション】チョイスマルシェールに出展します！",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/hurusatonozei/1024208/1025904.html",
+      "date": "2026-08-19",
+      "summary": "【ふるさと納税】東京都で行われるチョイスマルシェールに出展します！（8月28日・29日）"
+    },
+    {
+      "code": "03211",
+      "cityName": "釜石市",
+      "title": "釜石市立地適正化計画を策定しています",
+      "url": "https://www.city.kamaishi.iwate.jp/docs/2026050800016/",
+      "date": "2026-08-19",
+      "summary": "&nbsp; 釜石市の人口は、昭和38年（1963年）の92,123人をピークに減少を続けており、令和8年3月末現在の人口は27,745人となっています。さらに、約20年後の2045年には、約17,000人まで減少すると予測されています。 人口減少や少子高齢化は全国的な課題であり、将来にわたって暮らしやすいまちを維持していくためには、医療・福祉・商業などの生活サービスや公共交通を効率に維持していく必要があります。 このような背景から、平成26年（2014年）の都市再生特別措置法の一部改正により「立地適正化計画制度」が創設されました。 釜石市においても、人口減少や高齢化の進行に伴い、生活サービスの維持や公共交通の確保など様々な課題への対応が求められています。 こうした状況を踏まえ、将来にわたり暮らしやすく、持続可能なまちづくりを進めるため「釜石市立地適正化計画」の策定を進めています。 釜石市の人口推移（令和7年9月現在） &nbsp; 釜石市立地適正化計画とは 立地適正化計画とは、都市再生特別措置法に基づく計画です。 人口減少や少子高齢化が進む中に..."
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "「令和8年度いわてグリーン・ツーリズムスタディ」の企画提案募集に係る質問への回答について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1087775.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度岩手県ヤングケアラー支援セミナー",
+      "url": "https://www.pref.iwate.jp/event/kouza/1100879.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "県民生活センター広報紙 くらしのひろば",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/shouhiseikatsu/jouhou/kurashihiroba/1093667.html",
+      "date": "2026-08-18",
+      "summary": "消費生活情報に係る広報紙「くらしのひろば第396号（令和8年度夏号）」を発行しました。ぜひご覧ください！"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "いわて脱炭素化経営企業等（いわて地球環境にやさしい事業所）一覧【令和8年8月1日現在】",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/gx/ontai/1067285.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度包括的な支援体制の整備に向けた研修会（兼連絡調整会議）について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/chiiki/fukushisuishin/1100295.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【申込は終了しました】令和8年度岩手県市町村職員共同選考採用（第1回）",
+      "url": "https://www.pref.iwate.jp/kensei/seisaku/shichouson/1076876/1096575/index.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "県南広域振興局一関審査指導監工事発注予定",
+      "url": "https://www.pref.iwate.jp/kennan/1013951/1055896.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【盛岡広域振興局】物品定例見積情報（8/18 火曜日公開分）R8",
+      "url": "https://www.pref.iwate.jp/morioka/nyuusatsu/1012422/1073462.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【大船渡審査指導監】県営建設工事発注予定公表",
+      "url": "https://www.pref.iwate.jp/engan/1014009/1041750.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "eLTAXやeL-QRを利用した地方税の電子申告、電子納付等のサービス停止について",
+      "url": "https://www.town.hiraizumi.iwate.jp/eltax%e3%82%84el-qr%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%9f%e5%9c%b0%e6%96%b9%e7%a8%8e%e3%81%ae%e9%9b%bb%e5%ad%90%e7%94%b3%e5%91%8a%e3%80%81%e9%9b%bb%e5%ad%90%e7%b4%8d%e4%bb%98%e7%ad%89%e3%81%ae-39801/",
+      "date": "2026-08-18",
+      "summary": "一部の公金のお支払いがコンビニエンスストア及びスマートフォン決済アプリで納付ができます。平泉町役場出納室および町内に支店のある各金融機関でも引き続き納付できるほか、ゆうちょ銀行（東北6県）の窓口もご利用できます。納付できる公金種類・固定資産税・軽自動車税・町県民税（普通徴収）・国民健康保険税（普通徴収）・後期高齢者医療保険料（普通徴収）・町営住宅使用料納付の証明について町で納付の確認ができるまで納付日から2週間程度かかります。納付後すぐに納税証明書などが必要な場合は、窓口で領収書またはアプリの決済画面をご提示ください。コンビニエンスストア及びスマートフォン決済アプリで取り扱えないもの・納付書の1枚の金額が30万円を越えるもの・金額を訂正したもの・コンビニエンスストア取扱期限を過ぎたもの・バーコードがないもの、読み取れないもの※詳しくは納付書裏面に記載しておりますのでご覧ください。スマートフォン決済アプリによるお支払の際の注意点・通信にかかるパケット代は、別途利用者負担となります。・領収証は発行されません。納付確認は、アプリ内の取引履歴でのご確認となります。・軽自動車税の納付でスマートフォン決済アプリを利用した場合で、継続検査（車検）用納税証明書が必要なときは、役場窓口で納税証明書（無料）を取得してください。・領収書や軽自動車税の継続検査（車検）用納税証明書を必要とする場合は、納付書による納付を推奨します。スマートフォン決済アプリによる納付手続きに必要なもの・コンビニエンスストア収納用のバーコードが印字された納付書・スマートフォン、タブレット端末・専用アプリスマートフォン決済アプリ利用方法 PayPay請求書支払い 1. PayPayアプリをダウンロードする。 2. アプリ内の「銀行口座登録」から金融機関等の基本情報を登録する。 ※お支払いはPayPay残高のみとなります。クレジットカードからのお支払いはできませんので予めご了承ください。 3. アプリ内の「スキャン」からカメラを起動し、納付書のバーコードを読み取る。 4. 表示された請求内容を確認し、支払いを行う。 （PayPay利用ページへ） LINE Pay 請求書支払い 1. LINEアプリからLINE Payを開き「請求書払い」を選択する。 2. 案内を読んで次へ進むと、バーコードリーダーが機動する。納付書のバーコードを読み取る。 3. 表示された請求内容を確認し、支払いを行う。 ※「LINE Pay請求書払い」による納付には、事前にLINEアプリ内から利用者登録を行い、チャージすることが必要です。 (LINE Pay利用ページへ)&#160;"
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "”いきいき岩手”結婚サポートセンター「i-サポ」の入会登録料を全額助成します",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081800016/",
+      "date": "2026-08-18",
+      "summary": "町では、町内在住の未婚者の結婚を支援するため”いきいき岩手”結婚サポートセンター「i-サポ」の入会登録料を全額助成します。 ”いきいき岩手”結婚サポートセンターとは ”いきいき岩手”結婚サポートセンター「i-サポ」は、会員登録制によるお見合いなど出会いの機会を提供し、理想のパートナー探しをサポートします。また、婚活イベントの開催や各種情報発信を行っています。 助成対象・要件 以下の要件をすべて満たす方 i-サポの入会条件を満たす方 入会日に洋野町に住民登録をしている方 町税等の滞納がない方 助成額と手続き 入会登録料を全額（10,000円／１人につき１回限り）助成します。 入会登録時に、i－サポの窓口で同意書を記入いただくことで、町からi－サポに直接入会登録料を支払いますので、入会時の実費負担もなく、役場での手続きなども不要です。 ※対象要件を満たさない場合には、助成できないこともありますのであらかじめご了承ください。 入会登録の問い合わせ先 入会登録は、下記のURL（\"いきいき岩手”結婚サポートセンターのホームページ）をご覧ください。..."
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "岩手県医療審議会委員を公募します",
+      "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/oshirase/1019881/1025907.html",
+      "date": "2026-08-18",
+      "summary": "岩手県医療審議会委員を公募しています"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和7年度イーハトーブ花巻応援寄附金の活用状況についてご紹介します",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/hurusatonozei/1000243/1025906.html",
+      "date": "2026-08-18",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年度市民講座「はなまき賢治セミナー（親子編）」賢治さんの足跡を親子でたどってみよう！",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/shogaigakushu/1019894/1016419/1025697.html",
+      "date": "2026-08-18",
+      "summary": "市民講座「はなまき賢治セミナー（親子編）賢治さんの足跡を親子でたどってみよう！」を開催します（申込締切：8月28日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "全国瞬時警報システム（Jアラート）の全国一斉情報伝達試験（第2回）を実施します",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025915.html",
+      "date": "2026-08-18",
+      "summary": "Jアラートの全国一斉情報伝達試験（第2回）を実施します（8月26日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "議員名簿",
+      "url": "https://www.city.hanamaki.iwate.jp/shigikai/1004008/index.html",
+      "date": "2026-08-18",
+      "summary": "花巻市議会議員名簿を更新しました"
+    },
+    {
+      "code": "03211",
+      "cityName": "釜石市",
+      "title": "令和8年9月のマイナンバーカード休日窓口開庁日をお知らせします",
+      "url": "https://www.city.kamaishi.iwate.jp/docs/2026071400028/",
+      "date": "2026-08-18",
+      "summary": "&nbsp; 平日の開庁時間内に窓口に来ることが出来ない方のために、下記の日程で休日窓口を開設します。 &nbsp;戸籍関係（死亡届・婚姻届など）の届出は、通常の夜間・休日と同様に、宿日直が対応します。 【開設日時】 令和8年9月6日（日） 9時～12時 【取扱業務】 マイナンバーカードに関する手続き 【開設場所】 市役所第１庁舎１階 市民課 総合窓口係 &nbsp; マイナンバーカードの交付に必要なもの 交付に際し、以下の書類が必要となります。 ・マイナンバーカード交付通知書・電子証明書発行通知書（ハガキ） ・本人確認書類 本人確認書類について[PDF：150KB] ※ 運転免許証などの公的な顔写真付きの身分証明書が無い方は、資格確認証のほかに 診察券や通帳などで必ず２点確認をしております。 15歳未満の方へ交付する場合は、受取人本人と保護者のどちらも本人確認をして おりますので、必ず本人確認書類の持参をお願いします。 ・個人番号通知カード（お持ちの方は返納が必要） ・マイナン..."
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年8月17日(月曜)【入札公告】岩手県立東和病院診療情報統合システム",
+      "url": "https://www.pref.iwate.jp/iryoukyoku/1101327.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度介護職員処遇改善加算取得促進事業運営業務委託に係る企画提案の募集について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101281.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【県南広域振興局（奥州）】8月18日定例見積案件情報",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1029141.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出納局】印刷物定例見積情報《火曜公開分》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1010626/1010629.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出納局】事務用品等定例見積情報《火曜公開分》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1010626/1010628.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度岩手県サービス管理責任者等基礎研修について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/shougai/jigyousha/1003978/1101311.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度IT×ものづくりインタラクションミーティング【参加方法追加】",
+      "url": "https://www.pref.iwate.jp/kennan/keiei/1100287.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "岩手県産木材を活用した庁内保育施設備品製作業務委託について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101027.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度第2回岩手県職業能力開発審議会の開催",
+      "url": "https://www.pref.iwate.jp/kensei/shingikai/shoukou/shokugyou/1100816.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "市町村の選挙執行予定",
+      "url": "https://www.pref.iwate.jp/iinkai/senkyo/1015586.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度第5回中部保健所長による公開講座",
+      "url": "https://www.pref.iwate.jp/kennan/hana_hoken/1101212.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【企業局本局】 物品定例見積情報",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1098611.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和6年度土木工事標準積算基準書（公表用）",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kensetsu/1093671/1077298.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度「いわて健康経営認定事業所」の第2回認定申請の受付について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/kenkokeiei/1093826.html",
+      "date": "2026-08-17",
+      "summary": "令和8年度「いわて健康経営認定事業所」の第2回認定申請の受付は、令和8年9月14日（月曜）までです。"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "いわて健康経営事業所の募集（第2回）について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/kenkou/kenkokeiei/1081122.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【沿岸広域振興局（釜石）】物品購入関連情報",
+      "url": "https://www.pref.iwate.jp/engan/1014004/1017389.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "令和８年熊本地震災害義援金を受付しています",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e4%bb%a4%e5%92%8c7%e5%b9%b4%e5%a4%a7%e8%88%b9%e6%b8%a1%e5%b8%82%e8%b5%a4%e5%b4%8e%e7%94%ba%e6%9e%97%e9%87%8e%e7%81%ab%e7%81%bd%e7%be%a9%e6%8f%b4%e9%87%91%e3%82%92%e5%8f%97%e4%bb%98%e3%81%97-24709/",
+      "date": "2026-08-17",
+      "summary": "日本赤十字社では、令和８年７月２８日に発生した「令和８年熊本地震」で被災された方々を支援することを目的に次のとおり義援金の募集を行っています。 義援金は、日本赤十字社を通じて被災地へ送られます。 本町においても「令和８年熊本地震災害義援金募金箱」を役場及び町内施設に設置しています。 皆様の温かいご支援をよろしくお願いします。"
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "【参加者募集】洋野町特定創業塾を開催します。",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081700026/",
+      "date": "2026-08-17",
+      "summary": "『夢を夢のままで終わらせない。 夢をカタチにする第一歩を！』 創業に関する考え方や知識を身につけたい・創業したが事業計画の内容を見直したいなど、創業を考えている方・創業して間もない方を対象とする、専門家による基礎知識の習得を目的とした講習会です。 詳細については、チラシをご確認ください。 &nbsp; 【開催日時】 第1回：令和８年９月10日(木) 「経営の基礎」「創業の心構え」「販路開拓」 第2回：令和８年９月17日(木) 「財務の基礎」「資金計画」「売上利益計画」「人材育成」 第3回：令和８年10月１日(木) 「創業計画書の作成」「個別ブラッシュアップ」 第4回：令和８年10月８日(木) 「融資制度」「ビジネスプラン発表会準備」 第5回：令和７年10月15日(木) 「ビジネスプラン発表会」「事業の持続的発展」 全日 13時30分～16時30分 &nbsp; 【開催場所】 洋野町民文化会館..."
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "令和７年度教育課程特例校における特別の教育課程の実施状況の公表について",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081700019/",
+      "date": "2026-08-17",
+      "summary": "教育課程特例校として、文部科学省の指定を受けて海洋科の学習を実施している各学校について、次の通り令和７年度の実施状況を公表いたします。 01_【種市小】令和７年度教育課程特例校実施状況等について[PDF：125KB] 01_【種市小】教育課程評価[PDF：74.2KB] &nbsp; 02_【角浜小】令和７年度教育課程特例校実施状況等について[PDF：149KB] 02_【角浜小】教育課程評価[PDF：72.3KB] &nbsp; 03_【宿戸小】令和７年度教育課程特例校実施状況等について[PDF：122KB] 03_【宿戸小】教育課程評価[PDF：437KB] &nbsp; 04_【中野小】令和７年度教育課程特例校実施状況等について[PDF：138KB] 04_【中野小】教育課程評価[PDF：528KB] &nbsp; 05_【大野小】令和７年度教育課程特例校実施状況等について[PDF：196KB] 05_【大野小】教育課程評価[PDF：263KB] &nbsp; 06_【種市中】令和７年度教育課程特例校実施状況等について[PDF：167KB] ..."
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "令和８年度消防設備士講習について",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081300011/",
+      "date": "2026-08-17",
+      "summary": "&nbsp; 消防法（昭和23年法律第186号）第17条の10の規定により、消防用設備等の工事又は整備に関する講習を次のとおり実施いたします。 【受講対象者】 （１）消防設備士免状の交付を受けた日以降における最初の４月１日から２年以内の方 （２）前回の講習を受けた日以降における最初の４月１日から５年以内の方 （３）上記（１）、（２）以外の受講義務のある方 【受講申請手続き等】 添付ファイル「令和８年度法定講習実施要領」をご参照ください。 令和８年度法定講習実施要領[PDF：89.9KB]"
+    },
+    {
+      "code": "03201",
+      "cityName": "盛岡市",
+      "title": "【譲渡情報】新しい飼い主を募集しています",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/pet/pet_kurashi/1001657.html",
+      "date": "2026-08-17",
+      "summary": "現在、盛岡市保健所では新しい飼い主さんとの出会いを待っている動物がいます。"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "第55回おおはさまワインまつりを開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/kanko/oshirase/1025853.html",
+      "date": "2026-08-17",
+      "summary": "第55回おおはさまワインまつりを開催します(9月20日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "消防年報（令和7年版）",
+      "url": "https://www.city.hanamaki.iwate.jp/syoubou/1018616/1025908.html",
+      "date": "2026-08-17",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "ワークショップ「大正イマジュリィなブックカバーつくり」開催のお知らせ",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/bunka/1019887/1008981/1009017/1025896.html",
+      "date": "2026-08-17",
+      "summary": "【花巻市博物館】ワークショップ「大正イマジュリィなブックカバーつくり」を開催します(9月19日)"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "第108回全国高等学校野球選手権大会花巻東高校準々決勝パブリックビューイングを行います",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/sports/1019889/1025065.html",
+      "date": "2026-08-17",
+      "summary": "【夏の甲子園大会】花巻東高校準々決勝パブリックビューイングを開催します（8月18日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "火災速報",
+      "url": "https://www.city.hanamaki.iwate.jp/syoubou/1018501/1020136/1018789.html",
+      "date": "2026-08-17",
+      "summary": "火災速報を更新しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "はなまき企業見学バスツアーの受け入れ企業を募集します！",
+      "url": "https://www.city.hanamaki.iwate.jp/business/work/event_bosyu/1025882.html",
+      "date": "2026-08-17",
+      "summary": "はなまき企業見学バスツアーの受け入れ企業を募集します！"
+    },
+    {
+      "code": "03211",
+      "cityName": "釜石市",
+      "title": "釜石市議会（令和８年９月定例会）",
+      "url": "https://www.city.kamaishi.iwate.jp/docs/2026081700040/",
+      "date": "2026-08-17",
+      "summary": "釜石市議会の情報はこちらからご覧ください。 ※ 釜石市議会令和８年９月定例会の情報を更新しました。"
+    },
+    {
+      "code": "03211",
+      "cityName": "釜石市",
+      "title": "広報かまいし2026年8月15日号（No.1886）",
+      "url": "https://www.city.kamaishi.iwate.jp/docs/2026081000034/",
+      "date": "2026-08-15",
+      "summary": "広報かまいし2026年8月15日号 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 全ページ 広報かまいしNo1886_ALL_new[PDF：5.56MB] P1 表紙 広報かまいしNo1886_1[PDF：222KB] P2-3 夏だ！海だ！びしょ濡れだ！ 広報かまいしNo1886_2-3[PDF：1.19MB] P4-5 釜石・大槌地域健康講座 「かまいしエール券」の追加販売を行います 他 広報かまいしNo1886_4-5new[PDF：277KB] P6-7 TETTOサロンコンサート 釜石駅前フェス 他 広報かまいしNo1886_6-7new[PDF：2.5MB] P8-9 「守るって案外かっこいい。消防団で始める新しい自分」 令和9年 釜石市はたちのつどい 他 広報かまいしNo1886_8-9[PDF：557KB] P10-11 まちの話題 広報かまいしNo1886_10-11[PDF：490KB] P12-13 保健案内板 釜石市芸術文化・スポーツ団..."
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "いわて就職マッチングフェア（主催：ふるさといわて定住財団）の開催について",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/koyouroudou/koyou/1076246.html",
+      "date": "2026-08-14",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【沿岸広域振興局（大船渡）】令和8年度定例見積の実施について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/mitsumori/1081911.html",
+      "date": "2026-08-14",
+      "summary": ""
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "ひろの女性未来アンケートの実施について",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081300035/",
+      "date": "2026-08-14",
+      "summary": "普段の暮らしや時間の使い方に関するアンケートです。 個人情報の提出は不要のため、安心してご回答いただけます。 町への具体的な要望の記入欄もあるので、この機会にぜひ、あなたの声をお聞かせください。 &nbsp; 対象者：洋野町在住、在勤、または出身の女性 回答方法：Googleフォーム 回答期限：令和８年８月16日(日) &nbsp; ひろの女性未来アンケート[JPG：696KB] ひろの女性未来アンケート‗概要[JPG：723KB] ひろの女性未来アンケート‗QRコード[JPG：681KB]"
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "ひろの女性未来会議 参加者募集",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081300028/",
+      "date": "2026-08-14",
+      "summary": "ご自身の身近な体験から町の課題や良いところを話し合い、「こうなったら良い」「こうしていきたい」という町の姿を考えていくカジュアルな会議です。 初回は９月３日(木)で、11月末までを目途に、全４回をオンライン開催します。 ぜひ、率直な意見やアイデアをお聞かせください。 &nbsp; 対&nbsp; 象&nbsp; 者：洋野町在住、在勤、または出身の女性 応募方法：Googleフォーム 応募締切：８月23日(日) 参加方法：オンライン（zoomを使用） 日 時：全４回を平日19時30分から開催。 初回は、９月３日(木) 19時30分～20時30分 謝 礼：全４回参加した方にミニギフト贈呈！ &nbsp; ひろの女性未来会議[JPG：709KB] ひろの女性未来会議‗概要[JPG：784KB] ひろの女性未来会議‗QRコード[JPG：685KB"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "広報はなまき 令和8年8月15日号",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/kouhou/kouhou_hanamaki/1025117/1025875.html",
+      "date": "2026-08-14",
+      "summary": "広報はなまき 令和8年8月15日号を発行しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「花巻リズムヤンガー80周年記念コンサート」を開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/bunka/1019888/1025840.html",
+      "date": "2026-08-14",
+      "summary": "【文化会館】「花巻リズムヤンガー80周年記念コンサート」を開催します（11月7日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "求人情報を公開しました",
+      "url": "https://www.city.hanamaki.iwate.jp/business/work/kyujin/1002220.html",
+      "date": "2026-08-14",
+      "summary": "8月14日発行分のハローワーク花巻週刊求人情報を公開しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "【省エネ・再エネ】国・県の事業者むけ補助事業などを紹介します",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/kankyo/ondanka/1023209/1023211/1004551.html",
+      "date": "2026-08-14",
+      "summary": "【事業者向け｜省エネ・再エネ】水力発電導入促進支援事業費補助金の公募が始まっています"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年度「富士大学花巻市民セミナー」",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/shogaigakushu/1019894/1016419/1014882.html",
+      "date": "2026-08-14",
+      "summary": "令和8年度「富士大学花巻市民セミナー」の受講生を募集します（8月27日締切）"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "電子契約",
+      "url": "https://www.pref.iwate.jp/kensei/gyoseikeiei/1100084.html",
+      "date": "2026-08-13",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出展者募集中】令和8年度「いわて食の商談会in大阪」",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/sangyoushinkou/shoku/1058857.html",
+      "date": "2026-08-13",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度 各商談会（食産業）",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/sangyoushinkou/shoku/1053601/index.html",
+      "date": "2026-08-13",
+      "summary": ""
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "令和８年８月17日（月）から物価高騰対応水道基本料金相当支援給付金の受付を開始します",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%ef%bc%98%e6%9c%8817%e6%97%a5%ef%bc%88%e6%9c%88%ef%bc%89%e3%81%8b%e3%82%89%e7%89%a9%e4%be%a1%e9%ab%98%e9%a8%b0%e5%af%be%e5%bf%9c%e6%b0%b4%e9%81%93%e5%9f%ba%e6%9c%ac-39774/",
+      "date": "2026-08-13",
+      "summary": "町では、井戸水（自家水）・水道の用途が「営業小口」・世帯分離 [&#8230;]"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年度花巻市博物館 学芸員講座",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/bunka/1019887/1008981/1009017/1025263.html",
+      "date": "2026-08-13",
+      "summary": "【再掲】花巻市博物館｜第2回学芸員講座の参加者を募集しています（8月23日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "市民講座「きのこ採り入門講座」を開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/shogaigakushu/1019894/1016419/1025717.html",
+      "date": "2026-08-13",
+      "summary": "市民講座「きのこ採り入門講座」を開催します【申込期限：8月24日】"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "市民講座「花巻の「レトロ」を見る」を開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/shogaigakushu/1019894/1016419/1025583.html",
+      "date": "2026-08-13",
+      "summary": "市民講座「花巻の「レトロ」を見る」を開催します【申込締切：8月24日】"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "スカイフェスタ2026 管制塔および気象室見学のお知らせ",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kouwankuukou/airport/1009705/1101269.html",
+      "date": "2026-08-12",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "訪問介護等サービス提供体制確保支援事業費補助金について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/kaigo/1083362.html",
+      "date": "2026-08-12",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度介護テクノロジー導入等支援事業費補助金",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/1083030/1099125.html",
+      "date": "2026-08-12",
+      "summary": ""
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "【受付終了】平泉町物価高騰対応事業継続臨時支援金のお知らせ",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e3%80%90%e5%8f%97%e4%bb%98%e7%b5%82%e4%ba%86%e3%80%91%e5%b9%b3%e6%b3%89%e7%94%ba%e7%89%a9%e4%be%a1%e9%ab%98%e9%a8%b0%e5%af%be%e5%bf%9c%e4%ba%8b%e6%a5%ad%e7%b6%99%e7%b6%9a%e8%87%a8%e6%99%82%e6%94%af-39819/",
+      "date": "2026-08-12",
+      "summary": "平泉町エネルギー価格高騰影響緩和支援金について 平泉町では、エネルギー価格高騰による費用増加に直面している町内中小企業者等を対象に、平泉町エネルギー価格高騰影響緩和支援金を交付します。 平泉町エネルギー価格高騰影響緩和支援金 概要チラシ.pdf [431KB pdfファイル]&#160;対象となる事業者 平泉町内に事業所所在地がある法人または個人事業者の中小企業者等 ※対象とならない事業者・大企業及びみなし大企業 ・農林漁業収入を主とする事業者・政治団体、宗教上の組織もしくは団体 ・その他支給基準を満たさない事業者支給要件 令和6年1月から令和6年6月までの任意の1か月において、事業のために支払ったエネルギー費の合計額が、前年同月より増加していること。 ※「エネルギー費」とは、事業に要する電気、ガス、ガソリン・灯油・軽油などの燃料にかかる費用のこと。 支援金額 法人10万円・個人事業者5万円 ※同一事業者につき1回限り受付期間 令和6年9月30日（月）まで受付場所 平泉商工会（平泉町平泉字志羅山152&#8722;2 電話46&#8722;3560）申請に必要な書類 【共通する書類】 1 平泉町エネルギー価格高騰影響緩和支援金交付申請書兼請求書（様式第1号） 2 エネルギー費増加状況表（様式第1号別紙）&#8230;平泉商工会から認定を受けることが必要です 3 事業のために使用したエネルギーの料金を支払ったことを証明できる書類（対象月・基準月それぞれにおける請求書、領収書など） 4 振込先通帳の写し ※1、2の書類は、役場観光商工課または平泉商工会で配布しています。また、下部「様式」からもダウンロードできます。&#160; 【法人の場合】 1 （法人税）確定申告書の写し（直近のもの） 2 法人事業概況説明書 3 履歴事項全部証明書（3ヶ月以内のもの） 【個人事業主の場合】 1 （所得税）確定申告書の写しまたは市町村民税・県民税の申告書の控え（直近のもの） 2 所得税青色申告決算書または白色収支内訳書の写し 3 本人確認書類（運転免許証など）様式 平泉町エネルギー価格高騰影響緩和支援金申請書兼請求書（様式第1号）、エネルギー費増加状況表（様式第1号別紙）.xlsx [46KB xlsxファイル] &#160;LINE配信有"
+    },
+    {
+      "code": "03507",
+      "cityName": "洋野町",
+      "title": "岩手県主催移住イベント「THEいわてDAY2026」に出展します！",
+      "url": "https://www.town.hirono.iwate.jp/doc/2026081000010/",
+      "date": "2026-08-12",
+      "summary": "岩手への移住・Uターンを考えている方、 岩手に興味がある方、 今年も「THEいわてDAY」が開催されます！ 当日はスペシャルゲストとして、いわて暮らしアンバサダーの天津木村さんのほか、庄司智春さんやバッテリィズがステージイベントに登場し、岩手での暮らしを深堀りします！ 洋野町も移住担当職員が相談ブースを出展してお待ちしております。 ぜひお越しください！ ▶詳細はこちら https://iwate-day.com/ &nbsp; &nbsp; THEいわてDAY2026_チラシ（表）[PDF：1.64MB] THEいわてDAY2026_チラシ（裏）[PDF：1.89MB]"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和9年度着任の花巻市地域おこし協力隊を募集します！",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/chiiki/1008205/1022144.html",
+      "date": "2026-08-12",
+      "summary": "令和9年度着任の花巻市地域おこし協力隊を募集します！"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻南高等学校ソフトボール部 令和8年度全国高等学校総合体育大会ソフトボール競技大会準優勝おめでとうございます！",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/sports/1019889/1025889.html",
+      "date": "2026-08-12",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "【3泊4日の生活体験】花巻・遠野おためし居住体験ツアーを実施します！",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/ijyu_teijyu/event_kensyu/1025883.html",
+      "date": "2026-08-12",
+      "summary": "花巻・遠野おためし居住体験ツアーを開催します（10月1日～4日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「令和8年7月滋賀県甲賀市の土砂崩れ災害義援金（滋賀県）」を受け付けています",
+      "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/oshirase/1019872/1019873/1025893.html",
+      "date": "2026-08-12",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年度戦没者追悼・平和祈念式開催を開催しました",
+      "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/oshirase/1019882/1023919.html",
+      "date": "2026-08-12",
+      "summary": "令和8年度戦没者追悼・平和祈念式開催を開催しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "プロモーションサイト「まきまき花巻」",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/chiiki/1009485/1002461.html",
+      "date": "2026-08-12",
+      "summary": "プロモーションサイト「まきまき花巻」に新規記事を掲載しました"
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "令和８年８月11日午後4時08分「災害警戒本部」を廃止しました",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%ef%bc%98%e6%9c%8811%e6%97%a5%e5%8d%88%e5%be%8c4%e6%99%8208%e5%88%86%e3%80%8c%e7%81%bd%e5%ae%b3%e8%ad%a6%e6%88%92%e6%9c%ac%e9%83%a8%e3%80%8d%e3%82%92%e5%bb%83-39770/",
+      "date": "2026-08-11",
+      "summary": "【平泉町災害警戒本部から】 令和８年８月11日（火曜日）午後 [&#8230;]"
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "台風15号の接近に伴う警戒について",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e5%8f%b0%e9%a2%a815%e5%8f%b7%e3%81%ae%e6%8e%a5%e8%bf%91%e3%81%ab%e4%bc%b4%e3%81%86%e8%ad%a6%e6%88%92%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6-39768/",
+      "date": "2026-08-11",
+      "summary": "【平泉町災害警戒本部から】 台風15号の警戒情報についてお知 [&#8230;]"
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "令和８年８月11日午前１時23分「災害警戒本部」を設置しました",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%ef%bc%98%e6%9c%8811%e6%97%a5%e5%8d%88%e5%89%8d%ef%bc%91%e6%99%8223%e5%88%86%e3%80%8c%e7%81%bd%e5%ae%b3%e8%ad%a6%e6%88%92%e6%9c%ac%e9%83%a8%e3%80%8d%e3%82%92-39765/",
+      "date": "2026-08-11",
+      "summary": "【平泉町災害警戒本部から】 令和８年８月11日（火曜日）午前 [&#8230;]"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を廃止しました（令和8年8月11日)",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025895.html",
+      "date": "2026-08-11",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を設置しました（令和8年8月11日）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025894.html",
+      "date": "2026-08-11",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "医療機関等経営改善・従事者処遇改善等緊急支援事業について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/seido/1002990/1077853/1096530.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度建設業経営講習会の開催",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kensetsu/1095844/1024559.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【質問回答】令和8年度インド視察に係る現地手配業務委託",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/sonota/1101274.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "岩手県病院薬剤師奨学金償還支援対象者の募集について（令和9年度就職予定者向け・追加募集）",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/yakumu/1093151/1101181.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "広報紙「いわて県議会だより」",
+      "url": "https://www.pref.iwate.jp/gikai/koho/dayori/index.html",
+      "date": "2026-08-10",
+      "summary": "「いわて県議会だより（第199号）」を掲載しました。"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度高齢者の消費者トラブル110番週間のお知らせ",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/shouhiseikatsu/event/1101073.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "岩手国際イノベーションコンベンション",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/sangyoushinkou/shinjigyou/1045518/1098469.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【参加者募集】中山の園改築等工事に係る意見聴取会の実施について",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/chiiki/machizukuri/1101250.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【公募】農地中間管理機構関連農地整備事業平良木地区第23号変更事業計画書作成業務委託",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1100875.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度食の安全安心を考える講座を開催します",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/anzenanshin/shoku/1022334/1099940/1099941.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "設置費補助を利用して浄化槽を設置しましょう",
+      "url": "https://www.pref.iwate.jp/kendozukuri/toshigesui/gesui/1036127/1068409.html",
+      "date": "2026-08-10",
+      "summary": "設置費補助を利用して浄化槽を設置しましょう"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "「さんりくde婚活」開催情報",
+      "url": "https://www.pref.iwate.jp/engan/hoken/1067440.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【公募】中小企業者等賃上げ環境整備緊急支援事業費補助金（賃上げ補助金2.0）の公募について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1066780.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【入札公告】漁業取締船「岩鷲」上架修理工事一式",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/sonota/1063790.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【県北広域振興局（二戸）】レーザー加工機一式（岩手県立北桜高等学校）《一般競争入札》",
+      "url": "https://www.pref.iwate.jp/kenpoku/nyuusatsu/1101186.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和9年度岩手医科大学医学部学校推薦型選抜地域枠A（岩手県出身者枠）及び同地域枠B（東北出身者枠）いわて医学奨学金貸与候補生を募集します",
+      "url": "https://www.pref.iwate.jp/iryoukyoku/ishiboshuu/1030000/1067013.html",
+      "date": "2026-08-10",
+      "summary": ""
+    },
+    {
+      "code": "03201",
+      "cityName": "盛岡市",
+      "title": "もりおか女性センターフェスティバル2026",
+      "url": "https://www.city.morioka.iwate.jp/kurashi/shiminkatsudo/sankaku/1001892.html",
+      "date": "2026-08-10",
+      "summary": "「女性の政治参画」をテーマに、もりおか女性センターフェスティバル2026を開催します。"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "『花巻みち活street to park challenge2026』のお知らせ",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/keikaku/1010854/1025261.html",
+      "date": "2026-08-10",
+      "summary": "【花巻みち活】8月30日に行われる実験の内容をお知らせします"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年7月 定例記者会見を開催しました",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shicho/kisyakaiken/1025294/1025303.html",
+      "date": "2026-08-10",
+      "summary": "令和8年7月定例記者会見の市長の発言内容などを掲載しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和9年度採用 花巻市職員採用試験（社会人・経験者枠）を実施します",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/jinji_saiyo/syokuinsaiyo/1025760.html",
+      "date": "2026-08-10",
+      "summary": "【再掲】令和9年度採用 花巻市職員採用試験（社会人・経験者枠）を実施します"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和9年度採用 花巻市職員採用試験（高卒、障がいのある方、技術職、消防職）を実施します",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/jinji_saiyo/syokuinsaiyo/1025755.html",
+      "date": "2026-08-10",
+      "summary": "【再掲】令和9年度採用 花巻市職員採用試験（高卒、障がいのある方、技術職、消防職）を実施します"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "市営住宅入居者募集（8月定期・随時募集）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/kenchiku_jyutaku/1001168/1001170.html",
+      "date": "2026-08-10",
+      "summary": "8月に入居者を募集する市営住宅をお知らせします"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を廃止しました(8月9日)",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025892.html",
+      "date": "2026-08-09",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を設置しました（8月9日）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025890.html",
+      "date": "2026-08-09",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度魅力ある職場づくり推進事業費補助金二次募集のお知らせ",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/koyouroudou/oshirase/1101206.html",
+      "date": "2026-08-08",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "「農山漁村体験受入体制強化に係る広域連携による教育旅行等受入体制の整備支援業務」企画提案選考委員会の審査結果について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/kekka/1086558.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年8月7日知事記者会見",
+      "url": "https://www.pref.iwate.jp/governor/kaiken/1097577/1101261.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "ダムの洪水調節効果",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kasensabou/dam/1009973.html",
+      "date": "2026-08-07",
+      "summary": "入畑ダムの治水効果について"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年8月7日(金曜)【入札公告】岩手県立江刺病院内視鏡画像ファイリングシステム一式",
+      "url": "https://www.pref.iwate.jp/iryoukyoku/1101246.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "水産物の放射性物質の検査結果（2026年8月第2週分）",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/kankyou/hozen/torikumi/1002197/1097793/1101243.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年8月7日：道の日イベント「道の駅区界高原トイレ改修工事」現場見学会を開催しました！",
+      "url": "https://www.pref.iwate.jp/engan/miya_doboku/1068516/1097824/1101224.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和9～11年度の岩手県企業局再生可能エネルギー電気特定卸供給の協働事業者選定に係る公募型プロポーザルの参加資格の確認等に関する質問回答について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101037.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【プロポーザル公告】令和9～11年度の岩手県企業局再生可能エネルギー電気特定卸供給の協働事業者選定に係る公募型プロポーザルの実施について",
+      "url": "https://www.pref.iwate.jp/kigyoukyoku/nyuusatsu/1100737.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "（結果）岩手ぅんめぇ～もん！！グランプリ2026（令和8年度岩手県ふるさと食品コンクール）の入賞",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/nourinsuisan/hanro/1101230.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【情報更新しました】岩手県政150周年記念事業 次世代人材育成プログラムを実施します",
+      "url": "https://www.pref.iwate.jp/kensei/seisaku/1066648/1096259.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度建設業新分野進出等表彰事業の募集",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kensetsu/1095844/1023578/index.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度みちのく潮風トレイルプロモーション業務委託に係る企画提案の募集について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101225.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【入札取止め】【沿岸広域振興局（釜石）】普通乗用自動車（沿岸土木部）《一般競争入札》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/bupinjoho/1100586.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【入札取止め】【沿岸広域振興局（釜石）】普通乗用自動車（沿岸土木部）《一般競争入札》",
+      "url": "https://www.pref.iwate.jp/engan/1014004/1100583.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度若者向け県議会傍聴案内ポスターデザインコンテスト",
+      "url": "https://www.pref.iwate.jp/gikai/koho/poster/1099795.html",
+      "date": "2026-08-07",
+      "summary": "令和8年度若者向け県議会傍聴案内ポスターデザインコンテスト入賞作品が決定"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度北いわて生成AI活用実践研修",
+      "url": "https://www.pref.iwate.jp/event/kouza/1100259.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出納局】空港用プラウ除雪車《（特定調達）一般競争入札》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/bupinjoho/1101069.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "緊急浚渫推進事業債における浚渫発生土砂情報（衣川2号防災ダム）",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/nouson/bousai/1100612.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "岩手県子育て支援員研修",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/kosodate/shien/kosodate/1076276.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "【暑さ危険】熱中症予防行動をとりましょう",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e3%80%90%e6%9a%91%e3%81%95%e5%8d%b1%e9%99%ba%e3%80%91%e7%86%b1%e4%b8%ad%e7%97%87%e4%ba%88%e9%98%b2%e8%a1%8c%e5%8b%95%e3%82%92%e3%81%a8%e3%82%8a%e3%81%be%e3%81%97%e3%82%87%e3%81%86-39382/",
+      "date": "2026-08-07",
+      "summary": "医療機関への適切な受診について地域医療を支えていくためには、私たちも「医療の担い手」であるという意識を持って、自分の健康管理をはじめ、適切な受診行動を心がけることが大切です。地域医療を守るために、私たちができることから始めましょう。1.普段から健康管理を心がけましょう自分の健康に無関心では、病気を防ぐことはできません。「自分の健康は自分で守る」という意識を持ち、食事や運動など健康管理を心がけましょう。健康診断を受けましょう私たちの身体は、日々変化しています。毎年1回、健康診断を必ず受けましょう。そして、健診結果をその後の生活習慣の改善にいかしましょう。かかりつけ医を持ちましょう病気やケガなどで医療機関を受診する場合は、すぐに病院を受診するのではなく、身近な地域の診療所（クリニック）を受診し、かかりつけ医を持ちましょう。かかりつけ医を持つことで、普段からの健康状態を相談できたり、高度な治療が必要な場合は適切に病院へ紹介していただくこともできます。診療時間内に受診しましょう病気やケガなどで医療機関にかかる場合は、なるべく平日、日中の診療時間内に受診しましょう。診療時間内に受診することは、医師の負担を軽くする他、専門医の診断や検査を受けることができる利点があります。時間外に救急病院を安易に利用することにより、入院や救命を必要とする重症患者の治療に支障がでるおそれがあります。本当に必要な人が、必要な時に受診できるよう、コンビニ感覚での夜間受診は控えましょう。休日や夜間の受診は当番医を利用しましょう休日や夜間に具合が悪くなったときは、休日当番医や夜間救急当番医を利用することができます。www.town.hiraizumi.iwate.jp/index.cfm/22,878,105,192,htmlなお、お子さんの急な発熱やケガなど受診に迷うときには、こども救急ガイドブックを参考にしましょう。（母子健康手帳にも同じ情報が載っています。）www.pref.iwate.jp/kurashikankyou/iryou/seido/kyukyu/1028106.htmlそれでも迷う場合は、「子ども救急相談電話」に相談してみましょう。（相談受付時間：19時~翌日8時）☎019-605-9000 または 局番なしの＃8000※PHS・ダイヤル回線・IP電話からは、☎019-605-9000を利用してください。www.pref.iwate.jp/kurashikankyou/iryou/seido/kyukyu/1002955.html「お薬手帳」を持ちましょう処方された薬の内容や薬の効能、副作用について記録する「お薬手帳」を作りましょう。【お薬手帳の役割は？】1.他の病院・診療所・歯科医院にかかった時に、手帳を医師、歯科医師に見せることで薬の重複などを避けることができます。2.外出時に急な事故にあった時など、手帳を携帯することでいつも服用している薬の内容がわかり、医療機関による救命処置が円滑に行いやすくなります。3.手帳の記録をもとに、医師、歯科医師、薬剤師の連絡が円滑に進みます。【お薬手帳はどのようにして使うの？】1.受診の際に医療機関や調剤薬局へ提示しましょう。2.薬局や薬店でお薬を買った時にもその名前を記録しておきましょう。3.通院時や外出時に必ず持ち歩きましょう。4.災害時に自分の飲んでいる薬がわからない人が多く見られますので携行しましょう。"
+    },
+    {
+      "code": "03201",
+      "cityName": "盛岡市",
+      "title": "外山森林公園「秋を感じながらの植物観察会」",
+      "url": "https://www.city.morioka.iwate.jp/event/event/1036880/1047025.html",
+      "date": "2026-08-07",
+      "summary": "外山森林公園「秋を感じながらの植物観察会」を開催します。季節の変化を感じながらの植物観察と散策を楽しみます。豚汁の提供を予定しています！"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年9月の市政懇談会についてお知らせします",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/iken/kondannkai/1025886.html",
+      "date": "2026-08-07",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "【イベント情報】「遠野てくてく散歩 de 交流会」＠岩手県遠野市",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/ijyu_teijyu/event_kensyu/1025878.html",
+      "date": "2026-08-07",
+      "summary": "「遠野てくてく散歩 de 交流会」が開催されます（9月6日）"
+    },
+    {
+      "code": "03211",
+      "cityName": "釜石市",
+      "title": "【緊急！】7月30日12時～8月6日15時までに問い合わせフォームから投稿された方へ",
+      "url": "https://www.city.kamaishi.iwate.jp/docs/2026080700072/",
+      "date": "2026-08-07",
+      "summary": "令和8年7月30日（木）12時頃から8月6日（木）15時頃にかけて、ホームページの不具合により、トップページのお問い合わせフォームからお寄せいただいた投稿が正常に受け付けられていない可能性があります。 a { text-decoration: none; color: #464feb; } tr th, tr td { border: 1px solid #e6e6e6; } tr th { background-color: #f5f5f5; } 現在は不具合を解消し、正常にご利用いただける状態となっております。 期間中に問い合わせされた皆様には、多大なるご迷惑とご不便をお掛けしましたことをお詫び申し上げます。 大変お手数ではございますが、上記期間中にトップページのお問い合わせフォームを利用された方は、改めて投稿いただきますようお願いいたします。 &nbsp; &nbsp; a { text-decoration: none; color: #464feb; } tr th, tr td { border: ..."
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "道の駅区界高原トイレ改修工事 瓦版",
+      "url": "https://www.pref.iwate.jp/engan/miya_doboku/1068516/1068749/1091880.html",
+      "date": "2026-08-06",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "「林野火災警報・注意報制度説明動画制作等広報業務」受託候補者選定委員会の審査結果について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/kekka/1101182.html",
+      "date": "2026-08-06",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年7月 沿岸広域振興（釜石）からのプレスリリース",
+      "url": "https://www.pref.iwate.jp/engan/keiei/1072768/oshirase/1101167/index.html",
+      "date": "2026-08-06",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "にほんご学習",
+      "url": "https://www.pref.iwate.jp/kyouikubunka/kokusai/tabunka/1033520.html",
+      "date": "2026-08-06",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度障がい者雇用促進セミナーを開催します",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/koyouroudou/koyou/1057552/1059631.html",
+      "date": "2026-08-06",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "盛岡広域都市計画道路の変更素案の公表及び説明会の開催について",
+      "url": "https://www.pref.iwate.jp/kendozukuri/toshigesui/keikaku/1100862.html",
+      "date": "2026-08-06",
+      "summary": "盛岡広域都市計画道路のうち、3・3・6号向中野安倍館線ほか1路線について、都市計画道路の変更を行います。"
+    },
+    {
+      "code": "03402",
+      "cityName": "平泉町",
+      "title": "令和８年度平泉町地域おこし協力隊募集・採用支援業務委託に係る公募型プロポーザル審査委員会の審査結果について",
+      "url": "https://www.town.hiraizumi.iwate.jp/%e4%bb%a4%e5%92%8c%ef%bc%98%e5%b9%b4%e5%ba%a6%e5%b9%b3%e6%b3%89%e7%94%ba%e5%9c%b0%e5%9f%9f%e3%81%8a%e3%81%93%e3%81%97%e5%8d%94%e5%8a%9b%e9%9a%8a%e5%8b%9f%e9%9b%86%e3%83%bb%e6%8e%a1%e7%94%a8%e6%94%af-2-39644/",
+      "date": "2026-08-06",
+      "summary": "審査結果について 令和８年８月４日に開催した「令和８年度平 [&#8230;]"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "【7月ランキング公開】令和8年度 はなまき健康ポイント事業 事業所対抗戦！",
+      "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/oshirase/1019880/1021556.html",
+      "date": "2026-08-06",
+      "summary": "はなまき健康ポイント事業 事業所対抗戦を7月ランキングを公開しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "ツキノワグマの目撃件数及び捕獲頭数をお知らせします（令和8年7月31日時点）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/choju_sanrin/1024531.html",
+      "date": "2026-08-06",
+      "summary": "ツキノワグマの目撃件数及び捕獲頭数をお知らせします（令和8年7月31日時点）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「台焼＆鍛冶丁焼 出張！工房まつり」開催のお知らせ",
+      "url": "https://www.city.hanamaki.iwate.jp/bunkasports/bunka/1019887/1008981/1009006/1025828.html",
+      "date": "2026-08-06",
+      "summary": "【再掲】花巻市博物館｜テーマ展関連イベント「台焼＆鍛冶丁焼 出張！工房まつり」を開催します（8月9日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "倉沢人形歌舞伎調査委員会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1003039/1022505/index.html",
+      "date": "2026-08-06",
+      "summary": "倉沢人形歌舞伎調査委員会(6月27日)の開催結果を公開しました"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市文化財保護審議会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1003039/1011424/index.html",
+      "date": "2026-08-06",
+      "summary": "花巻市文化財保護審議会(6月23日)の開催結果を公開しました"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "R8道の日イベント清掃活動実施しました（R8.8.4）",
+      "url": "https://www.pref.iwate.jp/kennan/sen_doboku/1086605/1101180.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "県庁舎再整備に係る大学生ワークショップ",
+      "url": "https://www.pref.iwate.jp/kensei/kanzai/1086864/1100332.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【参加者募集】令和8年度ひとにやさしいまちづくりセミナーを開催します！",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/chiiki/machizukuri/1099003.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "第3期県立高等学校再編計画の策定（計画期間：R8～R17）",
+      "url": "https://www.pref.iwate.jp/kyouikubunka/kyouiku/gakkou/1006415/1098248/1097836.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "花巻審査指導監県営建設工事条件付一般競争入札発注予定",
+      "url": "https://www.pref.iwate.jp/kennan/1013947/1041243.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "県営笹谷地区土地改良事業(変更)計画書",
+      "url": "https://www.pref.iwate.jp/kennan/ichi_nousonseibi/1076908/1095382.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03201",
+      "cityName": "盛岡市",
+      "title": "都南つどいの森「大人のあかばやし探検隊・ツリークライミング」",
+      "url": "https://www.city.morioka.iwate.jp/event/event/1036879/1040000.html",
+      "date": "2026-08-05",
+      "summary": "都南つどいの森「大人のあかばやし探検隊・ツリークライミング」を開催します！"
+    },
+    {
+      "code": "03201",
+      "cityName": "盛岡市",
+      "title": "都南つどいの森「森のトリセツ・キャンプや野外で役に立つロープワーク、ブランコつくり」",
+      "url": "https://www.city.morioka.iwate.jp/event/event/1036879/1032765.html",
+      "date": "2026-08-05",
+      "summary": "都南つどいの森「森のトリセツ・キャンプや野外で役に立つロープワーク、ブランコつくり」を開催します！"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "8月13日に石鳥谷夢まつりを開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/kanko/oshirase/1009803.html",
+      "date": "2026-08-05",
+      "summary": "第36回石鳥谷夢まつりを開催します（8月13日開催）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「産後ケア事業」を実施しています",
+      "url": "https://www.city.hanamaki.iwate.jp/kosodate_kyoiku/kosodate/ninshin_syussan/1000270/1001729.html",
+      "date": "2026-08-05",
+      "summary": "産後ケア事業を実施しています"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「産前・産後サポート事業」を実施しています",
+      "url": "https://www.city.hanamaki.iwate.jp/kosodate_kyoiku/kosodate/ninshin_syussan/1000270/1025307.html",
+      "date": "2026-08-05",
+      "summary": "産前・産後サポート事業を実施しています"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「警視庁」を名乗る「運転免許更新」に関するサギメールにご注意ください！（8月4日発生）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/chui/1025208/1025873.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "「自動音声ガイダンス」によるサギ電話にご注意ください！（8月3日発生）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/chui/1025208/1025872.html",
+      "date": "2026-08-05",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市総合教育会議を8月24日に開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/kosodate_kyoiku/kyoiku/enjutsu_kaigi/sogokyoikukaigi/1016218.html",
+      "date": "2026-08-05",
+      "summary": "花巻市総合教育会議を8月24日に開催します"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "8月24日に教育委員会議を開催します",
+      "url": "https://www.city.hanamaki.iwate.jp/kosodate_kyoiku/kyoiku/enjutsu_kaigi/kyoikuiinkaigi/1001399.html",
+      "date": "2026-08-05",
+      "summary": "8月24日に教育委員会議を開催します"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "大雨の事後対策に関する農作物技術情報",
+      "url": "https://www.city.hanamaki.iwate.jp/business/norinchikusan/1000242/1013585.html",
+      "date": "2026-08-05",
+      "summary": "【農業者向け】大雨の事後対策に関する技術情報が発表されました（8月3日発表）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "大規模小売店舗立地法に基づく縦覧（スーパーセンタートライアル花巻店）",
+      "url": "https://www.city.hanamaki.iwate.jp/business/sangyoshien/bosyu_oshirase/1025860.html",
+      "date": "2026-08-05",
+      "summary": "大規模小売店舗立地法に基づく縦覧を行っています（スーパーセンタートライアル花巻店）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "【ジョブカフェはなまき】令和8年9月7日（月曜）職業観醸成セミナー開催のお知らせ",
+      "url": "https://www.city.hanamaki.iwate.jp/business/work/event_bosyu/1020447.html",
+      "date": "2026-08-05",
+      "summary": "【ジョブカフェはなまき】職業観醸成セミナーが開催されます（9月7日）"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市教育振興審議会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1003039/1010160/index.html",
+      "date": "2026-08-05",
+      "summary": "花巻市教育振興審議会を8月18日に開催します"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度「東日本大震災復興フォーラム」開催業務に関する質問への回答について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101163.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度人事委員会会議結果",
+      "url": "https://www.pref.iwate.jp/iinkai/jinji/kaigi/1097727.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "インクルーシブスポーツ推進事業",
+      "url": "https://www.pref.iwate.jp/kyouikubunka/sports/1007366/1073489.html",
+      "date": "2026-08-04",
+      "summary": "「岩手県みんなのボッチャ選手権2026」の情報をアップしました。"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "いわて3つの世界遺産ブロック作品展示",
+      "url": "https://www.pref.iwate.jp/kyouikubunka/1059148/1059221/1101066.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "世界遺産祭 in 平泉",
+      "url": "https://www.pref.iwate.jp/kyouikubunka/1059148/1059221/1101030.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "平泉遺産復元イメージパネル制作業務企画提案選考委員会の審査結果について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/kekka/1100531.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "宮古地域ガイドブック 2027 掲載企業募集",
+      "url": "https://www.pref.iwate.jp/engan/miya_chiiki/1014034/1047373/1088193.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "オープンキャンパス・学校見学",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/kikan/miyako/1019407.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【入札公告】令和8年度インド視察に係る現地手配業務委託",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/sonota/1101161.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "(都)盛岡駅本宮線杜の大橋改良舗装工事に伴う通行規制について",
+      "url": "https://www.pref.iwate.jp/morioka/doboku/1091126.html",
+      "date": "2026-08-04",
+      "summary": "杜の大橋通行規制情報を追加しました！"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "保護動物情報について",
+      "url": "https://www.pref.iwate.jp/engan/hoken/1014120/1014123.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【公募】令和8年度分（第6回）岩手県流域下水道設備点検整備業務委託（全1件）",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1100863.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "8月は児童扶養手当現況届の届出期間です",
+      "url": "https://www.city.hanamaki.iwate.jp/kosodate_kyoiku/kosodate/kosodateshien/teate_jyosei/1005584.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "定期健康診査（特定健康診査等）のお知らせ",
+      "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/kenshin/1019867/1001905.html",
+      "date": "2026-08-04",
+      "summary": "9月以降の定期健康診査の日程をお知らせします"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "手足口病の感染にご注意ください",
+      "url": "https://www.city.hanamaki.iwate.jp/kenko_iryo_fukushi/oshirase/1019879/1022008.html",
+      "date": "2026-08-04",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "大迫あんどんまつりを開催します！",
+      "url": "https://www.city.hanamaki.iwate.jp/kanko/oshirase/1025867.html",
+      "date": "2026-08-04",
+      "summary": "大迫あんどんまつりを開催します（8月14日、16日）"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【情報提供依頼（RFI）】県立看護師養成所授業料等口座振替電算処理システムの更新検討に係る情報提供依頼",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1100750.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度「いわて省エネルギー住宅建設推進事業費補助金」（いわてZEH＋住宅等普及促進事業費のうち新築向け）",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/kenchiku/kojin/hojo/1073811.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "お盆期間中のいわて花巻空港駐車場の混雑について",
+      "url": "https://www.pref.iwate.jp/kendozukuri/kouwankuukou/airport/1022184.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "北いわての歴史文化施設を巡って「北いわて縄文カード」を集めよう！",
+      "url": "https://www.pref.iwate.jp/kenpoku/nino_chiiki/1014651/1093120.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "令和8年度 献血推進協力団体等表彰",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/iryou/yakumu/kenketsu/1101055.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【公募】令和8年度指定管理鳥獣（ニホンジカ・イノシシ）捕獲等業務に係る契約希望者の公募",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/1010807/1100903.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "「令和8年度いわてグリーン・ツーリズムスタディ」に係る企画提案の募集について【再募集】",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1087183.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "障がい福祉の仕事の魅力発信動画等制作業務委託に係る企画提案の募集について",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/compe/sanka/1101036.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【新着】「森と湖in綱取」2026！を開催しました！（令和8年7月28日）",
+      "url": "https://www.pref.iwate.jp/morioka/tsunatori/1089429.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "岩手県職員（都道府県等職務経験者）の募集について",
+      "url": "https://www.pref.iwate.jp/kensei/saiyou/shokuin/1092706/1100851.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "【出納局】交通取締用四輪車《一般競争入札》",
+      "url": "https://www.pref.iwate.jp/kensei/nyuusatsu/buppin/bupinjoho/1100216.html",
+      "date": "2026-08-03",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市企業検索サイト「おしごとNAVI花巻」のご案内",
+      "url": "https://www.city.hanamaki.iwate.jp/business/work/service/1017876.html",
+      "date": "2026-08-03",
+      "summary": "花巻市企業検索サイト「おしごとNAVI花巻」をご利用ください"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市健康づくり推進協議会",
+      "url": "https://www.city.hanamaki.iwate.jp/shisei/shisei/shingikai_iinkai/1006109/1010006/index.html",
+      "date": "2026-08-03",
+      "summary": "花巻市健康づくり推進協議会を8月26日に開催します"
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "令和8年第2回花巻市議会臨時会を8月7日に開会します",
+      "url": "https://www.city.hanamaki.iwate.jp/shigikai/1004070/1022869.html",
+      "date": "2026-08-03",
+      "summary": "令和8年第2回花巻市議会臨時会を8月7日に開会します"
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "「いわておかえりキャンペーン」",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/1021252/1099731.html",
+      "date": "2026-08-02",
+      "summary": ""
+    },
+    {
+      "code": "03000",
+      "cityName": "岩手県",
+      "title": "次世代育成支援及び女性活躍推進のための特定事業主行動計画",
+      "url": "https://www.pref.iwate.jp/iryoukyoku/oshirase/1033661.html",
+      "date": "2026-08-02",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を廃止しました(8月2日)",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025866.html",
+      "date": "2026-08-02",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "警戒レベル4 避難指示を解除しました（8月2日）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025865.html",
+      "date": "2026-08-02",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を設置しました（8月1日）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025847.html",
+      "date": "2026-08-02",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "警戒レベル4避難指示を発令しました（令和8年8月1日）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025864.html",
+      "date": "2026-08-01",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を廃止しました(8月1日)",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025862.html",
+      "date": "2026-08-01",
+      "summary": ""
+    },
+    {
+      "code": "03205",
+      "cityName": "花巻市",
+      "title": "花巻市災害警戒本部を設置しました（8月1日）",
+      "url": "https://www.city.hanamaki.iwate.jp/kurashi/anshin_anzen/bousai_saigai/1025861.html",
+      "date": "2026-08-01",
+      "summary": ""
+    }
+  ]
+}
