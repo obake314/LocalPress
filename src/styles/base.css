@@ -1,5 +1,11 @@
 /* 要素そのものに掛ける最小限の既定スタイル */
 
+:root{
+  --font-sans: "Helvetica Neue",Arial,
+    "Hiragino Kaku Gothic ProN","Hiragino Sans",
+    sans-serif;
+}
+
 *,
 *::before,
 *::after {

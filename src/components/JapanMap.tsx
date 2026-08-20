@@ -90,7 +90,6 @@ export default function JapanMap({ onNavigate, showAllLabels }: JapanMapProps) {
                 fontSize={active ? 16 : 13}
                 fontWeight={active ? 700 : 500}
                 fill={active ? "var(--color-primary)" : "var(--color-foreground)"}
-                fontFamily="'Noto Sans JP',sans-serif"
                 style={{ pointerEvents: "none" }}
               >
                 {label}

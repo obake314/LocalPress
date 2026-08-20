@@ -94,18 +94,26 @@ export async function promoteAdopted({ dryRun = false } = {}) {
       continue
     }
 
-    const category = itemHasCategory
-      ? (Array.isArray(item.category) ? item.category[0] : item.category)
-      : urlCategory.get(item.url)
+    // 入札情報公開サービス由来のものは分野が確定している
+    const fromBidPortal = /epi-cloud\.fwd\.ne\.jp/.test(item.url ?? "")
+
+    const category = fromBidPortal
+      ? "入札・公募"
+      : itemHasCategory
+        ? Array.isArray(item.category)
+          ? item.category[0]
+          : item.category
+        : urlCategory.get(item.url)
 
     if (!category) {
       unknown.push(item.title)
       continue
     }
 
-    // 元ページから締切と概要を補う
-    const page = await inspectPage(item.url)
-    await sleep(400)
+    // 元ページから締切と概要を補う。入札情報公開サービスはセッションが要り
+    // 直リンクできないので取りに行かない
+    const page = fromBidPortal ? {} : await inspectPage(item.url)
+    if (!fromBidPortal) await sleep(400)
 
     const body = {
       title: item.title,

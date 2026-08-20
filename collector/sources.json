@@ -93,12 +93,6 @@
       "latestAtCheck": "2026-08-19",
       "categoryFeeds": [
         {
-          "slug": "nyusatsu",
-          "category": "入札・公募",
-          "defaultState": "採用",
-          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/nyusatsu/index.rss"
-        },
-        {
           "slug": "kanko_bussan",
           "category": "イベント",
           "defaultState": "採用",
@@ -294,12 +288,6 @@
       "itemsAtCheck": 10,
       "latestAtCheck": "2026-08-18",
       "categoryFeeds": [
-        {
-          "slug": "nyusatsu",
-          "category": "入札・公募",
-          "defaultState": "採用",
-          "feed": "https://www.town.hirono.iwate.jp/category/bunya/nyusatsu/index.rss"
-        },
         {
           "slug": "sangyo",
           "category": "募集",

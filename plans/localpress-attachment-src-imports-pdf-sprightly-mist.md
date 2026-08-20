@@ -41,7 +41,6 @@ src/
 ### src/index.css
 ```css
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 @import 'tailwindcss';
 
@@ -55,7 +54,7 @@ src/
   --color-muted-foreground: #5a6480;
   --color-accent: #f59e0b;
   --color-border: #d1d5e0;
-  --font-sans: 'DM Sans', 'Noto Sans JP', sans-serif;
+  --font-sans: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans", sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 ```

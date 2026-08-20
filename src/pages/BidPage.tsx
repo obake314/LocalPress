@@ -12,6 +12,8 @@ import Button from "../components/ui/Button"
 import SectionHeading from "../components/ui/SectionHeading"
 import PlanTag from "../components/ui/PlanTag"
 import { StatusBadge, DeadlineBadge } from "../components/BadgeTag"
+import BidSpecTable from "../components/BidSpecTable"
+import { parseBidSpec, bidSpecValue, bidRemark } from "../lib/bidSpec"
 interface BidPageProps {
   /** /bid/{案件ID} */
   bidId?: string
@@ -92,29 +94,21 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
               {detail.title}
             </h1>
 
-            <div className="mt-12 grid gap-10 border-t border-white/10 pt-10 sm:grid-cols-3">
-              <div>
-                <p className="eyebrow mb-3 text-white/40">発注者</p>
-                <p className="text-lead text-white">
-                  {detail.prefecture} {detail.cityName}
-                </p>
-              </div>
-              <div>
-                <p className="eyebrow mb-3 text-white/40">提出期限</p>
-                <p className="font-mono text-lead text-white">
-                  {detail.deadline ?? "—"}
-                </p>
-              </div>
-              <div>
-                <p className="eyebrow mb-3 text-white/40">残り</p>
-                {days !== null ? (
-                  <p className="font-mono text-lead text-accent">
-                    {days >= 0 ? `${days} 日` : "受付終了"}
-                  </p>
-                ) : (
-                  <p className="text-lead text-white/60">—</p>
-                )}
-              </div>
+            {/* 発注情報の仕様。入札情報公開サービスから取得したもの */}
+            <div className="mt-12 border-t border-white/10 pt-10">
+              <BidSpecTable
+                inverse
+                specs={[
+                  { label: "発注者", value: `${detail.prefecture} ${detail.cityName}` },
+                  ...parseBidSpec(detail.summary),
+                  ...(detail.deadline
+                    ? [{ label: "提出期限", value: detail.deadline, emphasis: true }]
+                    : []),
+                  ...(days !== null
+                    ? [{ label: "残り", value: days >= 0 ? `${days} 日` : "受付終了" }]
+                    : []),
+                ]}
+              />
             </div>
           </Container>
         </section>
@@ -130,7 +124,8 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                     <PlanTag plan="無料" />
                   </div>
                   <p className="text-body text-muted-foreground">
-                    {detail.summary}
+                    {bidRemark(detail.summary) ||
+                      "この案件の詳細は、発注機関の入札情報公開サービスでご確認いただけます。"}
                   </p>
                 </div>
 
@@ -281,6 +276,11 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
             {list.map((b, i) => {
               const days = daysUntilDeadline(b.deadline)
               const changes = getRevisions(b.id).length
+              const method = bidSpecValue(b.summary, "入札方式")
+              const workType = bidSpecValue(b.summary, "工種")
+              const opening = bidSpecValue(b.summary, "開札日")
+              const section = bidSpecValue(b.summary, "課所")
+              const remark = bidRemark(b.summary)
               return (
                 <button
                   key={b.id}
@@ -295,6 +295,16 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                       <span className="font-mono text-eyebrow text-faint-foreground">
                         {b.publishedAt} ／ {b.cityName}
                       </span>
+                      {method && (
+                        <span className="bg-muted px-2.5 py-1 text-eyebrow text-muted-foreground">
+                          {method}
+                        </span>
+                      )}
+                      {workType && (
+                        <span className="bg-muted px-2.5 py-1 text-eyebrow text-muted-foreground">
+                          {workType}
+                        </span>
+                      )}
                       {changes > 0 && (
                         <span className="bg-accent-soft px-2.5 py-1 font-mono text-eyebrow font-semibold text-accent-ink">
                           条件変更 {changes} 件
@@ -304,17 +314,24 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                     <h3 className="text-h3 text-foreground transition-colors group-hover:text-primary">
                       {b.title}
                     </h3>
-                    <p className="mt-3 text-sm text-muted-foreground line-clamp-1">
-                      {b.summary}
-                    </p>
+                    {remark && (
+                      <p className="mt-3 text-sm text-muted-foreground line-clamp-1">
+                        {remark}
+                      </p>
+                    )}
+                    {section && (
+                      <p className="mt-3 font-mono text-eyebrow text-faint-foreground">
+                        {section}
+                      </p>
+                    )}
                   </div>
 
                   <div className="shrink-0 md:w-40 md:text-right">
                     <p className="eyebrow mb-2 text-faint-foreground">
-                      提出期限
+                      {opening ? "開札日" : "提出期限"}
                     </p>
                     <p className="font-mono text-body text-foreground">
-                      {b.deadline ?? "—"}
+                      {opening ?? b.deadline ?? "—"}
                     </p>
                     {days !== null && (
                       <div className="mt-2">

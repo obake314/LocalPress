@@ -389,9 +389,9 @@ export default function TopPage({ onNavigate }: NavProps) {
                 <circle cx="100" cy="88" r="46" fill="var(--color-primary)" fillOpacity="0.14" stroke="var(--color-primary)" strokeWidth="1" />
                 <circle cx="72" cy="118" r="46" fill="var(--color-accent)" fillOpacity="0.18" stroke="var(--color-accent)" strokeWidth="1" />
                 <circle cx="128" cy="118" r="46" fill="var(--color-sage)" fillOpacity="0.16" stroke="var(--color-sage)" strokeWidth="1" />
-                <text x="100" y="72" textAnchor="middle" fontSize="9" fontWeight="700" fill="var(--color-primary)" fontFamily="'Noto Sans JP',sans-serif">収集・整理</text>
-                <text x="58" y="140" textAnchor="middle" fontSize="9" fontWeight="700" fill="var(--color-accent-ink)" fontFamily="'Noto Sans JP',sans-serif">横断検索</text>
-                <text x="142" y="140" textAnchor="middle" fontSize="9" fontWeight="700" fill="var(--color-sage)" fontFamily="'Noto Sans JP',sans-serif">通知・管理</text>
+                <text x="100" y="72" textAnchor="middle" fontSize="9" fontWeight="700" fill="var(--color-primary)">収集・整理</text>
+                <text x="58" y="140" textAnchor="middle" fontSize="9" fontWeight="700" fill="var(--color-accent-ink)">横断検索</text>
+                <text x="142" y="140" textAnchor="middle" fontSize="9" fontWeight="700" fill="var(--color-sage)">通知・管理</text>
               </svg>
             </div>
 
