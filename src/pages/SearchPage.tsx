@@ -228,7 +228,7 @@ export default function SearchPage({
             onClick={() => setPrefecture(prefecture === p ? "" : p)}
           />
         ))}
-        <div className="mt-3 max-h-64 space-y-1 pr-1">
+        <div className="mt-3 max-h-64 space-y-1 overflow-y-auto pr-1">
           {municipalities.map((m) => {
             const count = countOf((a) => a.cityCode === m.code)
             return (
@@ -333,7 +333,7 @@ export default function SearchPage({
         <div className="flex gap-16 py-12 md:py-16">
           {/* 絞り込み — デスクトップ */}
           <aside className="hidden w-72 shrink-0 lg:block">
-            <div className="top-32">
+            <div className="sticky top-32">
               <div className="mb-8 flex items-center justify-between">
                 <p className="text-h3 text-foreground">絞り込み</p>
                 {activeChips.length > 0 && (
@@ -345,7 +345,7 @@ export default function SearchPage({
                   </button>
                 )}
               </div>
-              <div className="max-h-[calc(100vh-14rem)] pr-2">
+              <div className="max-h-[calc(100vh-14rem)] overflow-y-auto pr-2">
                 {filters}
               </div>
             </div>

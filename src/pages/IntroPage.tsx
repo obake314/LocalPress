@@ -123,7 +123,7 @@ export default function IntroPage({ audience, onNavigate }: IntroPageProps) {
           />
           <div className="mt-8 max-w-3xl">
             <p className="eyebrow mb-8 text-accent">{copy.eyebrow}</p>
-            <h1 className="text-display text-white">{copy.title}</h1>
+            <h1 className="mt-6 text-h1 text-white">{copy.title}</h1>
             <p className="mt-8 text-lead text-white/70">{copy.lead}</p>
             <div className="mt-12 flex flex-wrap justify-between">
               <Button

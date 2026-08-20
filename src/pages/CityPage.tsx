@@ -110,7 +110,7 @@ export default function CityPage({ cityCode, onNavigate }: CityPageProps) {
       </section>
 
       {/* 分野タブ */}
-      <section className="top-20 z-30 border-b border-border bg-card/95 backdrop-blur">
+      <section className="sticky top-20 z-30 border-b border-border bg-card/95 backdrop-blur">
         <Container>
           <div className="flex gap-8 overflow-x-auto">
             {tabs.map(({ label, value }) => {

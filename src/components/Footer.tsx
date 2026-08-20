@@ -59,7 +59,7 @@ const regionMap: Record<string, string[]> = {
   ],
 }
 
-const columns: { heading: string items: { label: string page?: Page }[] }[] = [
+const columns: { heading: string; items: { label: string; page?: Page }[] }[] = [
   {
     heading: "分野から探す",
     items: [

@@ -264,11 +264,6 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
           <p className="mt-6 max-w-2xl text-lead text-white/70">
             案件の一覧は無料で確認できます。仕様・参加資格・条件変更の履歴、および通知と案件管理は法人プランの機能です。
           </p>
-          <div className="mt-10">
-            <Button variant="accent" onClick={() => onNavigate("pricing")}>
-              法人プランを見る
-            </Button>
-          </div>
         </Container>
       </section>
 
