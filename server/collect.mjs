@@ -14,9 +14,13 @@ import { decodeBody, parseFeed } from "./feed.mjs"
 import { getAll, createMany } from "./microcms.mjs"
 import { maxAgeDays } from "./config.mjs"
 import { classifyItem } from "./filter.mjs"
+import { inspectPage } from "./page.mjs"
 
 /** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
 const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
+
+/** 元ページを見て受付終了を判定するか。無効にすると速いがゴミが混ざる */
+const CHECK_PAGES = (process.env.CHECK_PAGES ?? "true") !== "false"
 
 const UA = "LocalPress-collector/0.1 (+https://github.com/localpress)"
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -93,6 +97,9 @@ export async function runCollection({ dryRun = false } = {}) {
   /** 案件として価値の無いものを落とした内訳 */
   const skippedByReason = {}
 
+  /** 元ページで受付終了だったもの */
+  let skippedClosed = 0
+
   for (const src of sources) {
     const r = await fetchFeed(src.feed)
 
@@ -118,9 +125,27 @@ export async function runCollection({ dryRun = false } = {}) {
       return false
     })
 
-    const news = worthKeeping.filter((i) => !known.has(i.url))
-    for (const i of news) {
+    const candidates = worthKeeping.filter((i) => !known.has(i.url))
+
+    const news = []
+    for (const i of candidates) {
       known.add(i.url) // 同一実行内の重複も防ぐ
+
+      // タイトルには出ない「申込みは終了しました」を本文で判定する
+      if (CHECK_PAGES) {
+        const page = await inspectPage(i.url)
+        await sleep(400)
+        if (page.closed) {
+          skippedClosed++
+          continue
+        }
+        if (page.summary && !i.summary) i.summary = page.summary
+      }
+
+      news.push(i)
+    }
+
+    for (const i of news) {
       fresh.push({
         cityCode: src.code,
         cityName: src.name,
@@ -152,6 +177,7 @@ export async function runCollection({ dryRun = false } = {}) {
       maxAgeDays: days,
       skippedOld,
       skippedByReason,
+      skippedClosed,
       sources: perSource,
       newCount: fresh.length,
     }
@@ -167,6 +193,7 @@ export async function runCollection({ dryRun = false } = {}) {
     maxAgeDays: days,
     skippedOld,
     skippedByReason,
+    skippedClosed,
     sources: perSource,
     registered: created.length,
     failed: failed.length,
