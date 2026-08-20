@@ -1,0 +1,11 @@
+{
+  "$comment": "入札情報公開サービス（電子入札コアシステム）の調達機関。name1 は入口URLのクエリ値。KF001ShowAction?name1=… で開く。連番を走査して見つけたもの。",
+  "checkedAt": "2026-08-20",
+  "base": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction",
+  "orgs": [
+    { "cityCode": "03000", "name": "岩手県",   "orgCode": "1030ZZZZZZ", "name1": "0620060006600600" },
+    { "cityCode": "03201", "name": "盛岡市",   "orgCode": "1032ZZZZZZ", "name1": "0620060006600640" },
+    { "cityCode": "03206", "name": "北上市",   "orgCode": "1034ZZZZZZ", "name1": "0620060006600680" },
+    { "cityCode": "03203", "name": "大船渡市", "orgCode": "1039ZZZZZZ", "name1": "0620060006600720" }
+  ]
+}

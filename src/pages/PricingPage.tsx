@@ -183,7 +183,7 @@ export default function PricingPage({ onNavigate }: NavProps) {
   return (
     <div>
       {/* ヘッダー */}
-      <section className="bg-ink-bg py-20 md:py-28">
+      <section className="bg-ink-bg py-16 md:py-20">
         <Container>
           <Breadcrumb
             inverse
@@ -192,12 +192,12 @@ export default function PricingPage({ onNavigate }: NavProps) {
               { label: "料金・プラン" },
             ]}
           />
-          <div className="mt-8 max-w-3xl">
-            <p className="eyebrow mb-8 text-accent">Pricing</p>
-            <h1 className="mt-6 text-h1 text-white">
-              無料で探せる。
-            </h1>
-            <p className="mt-8 text-lead text-white/70">
+          <div className="mt-6 max-w-2xl">
+            <div className="mb-6 flex items-center gap-4">
+              <p className="eyebrow text-accent">Pricing</p>
+            </div>
+            <h1 className="text-h1 text-white">無料で探せる。</h1>
+            <p className="mt-6 text-lead text-white/70">
               一般に開かれた情報の検索と閲覧は、すべて無料です。通知・変更履歴・案件管理といった、仕事の成果に直結する機能を有料プランで提供します。
             </p>
           </div>

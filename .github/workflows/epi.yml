@@ -1,0 +1,58 @@
+# 入札情報公開サービス（電子入札コアシステム）から発注情報を取得する。
+#
+# このシステムはフレーム構成・POST遷移・セッションIDのURL埋め込みで、
+# HTTPリクエストだけでは辿れず実ブラウザが要る。Render の無料プランには
+# Chromium が載らないため、ここで動かして microCMS へ直接書き込む。
+#
+# 必要な Secrets:
+#   MICROCMS_SERVICE_DOMAIN / MICROCMS_API_KEY
+
+name: epi
+
+on:
+  schedule:
+    # 1日2回（UTC 22:00 と 10:00 = JST 7時と19時）。
+    # 入札公告は日中に更新されるため、RSSほど頻繁に見る必要はない。
+    - cron: "0 22,10 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: epi
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 依存とブラウザを入れる
+        working-directory: collector/epi
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: 発注情報を取得する
+        working-directory: collector/epi
+        run: node scrape.mjs
+
+      - name: microCMS へ登録する
+        working-directory: collector/epi
+        env:
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+        run: node push.mjs
+
+      - name: 取得結果を残す
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: epi-output
+          path: collector/epi/output/
+          retention-days: 14

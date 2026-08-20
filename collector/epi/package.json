@@ -1,0 +1,13 @@
+{
+  "name": "localpress-epi-scraper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "入札情報公開サービスのスクレイパ。GitHub Actions で動かす。本体アプリとは依存を分ける",
+  "scripts": {
+    "scrape": "node scrape.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1"
+  }
+}
