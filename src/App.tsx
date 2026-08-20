@@ -97,7 +97,7 @@ export default function App() {
   return (
     <div className="flex min-h-screen flex-col font-sans">
       <Header onNavigate={navigate} onSearch={handleSearch} />
-      <main className="flex-1">{renderPage()}</main>
+      <main className="flex flex-1 flex-col">{renderPage()}</main>
       <Footer onNavigate={navigate} />
     </div>
   )

@@ -180,7 +180,7 @@ export default function TopPage({ onNavigate }: NavProps) {
   }
 
   return (
-    <div>
+    <div className="flex flex-1 flex-col">
       {/* ══ ヒーロー（参考サイト：左に見出し＋ボタン＋実績、右に日本地図） ══ */}
       <section className="border-b border-border bg-card py-20 md:py-24">
         <Container>
@@ -495,7 +495,7 @@ export default function TopPage({ onNavigate }: NavProps) {
       </section>
 
       {/* ══ CTA帯（参考サイトの波形バンドを踏襲） ══ */}
-      <section className="relative overflow-hidden bg-sage py-24 md:py-32">
+      <section className="relative flex flex-1 items-center overflow-hidden bg-sage py-24 md:py-32">
         <svg
           viewBox="0 0 1440 160"
           preserveAspectRatio="none"
