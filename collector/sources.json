@@ -1,5 +1,5 @@
 {
-  "$comment": "岩手県33市町村＋県庁の更新情報の取得先。collector/check-feeds.mjs で実地確認した結果。",
+  "$comment": "岩手県33市町村＋県庁の更新情報の取得先。collector/check-feeds.mjs で実地確認した結果。 categoryFeeds は分野別のRSS。分野が分かるので取り込み時にカテゴリを付けられる。",
   "checkedAt": "2026-08-19",
   "summary": {
     "total": 34,
@@ -90,7 +90,45 @@
       "feed": "https://www.city.kamaishi.iwate.jp/category/kubun/news/index.rss",
       "feedFormat": "RSS",
       "itemsAtCheck": 10,
-      "latestAtCheck": "2026-08-19"
+      "latestAtCheck": "2026-08-19",
+      "categoryFeeds": [
+        {
+          "slug": "nyusatsu",
+          "category": "入札・公募",
+          "defaultState": "採用",
+          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/nyusatsu/index.rss"
+        },
+        {
+          "slug": "kanko_bussan",
+          "category": "イベント",
+          "defaultState": "採用",
+          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/kanko_bussan/index.rss"
+        },
+        {
+          "slug": "chiikisangyo",
+          "category": "募集",
+          "defaultState": "未処理",
+          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/chiikisangyo/index.rss"
+        },
+        {
+          "slug": "koryu",
+          "category": "文化",
+          "defaultState": "未処理",
+          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/koryu/index.rss"
+        },
+        {
+          "slug": "ikuji",
+          "category": "子育て",
+          "defaultState": "未処理",
+          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/ikuji/index.rss"
+        },
+        {
+          "slug": "kankyo",
+          "category": "政策",
+          "defaultState": "未処理",
+          "feed": "https://www.city.kamaishi.iwate.jp/category/bunya/kankyo/index.rss"
+        }
+      ]
     },
     {
       "code": "03213",
@@ -254,7 +292,33 @@
       "feed": "https://www.town.hirono.iwate.jp/category/kubun/news/index.rss",
       "feedFormat": "RSS",
       "itemsAtCheck": 10,
-      "latestAtCheck": "2026-08-18"
+      "latestAtCheck": "2026-08-18",
+      "categoryFeeds": [
+        {
+          "slug": "nyusatsu",
+          "category": "入札・公募",
+          "defaultState": "採用",
+          "feed": "https://www.town.hirono.iwate.jp/category/bunya/nyusatsu/index.rss"
+        },
+        {
+          "slug": "sangyo",
+          "category": "募集",
+          "defaultState": "未処理",
+          "feed": "https://www.town.hirono.iwate.jp/category/bunya/sangyo/index.rss"
+        },
+        {
+          "slug": "kenko",
+          "category": "子育て",
+          "defaultState": "未処理",
+          "feed": "https://www.town.hirono.iwate.jp/category/bunya/kenko/index.rss"
+        },
+        {
+          "slug": "fukushi",
+          "category": "募集",
+          "defaultState": "未処理",
+          "feed": "https://www.town.hirono.iwate.jp/category/bunya/fukushi/index.rss"
+        }
+      ]
     },
     {
       "code": "03524",

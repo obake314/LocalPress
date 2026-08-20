@@ -47,10 +47,26 @@ export async function loadSources() {
   const fallback = JSON.parse(
     readFileSync(new URL("./sources.fallback.json", import.meta.url), "utf8")
   )
-  return {
-    origin: "sources.fallback.json",
-    sources: fallback.sources.filter((s) => s.method === "rss" && s.feed),
+
+  const sources = []
+  for (const s of fallback.sources) {
+    if (s.method === "rss" && s.feed) {
+      sources.push({ code: s.code, name: s.name, feed: s.feed, state: "未処理" })
+    }
+    // 分野別フィードは、その分野の記事しか入らないので状態を決め打ちできる。
+    // 入札・公募とイベントは基本的に採用する。
+    for (const cf of s.categoryFeeds ?? []) {
+      sources.push({
+        code: s.code,
+        name: s.name,
+        feed: cf.feed,
+        category: cf.category,
+        state: cf.defaultState ?? "未処理",
+      })
+    }
   }
+
+  return { origin: "sources.fallback.json", sources }
 }
 
 async function fetchFeed(url) {
@@ -153,13 +169,14 @@ export async function runCollection({ dryRun = false } = {}) {
         url: i.url,
         publishedDate: i.date ? `${i.date}T00:00:00.000Z` : null,
         rawSummary: i.summary?.slice(0, 1000) ?? "",
-        state: ["未処理"],
+        state: [src.state ?? "未処理"],
       })
     }
 
     perSource.push({
       code: src.code,
       name: src.name,
+      category: src.category ?? null,
       fetched: r.items.length,
       skippedOld: r.items.length - inRange.length,
       skippedNoise: inRange.length - worthKeeping.length,
