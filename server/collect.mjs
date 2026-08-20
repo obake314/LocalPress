@@ -3,7 +3,7 @@
  *
  *   1. microCMS の feeds API から収集元を読む（未作成なら同梱の sources.fallback.json）
  *   2. RSS を取得して記事を抽出
- *   3. 既に feedItems にあるURLを除いて、新着だけを登録する
+ *   3. 既に収集箱にあるURLを除いて、新着だけを登録する
  *
  * Render の無料プランはファイルシステムが揮発するため、重複判定は
  * ローカルに持たず必ず microCMS 側の既存データと突き合わせる。
@@ -13,6 +13,9 @@ import { readFileSync } from "node:fs"
 import { decodeBody, parseFeed } from "./feed.mjs"
 import { getAll, createMany } from "./microcms.mjs"
 import { maxAgeDays } from "./config.mjs"
+
+/** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
+const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
 
 const UA = "LocalPress-collector/0.1 (+https://github.com/localpress)"
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -69,11 +72,11 @@ export async function runCollection({ dryRun = false } = {}) {
   const { origin, sources } = await loadSources()
 
   // 既存URLを集めて重複登録を防ぐ
-  const existing = await getAll("feedItems", { fields: "url" })
+  const existing = await getAll(ITEMS_ENDPOINT, { fields: "url" })
   if (existing === null && !dryRun) {
     return {
       ok: false,
-      error: "feedItems API が見つかりません。microCMS で作成してください。",
+      error: `${ITEMS_ENDPOINT} API が見つかりません。microCMS で作成し、APIキーに GET/POST を許可してください。`,
       startedAt,
     }
   }
@@ -140,7 +143,7 @@ export async function runCollection({ dryRun = false } = {}) {
     }
   }
 
-  const { created, failed } = await createMany("feedItems", fresh)
+  const { created, failed } = await createMany(ITEMS_ENDPOINT, fresh)
 
   return {
     ok: true,
