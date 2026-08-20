@@ -15,6 +15,7 @@ import { getAll, createMany } from "./microcms.mjs"
 import { maxAgeDays } from "./config.mjs"
 import { classifyItem } from "./filter.mjs"
 import { inspectPage } from "./page.mjs"
+import { promoteAdopted } from "./promote.mjs"
 
 /** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
 const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
@@ -206,7 +207,11 @@ export async function runCollection({ dryRun = false } = {}) {
 
   const { created, failed } = await createMany(ITEMS_ENDPOINT, fresh)
 
+  // 収集箱で採用にした項目を articles へ移す
+  const promotion = await promoteAdopted()
+
   return {
+    promotion,
     ok: true,
     origin,
     startedAt,

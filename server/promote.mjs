@@ -84,8 +84,13 @@ export async function promoteAdopted({ dryRun = false } = {}) {
   const unknown = []
 
   for (const item of targets) {
+    // 既に articles にあるものは、収集箱から消して重複を残さない
     if (existing.has(item.url)) {
       skipped++
+      if (!dryRun) {
+        await fetch(`${endpoint(ITEMS)}/${item.id}`, { method: "DELETE", headers: headers() })
+        await sleep(150)
+      }
       continue
     }
 
