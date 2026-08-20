@@ -1,4 +1,5 @@
 import { NavProps, Page } from "../types/nav"
+import Breadcrumb from "../components/Breadcrumb"
 import Container from "../components/ui/Container"
 import Button from "../components/ui/Button"
 import SectionHeading from "../components/ui/SectionHeading"
@@ -184,7 +185,14 @@ export default function PricingPage({ onNavigate }: NavProps) {
       {/* ヘッダー */}
       <section className="bg-ink-bg py-20 md:py-28">
         <Container>
-          <div className="max-w-3xl">
+          <Breadcrumb
+            inverse
+            items={[
+              { label: "ホーム", onClick: () => onNavigate("top") },
+              { label: "料金・プラン" },
+            ]}
+          />
+          <div className="mt-8 max-w-3xl">
             <p className="eyebrow mb-8 text-accent">Pricing</p>
             <h1 className="text-display text-white">
               無料で探し、必要になったら深掘りする。
