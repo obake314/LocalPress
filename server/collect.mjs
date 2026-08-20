@@ -13,7 +13,7 @@ import { readFileSync } from "node:fs"
 import { decodeBody, parseFeed } from "./feed.mjs"
 import { getAll, createMany } from "./microcms.mjs"
 import { maxAgeDays } from "./config.mjs"
-import { classifyTitle } from "./filter.mjs"
+import { classifyItem } from "./filter.mjs"
 
 /** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
 const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
@@ -112,7 +112,7 @@ export async function runCollection({ dryRun = false } = {}) {
 
     // 統計の定期公表・記者会見・警告・開催報告・レシピは案件ではないので登録しない
     const worthKeeping = inRange.filter((i) => {
-      const c = classifyTitle(i.title)
+      const c = classifyItem(i)
       if (!c.excluded) return true
       skippedByReason[c.reason] = (skippedByReason[c.reason] ?? 0) + 1
       return false

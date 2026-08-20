@@ -15,6 +15,8 @@
  */
 const ALWAYS_EXCLUDE = [
   ["記者会見", /記者会見|定例会見|会見録/],
+  // 合格発表。「◯◯採用試験 合格者の発表」を救済語で残さないため常に除外する
+  ["合格発表", /合格者|合格発表|合格状況|内定者/],
   [
     "開催レポート",
     /開催しました|実施しました|開催レポート|開催報告|を行いました|終了しました|審査結果|選考結果|入札結果|落札結果|結果を公表|受賞作品|表彰式/,
@@ -29,7 +31,7 @@ const EXCLUDE_UNLESS_ANNOUNCEMENT = [
   ["統計・調査", /統計|人口動態|推計人口|月報|年報|速報値|排出量|検査結果|調査結果|実態調査|集計結果|世帯数/],
   [
     "警告・注意",
-    /クマ|ツキノワグマ|出没|注意喚起|気象警報|気象注意報|警報を発表|避難情報|熱中症|不審者|食中毒|感染症|停電|断水/,
+    /クマ|ツキノワグマ|出没|注意喚起|ご注意ください|注意してください|お気をつけください|気象警報|気象注意報|警報を発表|避難情報|熱中症|不審者|サギ|詐欺|食中毒|感染|海外へ旅行|海外渡航|渡航される/,
   ],
   ["レシピ", /レシピ|作り方|献立|クッキング/],
   // 「入札参加資格者名簿」「審議会委員を公募」まで巻き込まないよう語を絞る
@@ -41,19 +43,34 @@ const EXCLUDE_UNLESS_ANNOUNCEMENT = [
   // 巻き込まないよう、災害|消防 のような広い語は使わない
   [
     "防災情報",
-    /災害警戒本部|避難指示|避難勧告|避難準備|警戒レベル|火災速報|義援金|被災された方|防災情報|土砂災害|洪水調節|事後対策/,
+    /災害警戒本部|避難指示|避難勧告|避難準備|警戒レベル|火災速報|義援金|被災された方|防災情報|土砂災害|洪水調節|事後対策|Jアラート|一斉情報伝達/,
   ],
+]
+
+/**
+ * URL で判別する除外。特定の階層にまとまって置かれている読み物は
+ * タイトルに手がかりが無いことがある（料理名だけのレシピなど）。
+ */
+const EXCLUDE_URL = [
+  // 岩手県 県北広域振興局 水産部のレシピ集
+  ["レシピ", /^https:\/\/www\.pref\.iwate\.jp\/kenpoku\/suisan\/1085518\/1085799\//],
 ]
 
 /** 募集・告知と判断する語 */
 const ANNOUNCEMENT = /募集|公募|受講生|参加者|申込|申請受付|講座|講習|セミナー|研修会|教室|説明会|採用試験|入札|見積|プロポーザル/
 
 /**
- * @param {string} title
+ * @param {{ title?: string, url?: string } | string} item タイトル文字列でも可
  * @returns {{ excluded: boolean, reason?: string, matched?: string }}
  */
-export function classifyTitle(title) {
+export function classifyItem(item) {
+  const { title, url } = typeof item === "string" ? { title: item, url: "" } : (item ?? {})
   const t = String(title ?? "")
+  const u = String(url ?? "")
+
+  for (const [reason, pattern] of EXCLUDE_URL) {
+    if (pattern.test(u)) return { excluded: true, reason, matched: "URL" }
+  }
 
   for (const [reason, pattern] of ALWAYS_EXCLUDE) {
     const m = pattern.exec(t)
@@ -69,3 +86,6 @@ export function classifyTitle(title) {
 
   return { excluded: false }
 }
+
+/** 後方互換：タイトルだけで判定する */
+export const classifyTitle = (title) => classifyItem(title)
