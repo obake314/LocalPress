@@ -13,8 +13,14 @@
  * 常に除外する。すでに終わった事柄の報告なので、募集の告知と紛れることはない。
  * 「◯◯募集に係る審査結果について」のような、募集語を含むが結果報告のものを確実に落とす。
  */
+/** 発注・調達の案件を示す語。これがあれば採用情報の除外より優先して残す */
+const PROCUREMENT = /業務委託|プロポーザル|入札|公告|見積|指名競争|一般競争/
+
 const ALWAYS_EXCLUDE = [
   ["記者会見", /記者会見|定例会見|会見録/],
+  // 自治体の職員採用・求人。ただし「協力隊募集支援業務委託」のような
+  // 発注案件は PROCUREMENT で除外の対象外にする
+  ["採用情報", /職員採用|採用試験|採用選考|会計年度任用|職員を募集|人事異動|求人情報|地域おこし協力隊/],
   // 合格発表。「◯◯採用試験 合格者の発表」を救済語で残さないため常に除外する
   ["合格発表", /合格者|合格発表|合格状況|内定者/],
   [
@@ -63,7 +69,7 @@ const EXCLUDE_URL = [
 ]
 
 /** 募集・告知と判断する語 */
-const ANNOUNCEMENT = /募集|公募|受講生|参加者|申込|申請受付|講座|講習|セミナー|研修会|教室|説明会|採用試験|入札|見積|プロポーザル/
+const ANNOUNCEMENT = /募集|公募|受講生|参加者|申込|申請受付|講座|講習|セミナー|研修会|教室|説明会|入札|見積|プロポーザル/
 
 /**
  * @param {{ title?: string, url?: string } | string} item タイトル文字列でも可
@@ -80,7 +86,9 @@ export function classifyItem(item) {
 
   for (const [reason, pattern] of ALWAYS_EXCLUDE) {
     const m = pattern.exec(t)
-    if (m) return { excluded: true, reason, matched: m[0] }
+    if (!m) continue
+    if (reason === "採用情報" && PROCUREMENT.test(t)) continue
+    return { excluded: true, reason, matched: m[0] }
   }
 
   for (const [reason, pattern] of EXCLUDE_UNLESS_ANNOUNCEMENT) {

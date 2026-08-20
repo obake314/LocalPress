@@ -50,7 +50,11 @@ export async function loadSources() {
 
   const sources = []
   for (const s of fallback.sources) {
-    if (s.method === "rss" && s.feed) {
+    const hasCategoryFeeds = (s.categoryFeeds ?? []).length > 0
+
+    // 分野別フィードを登録したサイトは、サイト全体のフィードを取らない。
+    // 同じ記事が二重に入るうえ、分野の分からないものが混ざるため。
+    if (s.method === "rss" && s.feed && !hasCategoryFeeds) {
       sources.push({ code: s.code, name: s.name, feed: s.feed, state: "未処理" })
     }
     // 分野別フィードは、その分野の記事しか入らないので状態を決め打ちできる。
