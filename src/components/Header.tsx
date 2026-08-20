@@ -74,20 +74,14 @@ export default function Header({ onNavigate, onSearch }: HeaderProps) {
           </button>
 
           {/* Nav — desktop */}
-          <nav className="hidden flex-1 items-center gap-1 lg:flex">
+          <nav className="hidden flex-1 items-center justify-between gap-1 lg:flex">
             {navLinks.map(({ label, page, plan }) => (
               <button
                 key={label}
                 onClick={() => go(page)}
-                className="group flex items-center gap-2 whitespace-nowrap px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary-soft hover:text-primary xl:px-4"
+                className="group flex items-center whitespace-nowrap px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary-soft hover:text-primary xl:px-4"
               >
                 {label}
-                {plan === "有料" && (
-                  <span
-                    className="h-1.5 w-1.5 bg-accent"
-                    title="有料機能を含む"
-                  />
-                )}
               </button>
             ))}
           </nav>

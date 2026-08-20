@@ -195,7 +195,7 @@ export default function TopPage({ onNavigate }: NavProps) {
                 イベント・補助金・入札・公募・政策を自動で収集して整理し、地域と分野と締切から横断的に探せるようにします。
               </p>
 
-              <div className="mt-12 flex flex-wrap gap-4">
+              <div className="mt-12 flex flex-wrap justify-between">
                 <Button variant="accent" size="lg" onClick={() => onNavigate("search")}>
                   LocalPress を検索する
                 </Button>

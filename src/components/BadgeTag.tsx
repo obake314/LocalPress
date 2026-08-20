@@ -19,9 +19,9 @@ export function CategoryBadge({ category, size = "sm" }: CategoryBadgeProps) {
   const { bg, text, bar } = categoryColors[category]
   return (
     <span
-      className={`inline-flex items-center gap-1.5 font-medium ${bg} ${text} ${sizeCls[size]}`}
+      className={`inline-flex items-center font-medium ${bg} ${text} ${sizeCls[size]}`}
     >
-      <span className={`h-2.5 w-0.5 ${bar}`} />
+      <span className={`${bar}`} />
       {category}
     </span>
   )

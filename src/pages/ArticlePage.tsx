@@ -220,7 +220,7 @@ export default function ArticlePage({
                   掲載内容は公開情報を整理したものです。申請・応募の際は必ず自治体の元ページをご確認ください。
                 </p>
                 <Button href={article.sourceUrl} size="lg" className="shrink-0">
-                  元ページを開く ↗
+                  元ページを開く
                 </Button>
               </div>
             </article>

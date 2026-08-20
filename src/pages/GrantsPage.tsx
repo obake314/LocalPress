@@ -101,7 +101,7 @@ export default function GrantsPage({
                 </div>
                 <div className="mt-14">
                   <Button href={detail.sourceUrl} size="lg">
-                    自治体の元ページで申請する ↗
+                    自治体の元ページで申請する
                   </Button>
                 </div>
               </div>

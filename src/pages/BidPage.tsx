@@ -211,7 +211,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                       size="sm"
                       full
                     >
-                      元の公告を見る ↗
+                      元の公告を見る
                     </Button>
                   </div>
                 </div>

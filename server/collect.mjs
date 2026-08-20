@@ -13,6 +13,7 @@ import { readFileSync } from "node:fs"
 import { decodeBody, parseFeed } from "./feed.mjs"
 import { getAll, createMany } from "./microcms.mjs"
 import { maxAgeDays } from "./config.mjs"
+import { classifyTitle } from "./filter.mjs"
 
 /** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
 const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
@@ -89,6 +90,9 @@ export async function runCollection({ dryRun = false } = {}) {
   const oldestAllowed = days > 0 ? new Date(Date.now() - days * 86400000).toISOString().slice(0, 10) : null
   let skippedOld = 0
 
+  /** 案件として価値の無いものを落とした内訳 */
+  const skippedByReason = {}
+
   for (const src of sources) {
     const r = await fetchFeed(src.feed)
 
@@ -106,7 +110,15 @@ export async function runCollection({ dryRun = false } = {}) {
       return false
     })
 
-    const news = inRange.filter((i) => !known.has(i.url))
+    // 統計の定期公表・記者会見・警告・開催報告・レシピは案件ではないので登録しない
+    const worthKeeping = inRange.filter((i) => {
+      const c = classifyTitle(i.title)
+      if (!c.excluded) return true
+      skippedByReason[c.reason] = (skippedByReason[c.reason] ?? 0) + 1
+      return false
+    })
+
+    const news = worthKeeping.filter((i) => !known.has(i.url))
     for (const i of news) {
       known.add(i.url) // 同一実行内の重複も防ぐ
       fresh.push({
@@ -125,6 +137,7 @@ export async function runCollection({ dryRun = false } = {}) {
       name: src.name,
       fetched: r.items.length,
       skippedOld: r.items.length - inRange.length,
+      skippedNoise: inRange.length - worthKeeping.length,
       new: news.length,
     })
     await sleep(600)
@@ -138,6 +151,7 @@ export async function runCollection({ dryRun = false } = {}) {
       startedAt,
       maxAgeDays: days,
       skippedOld,
+      skippedByReason,
       sources: perSource,
       newCount: fresh.length,
     }
@@ -152,6 +166,7 @@ export async function runCollection({ dryRun = false } = {}) {
     finishedAt: new Date().toISOString(),
     maxAgeDays: days,
     skippedOld,
+    skippedByReason,
     sources: perSource,
     registered: created.length,
     failed: failed.length,

@@ -125,7 +125,7 @@ export default function IntroPage({ audience, onNavigate }: IntroPageProps) {
             <p className="eyebrow mb-8 text-accent">{copy.eyebrow}</p>
             <h1 className="text-display text-white">{copy.title}</h1>
             <p className="mt-8 text-lead text-white/70">{copy.lead}</p>
-            <div className="mt-12 flex flex-wrap gap-4">
+            <div className="mt-12 flex flex-wrap justify-between">
               <Button
                 variant="accent"
                 size="lg"
