@@ -27,7 +27,9 @@ services:
     name: localpress-site
     runtime: static
     plan: free
-    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm content:pull && pnpm build
+    # Render は pnpm-lock.yaml を見て pnpm を用意する。
+    # corepack enable は読み取り専用FSで失敗するため使わない。
+    buildCommand: pnpm install --frozen-lockfile && pnpm content:pull && pnpm build
     staticPublishPath: ./dist
     envVars:
       - key: MICROCMS_SERVICE_DOMAIN
