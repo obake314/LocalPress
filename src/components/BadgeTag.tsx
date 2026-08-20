@@ -37,7 +37,7 @@ export function StatusBadge({ status, size = "sm" }: StatusBadgeProps) {
   const dot = status === "募集中" || status === "締切間近"
   return (
     <span
-      className={`inline-flex items-center gap-1.5 font-medium ${bg} ${text} ${sizeCls[size]}`}
+      className={`inline-flex items-center font-medium ${bg} ${text} ${sizeCls[size]}`}
     >
       {dot && <span className="h-1.5 w-1.5 bg-current" />}
       {status}

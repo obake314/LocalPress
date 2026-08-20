@@ -431,7 +431,7 @@ export default function TopPage({ onNavigate }: NavProps) {
           <div className="grid gap-5 md:grid-cols-3">
             {pillars.map(({ head, body, eyebrow, title, plan, links }) => (
               <div key={title} className="flex flex-col border border-border">
-                <div className={`${head} flex min-h-[112px] items-center justify-between gap-4 px-8 py-7`}>
+                <div className={`${head} flex min-h-[112px] items-center justify-between gap-4 px-8 py-5`}>
                   <div>
                     <p className="eyebrow mb-2 text-white/60">{eyebrow}</p>
                     <h3 className="text-h3 text-white">{title}</h3>

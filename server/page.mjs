@@ -54,9 +54,35 @@ function metaDescription(html) {
   return m ? m[1].trim() : ""
 }
 
+/** 和暦・西暦の日付を YYYY-MM-DD に直す */
+function toIsoDate(era, y, m, d) {
+  const year = era === "令和" ? 2018 + Number(y) : Number(y)
+  const mm = String(Number(m)).padStart(2, "0")
+  const dd = String(Number(d)).padStart(2, "0")
+  return `${year}-${mm}-${dd}`
+}
+
+/**
+ * 締切らしき日付を本文から拾う。
+ * 「提出期限」「申込締切」などの語の直後に現れる日付だけを見る。
+ * 開催日や公開日を締切と取り違えないよう、語からの距離を制限する。
+ */
+export function extractDeadline(text) {
+  const label = /(提出期限|申[しこ]?込み?期限|申[しこ]?込み?締[め]?切|応募期限|応募締[め]?切|募集期限|受付期限|締[め]?切日|期限)/g
+  let m
+  while ((m = label.exec(text)) !== null) {
+    const window = text.slice(m.index, m.index + 60)
+    const wareki = /令和(\d{1,2})年\s*(\d{1,2})月\s*(\d{1,2})日/.exec(window)
+    if (wareki) return toIsoDate("令和", wareki[1], wareki[2], wareki[3])
+    const seireki = /(20\d{2})[年./-]\s*(\d{1,2})[月./-]\s*(\d{1,2})/.exec(window)
+    if (seireki) return toIsoDate("西暦", seireki[1], seireki[2], seireki[3])
+  }
+  return null
+}
+
 /**
  * @param {string} url
- * @returns {Promise<{ ok: boolean, closed: boolean, matched?: string, summary?: string, error?: string }>}
+ * @returns {Promise<{ ok: boolean, closed: boolean, matched?: string, summary?: string, deadline?: string|null, error?: string }>}
  */
 export async function inspectPage(url) {
   const ctrl = new AbortController()
@@ -79,7 +105,13 @@ export async function inspectPage(url) {
       if (m) return { ok: true, closed: true, matched: m[0] }
     }
 
-    return { ok: true, closed: false, summary: (metaDescription(html) || text.slice(0, 200)).slice(0, 300) }
+    return {
+      ok: true,
+      closed: false,
+      summary: (metaDescription(html) || text.slice(0, 200)).slice(0, 300),
+      deadline: extractDeadline(text),
+      text: text.slice(0, 4000),
+    }
   } catch (e) {
     return { ok: false, closed: false, error: e.cause?.code || e.name }
   } finally {
