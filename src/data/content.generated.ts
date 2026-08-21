@@ -2,12 +2,30 @@
  * microCMS から取得したコンテンツ（生成物・手で編集しないこと）。
  * 更新するには pnpm content:pull を実行する。
  * 取得元: https://localpress.microcms.io/api/v1/
- * 生成日時: 2026-08-20T09:39:59.014Z
+ * 生成日時: 2026-08-21T06:05:25.066Z
  */
 
 import type { Article, Municipality } from "./mockData"
 
 export const generatedMunicipalities: Municipality[] = [
+  {
+    "code": "15000",
+    "name": "新潟県",
+    "prefecture": "岩手県",
+    "population": 0,
+    "area": 0,
+    "website": "https://www.pref.niigata.lg.jp/",
+    "summary": ""
+  },
+  {
+    "code": "03000",
+    "name": "岩手県",
+    "prefecture": "岩手県",
+    "population": 0,
+    "area": 0,
+    "website": "https://www.pref.iwate.jp/",
+    "summary": ""
+  },
   {
     "code": "03201",
     "name": "盛岡市",
@@ -341,6 +359,1050 @@ export const generatedMunicipalities: Municipality[] = [
 ]
 
 export const generatedArticles: Article[] = [
+  {
+    "id": "plx8plnyuon",
+    "title": "佐建羽第7-1-39号 令和7災第168号 西山線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 羽茂滝平 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 羽茂滝平 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-39%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC168%E5%8F%B7%20%E8%A5%BF%E5%B1%B1%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "nl0p91v3b",
+    "title": "佐建畑第7-1-10号 令和7災第137号 7区浜河内15号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 浜河内 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 浜河内 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%95%91%E7%AC%AC7-1-10%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC137%E5%8F%B7%207%E5%8C%BA%E6%B5%9C%E6%B2%B3%E5%86%8515%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "h9wmyoswa4g",
+    "title": "佐建畑第7-1-12号 令和7災第82号 峠河内線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-08-26 / 場所: 佐渡市 浜河内 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-08-26 / 場所: 佐渡市 浜河内 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%95%91%E7%AC%AC7-1-12%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC82%E5%8F%B7%20%E5%B3%A0%E6%B2%B3%E5%86%85%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "gov1tgq5j",
+    "title": "佐建畑第7-1-13号 令和7災第74号 下日向線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 小倉 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 小倉 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%95%91%E7%AC%AC7-1-13%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC74%E5%8F%B7%20%E4%B8%8B%E6%97%A5%E5%90%91%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "uhklmdd-818",
+    "title": "佐建赤第7-1-16号 令和7災第103号 南新保3･4号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 南新保 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 南新保 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-16%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC103%E5%8F%B7%20%E5%8D%97%E6%96%B0%E4%BF%9D3%EF%BD%A54%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "iwva078e1v3",
+    "title": "佐建赤第8-1-4号 令和7災第124号 南新保3号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 南新保 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-26 / 場所: 佐渡市 南新保 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC8-1-4%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC124%E5%8F%B7%20%E5%8D%97%E6%96%B0%E4%BF%9D3%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "ulqfbkho-75",
+    "title": "佐建真第7-1-12号 令和7災第139号 下黒山21号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-08-05 / 場所: 佐渡市 下黒山 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-08-05 / 場所: 佐渡市 下黒山 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%9C%9F%E7%AC%AC7-1-12%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC139%E5%8F%B7%20%E4%B8%8B%E9%BB%92%E5%B1%B121%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "wyincaeosucr",
+    "title": "佐建羽第7-1-31号 令和7災第179号 岩田線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-05 / 場所: 佐渡市 羽茂滝平 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-05 / 場所: 佐渡市 羽茂滝平 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-31%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC179%E5%8F%B7%20%E5%B2%A9%E7%94%B0%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "ta-e-nc3zs2u",
+    "title": "佐建赤第8-1-3号 令和7災第117号 徳和22号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-05 / 場所: 佐渡市 徳和 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-05 / 場所: 佐渡市 徳和 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC8-1-3%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC117%E5%8F%B7%20%E5%BE%B3%E5%92%8C22%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "krzy6ycwe4",
+    "title": "佐建羽第7-1-38号 令和7災第78号 大崎野田山線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-05 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-08-05 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-38%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC78%E5%8F%B7%20%E5%A4%A7%E5%B4%8E%E9%87%8E%E7%94%B0%E5%B1%B1%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "w7muzcek3",
+    "title": "佐建両第7-1-16号 令和7災第119号 立間1号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 立間 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 立間 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E4%B8%A1%E7%AC%AC7-1-16%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC119%E5%8F%B7%20%E7%AB%8B%E9%96%931%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "pihksrszn",
+    "title": "佐建赤第7-1-15号 令和7災第170号 下川茂7号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 下川茂 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 下川茂 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-15%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC170%E5%8F%B7%20%E4%B8%8B%E5%B7%9D%E8%8C%827%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "uov6qk76zyb",
+    "title": "佐建小第7-1-13号 令和7災第121号 堂釜1号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 小木堂釜 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 小木堂釜 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E5%B0%8F%E7%AC%AC7-1-13%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC121%E5%8F%B7%20%E5%A0%82%E9%87%9C1%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "3b8dw5-oan9",
+    "title": "佐建畑第7-1-11号 令和7災第145号 7区浜河内15号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 浜河内 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-22 / 場所: 佐渡市 浜河内 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%95%91%E7%AC%AC7-1-11%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC145%E5%8F%B7%207%E5%8C%BA%E6%B5%9C%E6%B2%B3%E5%86%8515%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "jqpz0y0ox3",
+    "title": "佐建羽第7-1-21号 令和7災第144号 板尾3号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 羽茂村山 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 羽茂村山 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-21%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC144%E5%8F%B7%20%E6%9D%BF%E5%B0%BE3%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "4cw2nwxqt6cc",
+    "title": "佐建羽第7-1-35号 令和7災第81号 上山田線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-35%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC81%E5%8F%B7%20%E4%B8%8A%E5%B1%B1%E7%94%B0%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "l6jcfu7-edc",
+    "title": "佐建小第7-1-15号 令和7災第80号 小木半島巡環線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 小比叡 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 小比叡 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E5%B0%8F%E7%AC%AC7-1-15%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC80%E5%8F%B7%20%E5%B0%8F%E6%9C%A8%E5%8D%8A%E5%B3%B6%E5%B7%A1%E7%92%B0%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "5uz9jhpdxz1e",
+    "title": "佐建羽第7-1-37号 令和7災第114号 板山線道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-37%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC114%E5%8F%B7%20%E6%9D%BF%E5%B1%B1%E7%B7%9A%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "ny8roggd2u_q",
+    "title": "佐建赤第7-1-14号 令和7災第141号 杉野浦2号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-15 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-14%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC141%E5%8F%B7%20%E6%9D%89%E9%87%8E%E6%B5%A62%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "bgco9tbdbk",
+    "title": "佐建羽第7-1-36号 令和7災第106号 野田山線道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-36%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC106%E5%8F%B7%20%E9%87%8E%E7%94%B0%E5%B1%B1%E7%B7%9A%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "dc-y_37ijw",
+    "title": "佐建真第7-1-13号 令和7災第126号 高崎1号線道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 西三川 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 西三川 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%9C%9F%E7%AC%AC7-1-13%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC126%E5%8F%B7%20%E9%AB%98%E5%B4%8E1%E5%8F%B7%E7%B7%9A%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "bre5hkke_8",
+    "title": "佐建真第7-1-11号 令和7災第120号 下黒山21号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 下黒山 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 下黒山 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%9C%9F%E7%AC%AC7-1-11%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC120%E5%8F%B7%20%E4%B8%8B%E9%BB%92%E5%B1%B121%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "a4ldhulp445f",
+    "title": "佐建小第7-1-16号 令和7災第104号 井坪線支線1号 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 井坪 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 井坪 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E5%B0%8F%E7%AC%AC7-1-16%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC104%E5%8F%B7%20%E4%BA%95%E5%9D%AA%E7%B7%9A%E6%94%AF%E7%B7%9A1%E5%8F%B7%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "ex8u-rp45",
+    "title": "佐建赤第7-1-13号 令和7災第118号 赤泊4号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 赤泊 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-08 / 場所: 佐渡市 赤泊 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-13%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC118%E5%8F%B7%20%E8%B5%A4%E6%B3%8A4%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "n1v4xtnun4r",
+    "title": "佐建赤第7-1-12号 令和7災第172号 杉野浦2号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-01 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-01 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-12%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC172%E5%8F%B7%20%E6%9D%89%E9%87%8E%E6%B5%A62%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "2jfgrgxm1k",
+    "title": "佐建羽第7-1-33号 令和7災第113号 クヌギ宮坂線道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-01 / 場所: 佐渡市 羽茂亀脇 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-07-01 / 場所: 佐渡市 羽茂亀脇 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-33%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC113%E5%8F%B7%20%E3%82%AF%E3%83%8C%E3%82%AE%E5%AE%AE%E5%9D%82%E7%B7%9A%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "tlcvet3rlwg",
+    "title": "佐建羽第7-1-29号 令和7災第176号 出戸線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 羽茂大崎 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 羽茂大崎 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-29%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC176%E5%8F%B7%20%E5%87%BA%E6%88%B8%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "c8teyxcc-e30",
+    "title": "佐建羽第7-1-30号 令和7災第134号 高屋線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 羽茂滝平 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 羽茂滝平 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-30%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC134%E5%8F%B7%20%E9%AB%98%E5%B1%8B%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "l82_uympofc",
+    "title": "佐建羽第7-1-34号 令和7災 第164号 中素浜線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 羽茂村山 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 羽茂村山 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-34%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%20%E7%AC%AC164%E5%8F%B7%20%E4%B8%AD%E7%B4%A0%E6%B5%9C%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "3a47e16_5",
+    "title": "佐建赤第7-1-11号 令和7災第142号 大杉2号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 大杉 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-24 / 場所: 佐渡市 大杉 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-11%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC142%E5%8F%B7%20%E5%A4%A7%E6%9D%892%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "y7i7qu6qi9en",
+    "title": "佐建羽第7-1-32号 令和7災 第59号 大崎野田山線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-17 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-17 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-32%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%20%E7%AC%AC59%E5%8F%B7%20%E5%A4%A7%E5%B4%8E%E9%87%8E%E7%94%B0%E5%B1%B1%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "wvomrnn3wlml",
+    "title": "佐建赤第8-1-1号 令和7災第135号 杉野浦2号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-17 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-17 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC8-1-1%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC135%E5%8F%B7%20%E6%9D%89%E9%87%8E%E6%B5%A62%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "55bu7ya4vyc3",
+    "title": "佐デ工第1号 令和8年度佐渡市ケーブルテレビ耐災害性強化工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 電気通信 / 締切日: 2026-06-17 / 場所: 佐渡市 小川 地内ほか / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 電気通信 / 締切日: 2026-06-17 / 場所: 佐渡市 小川 地内ほか / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E3%83%87%E5%B7%A5%E7%AC%AC1%E5%8F%B7%20%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%BA%A6%E4%BD%90%E6%B8%A1%E5%B8%82%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%83%86%E3%83%AC%E3%83%93%E8%80%90%E7%81%BD%E5%AE%B3%E6%80%A7%E5%BC%B7%E5%8C%96%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "l3bb04rfyb",
+    "title": "佐建赤第7-1-10号 令和7災第125号 杉野浦15号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-17 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-17 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-10%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC125%E5%8F%B7%20%E6%9D%89%E9%87%8E%E6%B5%A615%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "k46uc9ayn",
+    "title": "佐建赤第7-1-8号 令和7災第167号 赤泊44号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-10 / 場所: 佐渡市 赤泊 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-10 / 場所: 佐渡市 赤泊 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-8%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC167%E5%8F%B7%20%E8%B5%A4%E6%B3%8A44%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "oz90k1u07m_b",
+    "title": "佐建羽第7-1-28号 令和7災 第60号 上山田線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-10 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-10 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-28%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%20%E7%AC%AC60%E5%8F%B7%20%E4%B8%8A%E5%B1%B1%E7%94%B0%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "x0hcip0-e3",
+    "title": "佐建真第7-1-10号 令和7災第138号 笹川36号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-06-03 / 場所: 佐渡市 西三川 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-06-03 / 場所: 佐渡市 西三川 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%9C%9F%E7%AC%AC7-1-10%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC138%E5%8F%B7%20%E7%AC%B9%E5%B7%9D36%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "2hdabtfbbf",
+    "title": "佐建羽第7-1-27号 令和7災 第62号 たての線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-03 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-06-03 / 場所: 佐渡市 羽茂上山田 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-27%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%20%E7%AC%AC62%E5%8F%B7%20%E3%81%9F%E3%81%A6%E3%81%AE%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "v9pb0ehuha45",
+    "title": "佐建赤第7-1-9号 令和7災第79号 赤泊1号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-27 / 場所: 佐渡市 下川茂 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-27 / 場所: 佐渡市 下川茂 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-9%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC79%E5%8F%B7%20%E8%B5%A4%E6%B3%8A1%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "873exbn69a8z",
+    "title": "佐建羽第7-1-23号 令和7災第105号 クヌギ宮坂線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-20 / 場所: 佐渡市 羽茂亀脇 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-20 / 場所: 佐渡市 羽茂亀脇 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-23%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC105%E5%8F%B7%20%E3%82%AF%E3%83%8C%E3%82%AE%E5%AE%AE%E5%9D%82%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "muor5aormf",
+    "title": "佐建羽第7-1-25号 令和7災第166号 大草公民館線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-20 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-20 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-25%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC166%E5%8F%B7%20%E5%A4%A7%E8%8D%89%E5%85%AC%E6%B0%91%E9%A4%A8%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "0vogbyi1m",
+    "title": "佐建羽第7-1-16号 令和7災第178号 新倉線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-16%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC178%E5%8F%B7%20%E6%96%B0%E5%80%89%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "yf-58rfb741x",
+    "title": "佐建小第7-1-10号 令和7災第131号 小木半島巡環線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 小木堂釜 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 小木堂釜 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E5%B0%8F%E7%AC%AC7-1-10%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC131%E5%8F%B7%20%E5%B0%8F%E6%9C%A8%E5%8D%8A%E5%B3%B6%E5%B7%A1%E7%92%B0%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "nkd7w2l7ee",
+    "title": "佐建赤第7-1-7号 令和7災第147号 莚場2号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 莚場 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 莚場 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-7%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC147%E5%8F%B7%20%E8%8E%9A%E5%A0%B42%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "za8ah6z05w",
+    "title": "佐建羽第7-1-26号 令和7災第129号 坪根線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-26%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC129%E5%8F%B7%20%E5%9D%AA%E6%A0%B9%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "kh5n4jgm954",
+    "title": "佐建羽第7-1-24号 令和7災第102号 大崎野田山線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂本郷 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-24%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC102%E5%8F%B7%20%E5%A4%A7%E5%B4%8E%E9%87%8E%E7%94%B0%E5%B1%B1%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "gftm1clt2qd",
+    "title": "佐建羽第7-1-21号 令和7災第144号 板尾3号線 道路災害復旧工事【入札中止】",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂村山 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-05-13 / 場所: 佐渡市 羽茂村山 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-21%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC144%E5%8F%B7%20%E6%9D%BF%E5%B0%BE3%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B%E3%80%90%E5%85%A5%E6%9C%AD%E4%B8%AD%E6%AD%A2%E3%80%91",
+    "tags": []
+  },
+  {
+    "id": "p-msl494j6",
+    "title": "佐建赤第7-1-6号 令和7災第171号 杉野浦1号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-04-08 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 法面処理 / 締切日: 2026-04-08 / 場所: 佐渡市 杉野浦 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E8%B5%A4%E7%AC%AC7-1-6%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC171%E5%8F%B7%20%E6%9D%89%E9%87%8E%E6%B5%A61%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "3tblklvib7e",
+    "title": "佐建羽第7-1-20号 令和7災第116号 出戸線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-04-08 / 場所: 佐渡市 羽茂大崎 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-04-08 / 場所: 佐渡市 羽茂大崎 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%BE%BD%E7%AC%AC7-1-20%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC116%E5%8F%B7%20%E5%87%BA%E6%88%B8%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "d7a-if91hz4",
+    "title": "佐建真第7-1-7号 令和7災第173号 静平109号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-04-08 / 場所: 佐渡市 静平 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-04-08 / 場所: 佐渡市 静平 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%9C%9F%E7%AC%AC7-1-7%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC173%E5%8F%B7%20%E9%9D%99%E5%B9%B3109%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "9axgwiq4wb7s",
+    "title": "佐建真第7-1-8号 令和7災第174号 下黒山22号線 道路災害復旧工事",
+    "cityCode": "15000",
+    "cityName": "佐渡市",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-04-08 / 場所: 佐渡市 下黒山 地内 / 発注機関: 佐渡市",
+    "body": "調達区分: 工事 / 入札方式: 制限付き一般競争入札 / 工種: 土木一式 / 締切日: 2026-04-08 / 場所: 佐渡市 下黒山 地内 / 発注機関: 佐渡市",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E4%BD%90%E6%B8%A1%E5%B8%82%2F%E4%BD%90%E5%BB%BA%E7%9C%9F%E7%AC%AC7-1-8%E5%8F%B7%20%E4%BB%A4%E5%92%8C7%E7%81%BD%E7%AC%AC174%E5%8F%B7%20%E4%B8%8B%E9%BB%92%E5%B1%B122%E5%8F%B7%E7%B7%9A%20%E9%81%93%E8%B7%AF%E7%81%BD%E5%AE%B3%E5%BE%A9%E6%97%A7%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "x75bldo0n_wd",
+    "title": "令和8年度 新潟県原子力発電施設立地市町村振興交付金事業 刈羽村宿泊交流センターピーチビレッジ電話交換機交換工事",
+    "cityCode": "15000",
+    "cityName": "刈羽村",
+    "prefecture": "新潟県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "調達区分: 工事 / 入札方式: 通常型指名競争入札 / 工種: 電気通信 / 場所: 刈羽村大字刈羽地内 / 発注機関: 刈羽村",
+    "body": "調達区分: 工事 / 入札方式: 通常型指名競争入札 / 工種: 電気通信 / 場所: 刈羽村大字刈羽地内 / 発注機関: 刈羽村",
+    "sourceUrl": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj#%E6%96%B0%E6%BD%9F%E7%9C%8C%2F%E5%88%88%E7%BE%BD%E6%9D%91%2F%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%BA%A6%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E5%8E%9F%E5%AD%90%E5%8A%9B%E7%99%BA%E9%9B%BB%E6%96%BD%E8%A8%AD%E7%AB%8B%E5%9C%B0%E5%B8%82%E7%94%BA%E6%9D%91%E6%8C%AF%E8%88%88%E4%BA%A4%E4%BB%98%E9%87%91%E4%BA%8B%E6%A5%AD%20%E5%88%88%E7%BE%BD%E6%9D%91%E5%AE%BF%E6%B3%8A%E4%BA%A4%E6%B5%81%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%94%E3%83%BC%E3%83%81%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8%E9%9B%BB%E8%A9%B1%E4%BA%A4%E6%8F%9B%E6%A9%9F%E4%BA%A4%E6%8F%9B%E5%B7%A5%E4%BA%8B",
+    "tags": []
+  },
+  {
+    "id": "5pwspwuov",
+    "title": "交通信号機改良等工事No.27",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "入札方式: 一般競争入札 / 工種: 電気設備工事 / 開札日: 2026-09-15 / 課所: 知事部局 本庁 出納局総務課 / 奥州市水沢字福原46地先ほか",
+    "body": "入札方式: 一般競争入札 / 工種: 電気設備工事 / 開札日: 2026-09-15 / 課所: 知事部局 本庁 出納局総務課 / 奥州市水沢字福原46地先ほか",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-1-0832-00039",
+    "tags": []
+  },
+  {
+    "id": "qmu_-xmy5j6j",
+    "title": "基幹水利施設ストックマネジメント事業岩手８期地区（立花頭首工）第１号工事",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "入札方式: 一般競争入札 / 工種: 機械設備工事 / 開札日: 2026-09-11 / 課所: 知事部局 県南広域振興局 奥州審査指導監 / 北上市立花地内",
+    "body": "入札方式: 一般競争入札 / 工種: 機械設備工事 / 開札日: 2026-09-11 / 課所: 知事部局 県南広域振興局 奥州審査指導監 / 北上市立花地内",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-2-2508-00018",
+    "tags": []
+  },
+  {
+    "id": "5vopngxuk14k",
+    "title": "前田地区県単治山（施設維持補修）工事",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "入札方式: 一般競争入札 / 工種: 土木工事 / 開札日: 2026-09-11 / 課所: 知事部局 県南広域振興局 奥州審査指導監 / 奥州市江刺藤里字前田地内",
+    "body": "入札方式: 一般競争入札 / 工種: 土木工事 / 開札日: 2026-09-11 / 課所: 知事部局 県南広域振興局 奥州審査指導監 / 奥州市江刺藤里字前田地内",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-2-2517-00004",
+    "tags": []
+  },
+  {
+    "id": "6c0mjeyix5",
+    "title": "岩手県立二戸病院救急室改修工事",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "入札方式: 一般競争入札 / 工種: 建築一式工事 / 開札日: 2026-09-08 / 課所: 医療局 経営管理課 / 二戸市岩手県二戸市堀野字大川原毛38-2",
+    "body": "入札方式: 一般競争入札 / 工種: 建築一式工事 / 開札日: 2026-09-08 / 課所: 医療局 経営管理課 / 二戸市岩手県二戸市堀野字大川原毛38-2",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-8-A001-00020",
+    "tags": []
+  },
+  {
+    "id": "kp2u5-_zer",
+    "title": "岩手県立宮古病院外来トイレ洋式化等改修工事",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "入札方式: 一般競争入札 / 工種: 管設備工事 / 開札日: 2026-09-08 / 課所: 医療局 経営管理課 / 宮古市宮古市崎鍬ヶ崎第１地割11番地26",
+    "body": "入札方式: 一般競争入札 / 工種: 管設備工事 / 開札日: 2026-09-08 / 課所: 医療局 経営管理課 / 宮古市宮古市崎鍬ヶ崎第１地割11番地26",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-8-A001-00025",
+    "tags": []
+  },
+  {
+    "id": "2h17uxfys4i",
+    "title": "岩手県立中部病院結核病棟改修工事",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-21",
+    "deadline": null,
+    "summary": "入札方式: 一般競争入札 / 工種: 建築一式工事 / 開札日: 2026-09-08 / 課所: 医療局 経営管理課 / 北上市村崎野17-10",
+    "body": "入札方式: 一般競争入札 / 工種: 建築一式工事 / 開札日: 2026-09-08 / 課所: 医療局 経営管理課 / 北上市村崎野17-10",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-8-A001-00026",
+    "tags": []
+  },
   {
     "id": "t5mon1s2sx",
     "title": "小柳沢砂防公園落石対策工事",
