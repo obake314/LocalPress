@@ -15,6 +15,7 @@ import Breadcrumb from "../components/Breadcrumb"
 import Container from "../components/ui/Container"
 import Button from "../components/ui/Button"
 import PlanTag from "../components/ui/PlanTag"
+import { PAID_FEATURES } from "../lib/features"
 interface ArticlePageProps {
   articleId: string
   onNavigate: Navigate
@@ -42,7 +43,7 @@ export default function ArticlePage({
 
   const days = daysUntilDeadline(article.deadline)
   // 入札・公募は法人プランの領域。ここでは概要までを見せ、詳細は案件ページへ送る
-  const isBid = article.category === "入札・公募"
+  const isBid = PAID_FEATURES && article.category === "入札・公募"
   const related = articles
     .filter(
       (a) =>
@@ -138,7 +139,7 @@ export default function ArticlePage({
             <div className="mb-8 flex flex-wrap items-center gap-3">
               <CategoryBadge category={article.category} />
               <StatusBadge status={article.status} />
-              <PlanTag plan={isBid ? "法人" : "無料"} />
+              {PAID_FEATURES && <PlanTag plan={isBid ? "法人" : "無料"} />}
               {days !== null && <DeadlineBadge days={days} />}
             </div>
 
@@ -170,7 +171,7 @@ export default function ArticlePage({
               <div className="mt-14">
                 <div className="flex flex-wrap items-center gap-4">
                   <h2 className="text-h3 text-foreground">詳細</h2>
-                  {isBid && <PlanTag plan="有料" />}
+                  {PAID_FEATURES && isBid && <PlanTag plan="有料" />}
                 </div>
 
                 {isBid ? (

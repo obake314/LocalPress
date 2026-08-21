@@ -1,0 +1,13 @@
+{
+  "name": "localpress-bid-scraper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "都道府県の入札情報システムから発注情報を取得する。GitHub Actions で動かす",
+  "scripts": {
+    "ebid": "node ebid.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1"
+  }
+}

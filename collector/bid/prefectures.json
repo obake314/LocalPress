@@ -1,0 +1,260 @@
+{
+  "$comment": "全47都道府県の入札情報公開システム。system はURLの形から推定した系統。実地確認前の暫定値。",
+  "source": "https://www.bic-net.jp/bid-information-link/",
+  "checkedAt": "2026-08-21",
+  "prefectures": [
+    {
+      "code": "01",
+      "name": "北海道",
+      "url": "https://www.idc.e-harp.jp/Public/PortalWeb/PublicHomeInit.do"
+    },
+    {
+      "code": "02",
+      "name": "青森県",
+      "url": "https://pub.pref.aomori.lg.jp/kouji/"
+    },
+    {
+      "code": "03",
+      "name": "岩手県",
+      "url": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600"
+    },
+    {
+      "code": "04",
+      "name": "宮城県",
+      "url": "https://miyagi.efftis.jp/04000/PPI/Public/Server/"
+    },
+    {
+      "code": "05",
+      "name": "秋田県",
+      "url": "https://cals05.pref.akita.lg.jp/ecydeen/do/PPI/koukokuSearch"
+    },
+    {
+      "code": "06",
+      "name": "山形県",
+      "url": "https://ppi.cals.pref.yamagata.jp/PPI/JS03-01.shtml"
+    },
+    {
+      "code": "07",
+      "name": "福島県",
+      "url": "https://densieturan1.pref.fukushima.jp/juchu/JK01-01.shtml"
+    },
+    {
+      "code": "08",
+      "name": "茨城県",
+      "url": "https://www.pref.ibaraki.jp/doboku/kensa/kanri/ebid/denshinyusatu-information.html"
+    },
+    {
+      "code": "09",
+      "name": "栃木県",
+      "url": "https://www.pref.tochigi.lg.jp/h02/pref/jyouhouka/denshikenchou/cals.html"
+    },
+    {
+      "code": "10",
+      "name": "群馬県",
+      "url": "https://portal.g-cals.e-gunma.lg.jp/ebia/servlet/p?job=AcDantaiZIndex"
+    },
+    {
+      "code": "11",
+      "name": "埼玉県",
+      "url": "https://www.pref.saitama.lg.jp/a0212/densinyusatsu/index.html"
+    },
+    {
+      "code": "12",
+      "name": "千葉県",
+      "url": "https://www.chiba-ep-bis.supercals.jp/portalPublic/LPC0H00T_INIT_Action.do"
+    },
+    {
+      "code": "13",
+      "name": "東京都",
+      "url": "https://www.e-procurement.metro.tokyo.lg.jp/index.jsp"
+    },
+    {
+      "code": "14",
+      "name": "神奈川県",
+      "url": "https://nyusatsu-joho.e-kanagawa.lg.jp/DENTYO/GP5000_10F?hdn_dantai=0001"
+    },
+    {
+      "code": "15",
+      "name": "新潟県",
+      "url": "https://www.ep-bis.pref.niigata.jp/ebidPPIPublish/EjPPIj",
+      "family": "ebidPPIPublish",
+      "variant": "ebid-menuFrm",
+      "note": "menu_Frm でメニュー、cond で検索、list に結果。共同利用17団体"
+    },
+    {
+      "code": "16",
+      "name": "富山県",
+      "url": "https://toyama.efftis.jp/portal/"
+    },
+    {
+      "code": "17",
+      "name": "石川県",
+      "url": "https://www.pref.ishikawa.lg.jp/kanri/cals-ec/bidding_information.html"
+    },
+    {
+      "code": "18",
+      "name": "福井県",
+      "url": "https://www2.ebid.pref.fukui.jp/ebidPPIPublish/EjPPIj",
+      "family": "ebidPPIPublish",
+      "variant": "ebid-mainFrm",
+      "note": "MainFrm 型。参加団体：福井県ほか12団体（トップに明記）"
+    },
+    {
+      "code": "19",
+      "name": "山梨県",
+      "url": "http://www.cals.pref.yamanashi.lg.jp/"
+    },
+    {
+      "code": "20",
+      "name": "長野県",
+      "url": "https://www.pref.nagano.lg.jp/gijukan/kensei/nyusatsu/kokyokoji/denshi/nyusatsu/index.html"
+    },
+    {
+      "code": "21",
+      "name": "岐阜県",
+      "url": "https://www.i-ppi.jp/Search/Web/Index.htm"
+    },
+    {
+      "code": "22",
+      "name": "静岡県",
+      "url": "http://www.cals-shizuoka.jp/ec/kouji/"
+    },
+    {
+      "code": "23",
+      "name": "愛知県",
+      "url": "https://www.chotatsu.e-aichi.jp/portal/index.jsp"
+    },
+    {
+      "code": "24",
+      "name": "三重県",
+      "url": "https://mie.efftis.jp/24000/ppi/pub"
+    },
+    {
+      "code": "25",
+      "name": "滋賀県",
+      "url": "https://www.pref.shiga.lg.jp/zigyousya/nyusatsubaikyaku/kouzi/300177.html"
+    },
+    {
+      "code": "26",
+      "name": "京都府",
+      "url": "https://kyoto.efftis.jp/26000/CALS/PPI_P/"
+    },
+    {
+      "code": "27",
+      "name": "大阪府",
+      "url": "https://www.pref.osaka.lg.jp/keiyaku_2/e-nyuusatsu/e-kensetsu-koukoku.html"
+    },
+    {
+      "code": "28",
+      "name": "兵庫県",
+      "url": "https://www2.ppi.pref.hyogo.jp/ebidPPIPublish/EjPPIj",
+      "family": "ebidPPIPublish",
+      "variant": "ebid-mainFrm",
+      "note": "MainFrm 型。兵庫県のみ（土木部・農林水産部・企業庁）"
+    },
+    {
+      "code": "29",
+      "name": "奈良県",
+      "url": "https://www.pref.nara.jp/4283.htm"
+    },
+    {
+      "code": "30",
+      "name": "和歌山県",
+      "url": "https://www.calsism.pref.wakayama.lg.jp/"
+    },
+    {
+      "code": "31",
+      "name": "鳥取県",
+      "url": "http://nyusatsu.pref.tottori.jp/#kokai"
+    },
+    {
+      "code": "32",
+      "name": "島根県",
+      "url": "https://choutatsuweb.pref.shimane.lg.jp/portal/"
+    },
+    {
+      "code": "33",
+      "name": "岡山県",
+      "url": "http://www.e-okayama.t-elbs.jp/"
+    },
+    {
+      "code": "34",
+      "name": "広島県",
+      "url": "https://www.e-chotatsu.dentyo.pref.hiroshima.lg.jp/ppij/PpiJGyomuStart.do?kinouid=GP5000_Top&dantaiCd=34000"
+    },
+    {
+      "code": "35",
+      "name": "山口県",
+      "url": "https://www.pref.yamaguchi.lg.jp/soshiki/127/23376.html"
+    },
+    {
+      "code": "36",
+      "name": "徳島県",
+      "url": "https://e-ppi.pref.tokushima.lg.jp/bbs/open/front"
+    },
+    {
+      "code": "37",
+      "name": "香川県",
+      "url": "https://dennyu.pref.kagawa.lg.jp/PPI_P/?procKbn=0"
+    },
+    {
+      "code": "38",
+      "name": "愛媛県",
+      "url": "https://www.ebid-ppi.pref.ehime.jp/ebidPPIPublish/index.html",
+      "family": "ebidPPIPublish",
+      "variant": "ebid-agencySelect",
+      "note": "調達機関の選択画面から入る。愛媛県＋県内市町"
+    },
+    {
+      "code": "39",
+      "name": "高知県",
+      "url": "https://ppi.pref.kochi.lg.jp/portal/"
+    },
+    {
+      "code": "40",
+      "name": "福岡県",
+      "url": "https://www.choutatsu-ppi.pref.fukuoka.lg.jp/DENTYO/P1005_05"
+    },
+    {
+      "code": "41",
+      "name": "佐賀県",
+      "url": "http://nyusatsu-asp.pref.saga.lg.jp/jouhoukoukai.html"
+    },
+    {
+      "code": "42",
+      "name": "長崎県",
+      "url": "https://www.doboku.pref.nagasaki.jp/bidding/info/index.html"
+    },
+    {
+      "code": "43",
+      "name": "熊本県",
+      "url": "https://ebid.kumamoto-idc.pref.kumamoto.jp/PPIAccepter/TopServlet"
+    },
+    {
+      "code": "44",
+      "name": "大分県",
+      "url": "https://www.t-elis.pref.oita.lg.jp/DENTYO/GPPI_MENU"
+    },
+    {
+      "code": "45",
+      "name": "宮崎県",
+      "url": "https://www.e-nyusatsu-joho.pref.miyazaki.lg.jp/ebidPPIPublish/EjPPIj",
+      "family": "ebidPPIPublish",
+      "variant": "ebid-mainFrm",
+      "note": "MainFrm 型。建設工事のみ"
+    },
+    {
+      "code": "46",
+      "name": "鹿児島県",
+      "url": "https://www.kagoshima-nyusatsu.jp/ebidPPIPublish/EjPPIj",
+      "family": "ebidPPIPublish",
+      "variant": "ebid-mainFrm",
+      "note": "MainFrm 型"
+    },
+    {
+      "code": "47",
+      "name": "沖縄県",
+      "url": "https://www.pref.okinawa.jp/site/doboku/gijiken/ebidportal/index.html"
+    }
+  ]
+}

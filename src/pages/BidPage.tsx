@@ -11,6 +11,7 @@ import Container from "../components/ui/Container"
 import Button from "../components/ui/Button"
 import SectionHeading from "../components/ui/SectionHeading"
 import PlanTag from "../components/ui/PlanTag"
+import { PAID_FEATURES } from "../lib/features"
 import { StatusBadge, DeadlineBadge } from "../components/BadgeTag"
 import BidSpecTable from "../components/BidSpecTable"
 import { parseBidSpec, bidSpecValue, bidRemark } from "../lib/bidSpec"
@@ -34,6 +35,11 @@ function PaidLock({
   onNavigate: Navigate
   children: React.ReactNode
 }) {
+  // 開発期間中は制限を掛けず、そのまま見せる
+  if (!PAID_FEATURES) {
+    return <div className="border border-border bg-card">{children}</div>
+  }
+
   return (
     <div className="relative overflow-hidden border border-border bg-card">
       <div
@@ -44,7 +50,7 @@ function PaidLock({
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 bg-card/70 px-8 text-center backdrop-blur-[2px]">
-        <PlanTag plan="法人" />
+        {PAID_FEATURES && <PlanTag plan="法人" />}
         <div>
           <p className="text-h3 text-foreground">{title}</p>
           <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
@@ -82,7 +88,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
               ]}
             />
             <div className="mt-6 flex flex-wrap items-center gap-4">
-              <PlanTag plan="法人" />
+              {PAID_FEATURES && <PlanTag plan="法人" />}
               <StatusBadge status={detail.status} size="xs" />
               {history.length > 0 && (
                 <span className="bg-accent px-2.5 py-1 font-mono text-eyebrow font-semibold text-accent-foreground">
@@ -133,7 +139,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                 <div>
                   <div className="mb-6 flex items-center gap-4">
                     <h2 className="text-h3 text-foreground">仕様・参加資格</h2>
-                    <PlanTag plan="有料" />
+                    {PAID_FEATURES && <PlanTag plan="有料" />}
                   </div>
                   <PaidLock
                     title="案件の詳細は法人プランで閲覧できます"
@@ -152,7 +158,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                 <div>
                   <div className="mb-6 flex items-center gap-4">
                     <h2 className="text-h3 text-foreground">条件変更の履歴</h2>
-                    <PlanTag plan="有料" />
+                    {PAID_FEATURES && <PlanTag plan="有料" />}
                   </div>
                   <PaidLock
                     title="公開後に変わった条件を追跡します"
@@ -253,7 +259,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
           />
           <div className="mt-6 flex items-center gap-4">
             <p className="eyebrow text-accent">Bids & RFPs</p>
-            <PlanTag plan="法人" />
+            {PAID_FEATURES && <PlanTag plan="法人" />}
           </div>
           <h1 className="mt-6 text-h1 text-white">入札・公募</h1>
           <p className="mt-6 max-w-2xl text-lead text-white/70">

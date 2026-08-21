@@ -3,6 +3,7 @@ import { Page, Navigate } from "../types/nav"
 import Container from "./ui/Container"
 import Button from "./ui/Button"
 import PlanTag from "./ui/PlanTag"
+import { PAID_FEATURES } from "../lib/features"
 interface HeaderProps {
   onNavigate: Navigate
   onSearch: (query: string) => void
@@ -177,7 +178,7 @@ export default function Header({ onNavigate, onSearch }: HeaderProps) {
                   className="flex items-center justify-between border-b border-border py-4 text-left text-lead font-medium text-foreground"
                 >
                   {label}
-                  {plan && <PlanTag plan={plan} />}
+                  {PAID_FEATURES && plan && <PlanTag plan={plan} />}
                 </button>
               ))}
 

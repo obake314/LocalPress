@@ -11,6 +11,7 @@ import ArticleCard from "../components/ArticleCard"
 import Container from "../components/ui/Container"
 import Button from "../components/ui/Button"
 import PlanTag from "../components/ui/PlanTag"
+import { PAID_FEATURES } from "../lib/features"
 interface SearchPageProps {
   initialQuery?: string
   initialCategory?: string
@@ -152,7 +153,7 @@ export default function SearchPage({
     <div className="border-b border-border pb-8 last:border-0">
       <div className="mb-5 flex items-center gap-3">
         <p className="eyebrow text-faint-foreground">{title}</p>
-        {plan === "有料" && <PlanTag plan="有料" />}
+        {PAID_FEATURES && plan === "有料" && <PlanTag plan="有料" />}
       </div>
       <div className="space-y-1">{children}</div>
     </div>
