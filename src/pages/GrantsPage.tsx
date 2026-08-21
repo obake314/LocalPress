@@ -79,7 +79,7 @@ export default function GrantsPage({
               <PlanTag plan="無料" />
               <StatusBadge status={detail.status} size="xs" />
             </div>
-            <h1 className="mt-6 max-w-4xl text-h1 text-foreground">
+            <h1 className="page-title page-title--spaced page-title--wide">
               {detail.title}
             </h1>
           </Container>
@@ -108,13 +108,13 @@ export default function GrantsPage({
               <aside className="space-y-8 border border-border bg-card p-8">
                 <div>
                   <p className="eyebrow mb-3 text-faint-foreground">上限額</p>
-                  <p className="font-mono text-h3 font-bold text-foreground">
+                  <p className="font-mono text-h3 font-semibold text-foreground">
                     {detail.amount ?? "記載なし"}
                   </p>
                 </div>
                 <div className="border-t border-border pt-8">
                   <p className="eyebrow mb-3 text-faint-foreground">申請締切</p>
-                  <p className="font-mono text-h3 font-bold text-foreground">
+                  <p className="font-mono text-h3 font-semibold text-foreground">
                     {detail.deadline ?? "随時"}
                   </p>
                   {days !== null && (
@@ -163,7 +163,7 @@ export default function GrantsPage({
             <p className="eyebrow text-primary">Grants</p>
             <PlanTag plan="無料" />
           </div>
-          <h1 className="mt-6 text-h1 text-foreground">補助金・助成を探す</h1>
+          <h1 className="page-title page-title--spaced">補助金・助成を探す</h1>
           <p className="mt-6 max-w-2xl text-lead text-muted-foreground">
             対象・上限額・締切・申請先を揃えて掲載しています。締切が近い順に並びます。
           </p>
@@ -248,7 +248,7 @@ export default function GrantsPage({
 
                   <div className="shrink-0 md:w-44 md:text-right">
                     <p className="eyebrow mb-2 text-faint-foreground">上限額</p>
-                    <p className="font-mono text-h3 font-bold text-foreground">
+                    <p className="font-mono text-h3 font-semibold text-foreground">
                       {g.amount ?? "—"}
                     </p>
                     <p className="mt-4 font-mono text-sm text-muted-foreground">

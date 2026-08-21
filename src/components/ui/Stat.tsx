@@ -15,18 +15,10 @@ export default function Stat({ label, value, unit, inverse }: StatProps) {
       >
         {label}
       </p>
-      <p
-        className={`font-mono text-h1 font-bold tracking-tight ${
-          inverse ? "text-white" : "text-foreground"
-        }`}
-      >
+      <p className={`metric-value${inverse ? " metric-value--inverse" : ""}`}>
         {value}
         {unit && (
-          <span
-            className={`ml-2 text-lead font-normal ${
-              inverse ? "text-white/60" : "text-muted-foreground"
-            }`}
-          >
+          <span className="metric-value__unit">
             {unit}
           </span>
         )}

@@ -59,7 +59,7 @@ export default function EventsPage({
                 <p className="eyebrow text-primary">Events & Life</p>
                 <PlanTag plan="無料" />
               </div>
-              <h1 className="text-h1 text-foreground">
+              <h1 className="page-title">
                 {activeCity
                   ? `${activeCity.name}のイベント・生活情報`
                   : "イベント・生活"}
@@ -71,9 +71,9 @@ export default function EventsPage({
                   : "地域の催し、文化、子育て支援、各種募集。暮らしに関わる情報をまとめて探せます。すべて無料で閲覧できます。"}
               </p>
             </div>
-            <p className="font-mono text-h1 text-foreground">
+            <p className="metric-value">
               {list.length}
-              <span className="ml-2 text-lead font-normal text-muted-foreground">
+              <span className="metric-value__unit">
                 件
               </span>
             </p>
@@ -98,7 +98,7 @@ export default function EventsPage({
                 }`}
               >
                 <CategoryBadge category={c} size="xs" />
-                <p className="mt-6 font-mono text-h2 font-bold text-foreground">
+                <p className="mt-6 font-mono text-h2 font-semibold text-foreground">
                   {countOf(c)}
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">{c}の情報</p>

@@ -143,7 +143,7 @@ export default function ArticlePage({
               {days !== null && <DeadlineBadge days={days} />}
             </div>
 
-            <h1 className="text-h1 text-foreground">{article.title}</h1>
+            <h1 className="page-title">{article.title}</h1>
             <p className="mt-8 text-lead text-muted-foreground">
               {article.summary}
             </p>

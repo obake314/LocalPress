@@ -96,7 +96,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                 </span>
               )}
             </div>
-            <h1 className="mt-6 max-w-4xl text-h1 text-foreground">
+            <h1 className="page-title page-title--spaced page-title--wide">
               {detail.title}
             </h1>
 
@@ -286,7 +286,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
             <p className="eyebrow text-primary">Bids & RFPs</p>
             {PAID_FEATURES && <PlanTag plan="法人" />}
           </div>
-          <h1 className="mt-6 text-h1 text-foreground">入札・公募</h1>
+          <h1 className="page-title page-title--spaced">入札・公募</h1>
           <p className="mt-6 max-w-2xl text-lead text-muted-foreground">
             案件の一覧は無料で確認できます。仕様・参加資格・条件変更の履歴、および通知と案件管理は法人プランの機能です。
           </p>

@@ -208,7 +208,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                     <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 2c1.1 0 2.1.25 3 .68V10h-3V4zm-1 0v6H6.07A6.01 6.01 0 019 4zm-3.93 7H9v5.93A6.01 6.01 0 015.07 11zm5.93 5.93V11h3.93A6.01 6.01 0 0111 16.93z" />
                   </svg>
                 </span>
-                <span className="text-body font-bold tracking-tight text-white">
+                <span className="text-body font-semibold tracking-tight text-white">
                   LocalPress
                 </span>
               </button>

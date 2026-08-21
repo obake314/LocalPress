@@ -195,7 +195,7 @@ export default function PricingPage({ onNavigate }: NavProps) {
             <div className="mb-6 flex items-center gap-4">
               <p className="eyebrow text-primary">Pricing</p>
             </div>
-            <h1 className="text-h1 text-foreground">無料で探せる。</h1>
+            <h1 className="page-title">無料で探せる。</h1>
             <p className="mt-6 text-lead text-muted-foreground">
               一般に開かれた情報の検索と閲覧は、すべて無料です。通知・変更履歴・案件管理といった、仕事の成果に直結する機能を有料プランで提供します。
             </p>
@@ -248,7 +248,7 @@ export default function PricingPage({ onNavigate }: NavProps) {
 
                 <p className="mt-8">
                   <span
-                    className={`font-mono text-h2 font-bold tracking-tight ${
+                    className={`font-mono text-h2 font-semibold tracking-tight ${
                       plan.highlighted ? "text-white" : "text-foreground"
                     }`}
                   >

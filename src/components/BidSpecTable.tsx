@@ -28,7 +28,7 @@ export default function BidSpecTable({ specs, inverse, columns = 3 }: BidSpecTab
           <dd
             className={
               emphasis
-                ? `font-mono text-h3 font-bold ${inverse ? "text-accent" : "text-alert"}`
+                ? `font-mono text-h3 font-semibold ${inverse ? "text-accent" : "text-alert"}`
                 : `text-body ${inverse ? "text-white" : "text-foreground"}`
             }
           >

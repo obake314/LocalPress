@@ -65,7 +65,7 @@ export default function CityPage({ cityCode, onNavigate }: CityPageProps) {
               <p className="eyebrow mb-6 text-primary">
                 {city.region ? `${city.region}・${city.prefecture}` : city.prefecture}
               </p>
-              <h1 className="text-h1 text-foreground">{city.name}</h1>
+              <h1 className="page-title">{city.name}</h1>
               {city.summary && (
                 <p className="mt-6 text-lead text-muted-foreground">{city.summary}</p>
               )}

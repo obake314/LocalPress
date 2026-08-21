@@ -64,8 +64,6 @@
   --text-h3--line-height: 1.45;
   --text-h2: clamp(1.75rem, 3vw, 2.5rem);
   --text-h2--line-height: 1.2;
-  --text-h1: clamp(2rem, 3.6vw, 3rem);
-  --text-h1--line-height: 1.18;
   --text-display: clamp(2rem, 5.2vw, 4.25rem);
   --text-display--line-height: 1.14;
 

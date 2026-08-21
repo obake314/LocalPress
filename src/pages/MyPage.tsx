@@ -37,7 +37,7 @@ export default function MyPage({ onNavigate }: NavProps) {
               { label: "マイページ" },
             ]}
           />
-          <h1 className="mt-8 text-h1 text-foreground">マイページ</h1>
+          <h1 className="page-title page-title--spaced-lg">マイページ</h1>
           <p className="mt-6 max-w-2xl text-lead text-muted-foreground">
             保存した条件と案件、通知の設定をまとめて管理します。ログインするとご利用いただけます。
           </p>
@@ -100,11 +100,7 @@ export default function MyPage({ onNavigate }: NavProps) {
                   "締切の 7 日前・前日にリマインドする",
                   "保存した案件の条件が変わったら即時に知らせる",
                 ].map((t) => (
-                  <li
-                    key={t}
-                    className="flex items-start gap-4 text-body text-white/70"
-                  >
-                    <span className="mt-2.5 h-1.5 w-1.5 shrink-0 bg-accent" />
+                  <li key={t} className="text-body text-white/70">
                     {t}
                   </li>
                 ))}

@@ -144,7 +144,7 @@ function NewsBox({ onNavigate }: NavProps) {
                   {article.title}
                 </span>
                 {days !== null && days >= 0 && days <= 7 ? (
-                  <span className="shrink-0 bg-alert-soft px-3 py-1 font-mono text-sm font-bold text-alert">
+                  <span className="shrink-0 bg-alert-soft px-3 py-1 font-mono text-sm font-semibold text-alert">
                     残{days}日
                   </span>
                 ) : (
@@ -188,7 +188,7 @@ export default function TopPage({ onNavigate }: NavProps) {
             {/* 左 */}
             <div className="min-w-0 flex-1">
               <p className="eyebrow mb-8 text-primary">全国自治体情報プラットフォーム</p>
-              <h1 className="text-h1 text-foreground">
+              <h1 className="page-title">
                 全国の自治体情報を、ひとつの窓口に。
               </h1>
               <p className="mt-8 max-w-xl text-lead text-muted-foreground">
@@ -220,9 +220,9 @@ export default function TopPage({ onNavigate }: NavProps) {
                   ].map(({ label, value, unit }) => (
                     <div key={label} className="px-8 py-7">
                       <p className="mb-3 text-sm text-muted-foreground">{label}</p>
-                      <p className="font-mono text-h1 font-bold text-foreground">
+                      <p className="metric-value">
                         {value}
-                        <span className="ml-2 text-lead font-normal text-muted-foreground">
+                        <span className="metric-value__unit">
                           {unit}
                         </span>
                       </p>
@@ -410,7 +410,7 @@ export default function TopPage({ onNavigate }: NavProps) {
                 ].map(({ k, v }) => (
                   <div key={k} className="bg-card px-8 py-7">
                     <p className="eyebrow mb-3 text-faint-foreground">{k}</p>
-                    <p className="font-mono text-h3 font-bold text-foreground">{v}</p>
+                    <p className="font-mono text-h3 font-semibold text-foreground">{v}</p>
                   </div>
                 ))}
               </div>
@@ -484,7 +484,7 @@ export default function TopPage({ onNavigate }: NavProps) {
                   <div className="mt-8 border-t border-border pt-5">
                     <p className="font-mono text-sm text-faint-foreground">{article.cityName}</p>
                     {days !== null && (
-                      <p className="mt-2 font-mono text-h3 font-bold text-alert">残{days}日</p>
+                      <p className="mt-2 font-mono text-h3 font-semibold text-alert">残{days}日</p>
                     )}
                   </div>
                 </button>
@@ -521,7 +521,7 @@ export default function TopPage({ onNavigate }: NavProps) {
               ].map(({ label, value, unit }) => (
                 <div key={label} className="bg-card px-6 py-8">
                   <p className="eyebrow mb-3 text-faint-foreground">{label}</p>
-                  <p className="font-mono text-h2 font-bold text-foreground">
+                  <p className="font-mono text-h2 font-semibold text-foreground">
                     {value}
                     {unit && (
                       <span className="ml-2 text-sm font-normal text-muted-foreground">{unit}</span>

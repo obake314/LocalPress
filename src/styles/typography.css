@@ -1,0 +1,48 @@
+/* Tailwind のテーマに依存しない、プロジェクト固有の文字スタイル */
+
+.page-title {
+  margin: 0;
+  color: var(--color-foreground);
+  font-size: 2rem;
+  line-height: 1.18;
+}
+
+.page-title--spaced {
+  margin-top: 1.5rem;
+}
+
+.page-title--spaced-lg {
+  margin-top: 2rem;
+}
+
+.page-title--wide {
+  max-width: 56rem;
+}
+
+.metric-value {
+  margin: 0;
+  color: var(--color-foreground);
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.metric-value--inverse {
+  color: #ffffff;
+}
+
+.metric-value__unit {
+  margin-left: 0.5rem;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+
+.metric-value--inverse .metric-value__unit {
+  color: rgb(255 255 255 / 60%);
+}

@@ -34,12 +34,10 @@ interface StatusBadgeProps {
 
 export function StatusBadge({ status, size = "sm" }: StatusBadgeProps) {
   const { bg, text } = statusColors[status]
-  const dot = status === "募集中" || status === "締切間近"
   return (
     <span
       className={`inline-flex items-center font-medium ${bg} ${text} ${sizeCls[size]}`}
     >
-      {dot && <span className="h-1.5 w-1.5 bg-current" />}
       {status}
     </span>
   )
@@ -59,7 +57,7 @@ export function DeadlineBadge({ days, emphasis }: DeadlineBadgeProps) {
   }
 
   const base = emphasis
-    ? "font-mono text-h3 font-bold tracking-tight"
+    ? "font-mono text-h3 font-semibold tracking-tight"
     : "inline-flex items-center px-2.5 py-1 font-mono text-sm font-semibold"
 
   if (days === 0) {
@@ -90,7 +88,7 @@ export function DeadlineBadge({ days, emphasis }: DeadlineBadgeProps) {
     <span
       className={
         emphasis
-          ? "font-mono text-h3 font-bold tracking-tight text-primary"
+          ? "font-mono text-h3 font-semibold tracking-tight text-primary"
           : "font-mono text-sm text-muted-foreground"
       }
     >

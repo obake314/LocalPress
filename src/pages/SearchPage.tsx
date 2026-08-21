@@ -360,7 +360,7 @@ export default function SearchPage({
             <div className="flex flex-col gap-8 border-b border-border pb-10 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="eyebrow mb-4 text-primary">Search result</p>
-                <h1 className="text-h2 text-foreground">
+                <h1 className="page-title">
                   {filtered.length}
                   <span className="ml-3 text-lead font-normal text-muted-foreground">
                     件
