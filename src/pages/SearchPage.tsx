@@ -2,6 +2,7 @@ import { useState, useMemo, useRef } from "react"
 import {
   articles,
   municipalities,
+  daysUntilDeadline,
   Category,
   Status,
   Target,
@@ -85,9 +86,11 @@ export default function SearchPage({
       result = result.filter((a) => a.targets.includes(target as Target))
     if (withAmount) result = result.filter((a) => Boolean(a.amount))
     if (deadlineWithin > 0) {
-      const limit = new Date("2026-08-19")
-      limit.setDate(limit.getDate() + deadlineWithin)
-      result = result.filter((a) => a.deadline && new Date(a.deadline) <= limit)
+      // 締切済みは「◯日以内」に含めない
+      result = result.filter((a) => {
+        const days = daysUntilDeadline(a.deadline)
+        return days !== null && days >= 0 && days <= deadlineWithin
+      })
     }
 
     return result.sort((a, b) =>
