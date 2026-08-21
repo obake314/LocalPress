@@ -877,9 +877,41 @@ export const revisions: Record<string, Revision[]> = {
 export const getRevisions = (articleId: string): Revision[] =>
   revisions[articleId] ?? []
 
+/**
+ * 今日（日本時間）を YYYY-MM-DD で返す。
+ *
+ * 締切は日付までしか持たないので、時刻や閲覧者のタイムゾーンで
+ * 残日数がずれないよう、日本時間の暦日どうしで比べる。
+ */
+export const todayJst = (): string =>
+  new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
+
+/** 締切までの残り日数。今日が締切なら 0、過ぎていれば負の数 */
 export const daysUntilDeadline = (deadline: string | null): number | null => {
   if (!deadline) return null
-  const now = new Date("2026-08-19")
-  const d = new Date(deadline)
-  return Math.ceil((d.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
+  const day = 24 * 60 * 60 * 1000
+  const from = Date.parse(`${todayJst()}T00:00:00Z`)
+  const to = Date.parse(`${deadline.slice(0, 10)}T00:00:00Z`)
+  if (Number.isNaN(to)) return null
+  return Math.round((to - from) / day)
+}
+
+/**
+ * 締切から見た実際の状態。
+ *
+ * サイトは静的で、状態は書き出した時点のまま固まる。締切が過ぎても
+ * 「募集中」と出続けてしまうため、表示のたびに締切と突き合わせて直す。
+ *
+ * 下げる方向にだけ効かせる。「終了」「準備中」は編集側の判断なので触らない。
+ */
+export const statusByDeadline = (
+  status: Status,
+  deadline: string | null,
+): Status => {
+  if (status === "終了" || status === "準備中") return status
+  const days = daysUntilDeadline(deadline)
+  if (days === null) return status
+  if (days < 0) return "終了"
+  if (days <= 7) return "締切間近"
+  return status
 }

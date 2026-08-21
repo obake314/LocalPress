@@ -2,7 +2,7 @@
  * microCMS から取得したコンテンツ（生成物・手で編集しないこと）。
  * 更新するには pnpm content:pull を実行する。
  * 取得元: https://localpress.microcms.io/api/v1/
- * 生成日時: 2026-08-21T08:30:27.496Z
+ * 生成日時: 2026-08-21T08:44:47.849Z
  */
 
 import type { Article, Municipality } from "./mockData"
@@ -573,7 +573,7 @@ export const generatedArticles: Article[] = [
     "cityName": "環境生活部／食と暮らしの安全推進課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -591,7 +591,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／住宅課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -609,7 +609,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／住宅課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -627,7 +627,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／営繕課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -663,7 +663,7 @@ export const generatedArticles: Article[] = [
     "cityName": "教育庁／文化財課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -681,7 +681,7 @@ export const generatedArticles: Article[] = [
     "cityName": "教育庁／施設整備課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -699,7 +699,7 @@ export const generatedArticles: Article[] = [
     "cityName": "教育庁／施設整備課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -753,7 +753,7 @@ export const generatedArticles: Article[] = [
     "cityName": "企業局／東部下水道事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -771,7 +771,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大河原地方管内／大河原地方振興事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -807,7 +807,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大河原地方管内／大河原土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -843,7 +843,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台地方振興事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -861,7 +861,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -879,7 +879,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -915,7 +915,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大崎地方管内／北部地方振興事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -951,7 +951,7 @@ export const generatedArticles: Article[] = [
     "cityName": "気仙沼地方管内／気仙沼土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -969,7 +969,7 @@ export const generatedArticles: Article[] = [
     "cityName": "気仙沼地方管内／気仙沼土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -987,7 +987,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／河川課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1005,7 +1005,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／住宅課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1023,7 +1023,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／設備課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1041,7 +1041,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／設備課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1059,7 +1059,7 @@ export const generatedArticles: Article[] = [
     "cityName": "土木部／設備課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1077,7 +1077,7 @@ export const generatedArticles: Article[] = [
     "cityName": "企業局／水道経営課",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1095,7 +1095,7 @@ export const generatedArticles: Article[] = [
     "cityName": "企業局／仙南仙塩広域水道事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1113,7 +1113,7 @@ export const generatedArticles: Article[] = [
     "cityName": "企業局／中南部下水道事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1131,7 +1131,7 @@ export const generatedArticles: Article[] = [
     "cityName": "企業局／東部下水道事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1149,7 +1149,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大河原地方管内／大河原土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1167,7 +1167,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台地方振興事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1185,7 +1185,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1203,7 +1203,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1221,7 +1221,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／仙台土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1239,7 +1239,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台地方管内／王城寺原補償工事事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1257,7 +1257,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大崎地方管内／北部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1275,7 +1275,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大崎地方管内／北部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1293,7 +1293,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大崎地方管内／北部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1311,7 +1311,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大崎地方管内／北部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1329,7 +1329,7 @@ export const generatedArticles: Article[] = [
     "cityName": "栗原地方管内／北部地方振興事務所栗原地域事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1347,7 +1347,7 @@ export const generatedArticles: Article[] = [
     "cityName": "栗原地方管内／北部土木事務所栗原地域事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1365,7 +1365,7 @@ export const generatedArticles: Article[] = [
     "cityName": "登米地方管内／東部土木事務所登米地域事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1383,7 +1383,7 @@ export const generatedArticles: Article[] = [
     "cityName": "登米地方管内／東部土木事務所登米地域事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1401,7 +1401,7 @@ export const generatedArticles: Article[] = [
     "cityName": "登米地方管内／東部土木事務所登米地域事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1419,7 +1419,7 @@ export const generatedArticles: Article[] = [
     "cityName": "登米地方管内／東部土木事務所登米地域事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1437,7 +1437,7 @@ export const generatedArticles: Article[] = [
     "cityName": "石巻地方管内／東部地方振興事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1455,7 +1455,7 @@ export const generatedArticles: Article[] = [
     "cityName": "石巻地方管内／東部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1473,7 +1473,7 @@ export const generatedArticles: Article[] = [
     "cityName": "石巻地方管内／東部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1491,7 +1491,7 @@ export const generatedArticles: Article[] = [
     "cityName": "石巻地方管内／東部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1509,7 +1509,7 @@ export const generatedArticles: Article[] = [
     "cityName": "石巻地方管内／東部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1527,7 +1527,7 @@ export const generatedArticles: Article[] = [
     "cityName": "石巻地方管内／東部土木事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1545,7 +1545,7 @@ export const generatedArticles: Article[] = [
     "cityName": "気仙沼地方管内／気仙沼地方振興事務所",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1563,7 +1563,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1581,7 +1581,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1599,7 +1599,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1617,7 +1617,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1635,7 +1635,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1653,7 +1653,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -1671,7 +1671,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1689,7 +1689,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1707,7 +1707,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1725,7 +1725,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1743,7 +1743,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1761,7 +1761,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1779,7 +1779,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1797,7 +1797,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1815,7 +1815,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1833,7 +1833,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1851,7 +1851,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1869,7 +1869,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1887,7 +1887,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1905,7 +1905,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1923,7 +1923,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1941,7 +1941,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1959,7 +1959,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1977,7 +1977,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -1995,7 +1995,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2013,7 +2013,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2031,7 +2031,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2049,7 +2049,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2067,7 +2067,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2085,7 +2085,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2103,7 +2103,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2121,7 +2121,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2139,7 +2139,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2157,7 +2157,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2175,7 +2175,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2193,7 +2193,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2211,7 +2211,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2229,7 +2229,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2247,7 +2247,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2265,7 +2265,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2283,7 +2283,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2301,7 +2301,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2319,7 +2319,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2337,7 +2337,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2355,7 +2355,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2373,7 +2373,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2391,7 +2391,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2409,7 +2409,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2427,7 +2427,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2445,7 +2445,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2463,7 +2463,7 @@ export const generatedArticles: Article[] = [
     "cityName": "佐渡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -2877,7 +2877,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3219,7 +3219,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3237,7 +3237,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3255,7 +3255,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3273,7 +3273,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3381,7 +3381,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3399,7 +3399,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3471,7 +3471,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3489,7 +3489,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3507,7 +3507,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3615,7 +3615,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3633,7 +3633,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3669,7 +3669,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3705,7 +3705,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3723,7 +3723,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3759,7 +3759,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3777,7 +3777,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3795,7 +3795,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3813,7 +3813,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3831,7 +3831,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3849,7 +3849,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3885,7 +3885,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -3921,7 +3921,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3939,7 +3939,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3957,7 +3957,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3975,7 +3975,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -3993,7 +3993,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4011,7 +4011,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4029,7 +4029,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4047,7 +4047,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4065,7 +4065,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4083,7 +4083,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4101,7 +4101,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4119,7 +4119,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4137,7 +4137,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4155,7 +4155,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4173,7 +4173,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4191,7 +4191,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4209,7 +4209,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4227,7 +4227,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4245,7 +4245,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4263,7 +4263,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4281,7 +4281,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4299,7 +4299,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4317,7 +4317,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4335,7 +4335,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4353,7 +4353,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4371,7 +4371,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4389,7 +4389,7 @@ export const generatedArticles: Article[] = [
     "cityName": "岩手県",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4569,7 +4569,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4587,7 +4587,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4605,7 +4605,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4623,7 +4623,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4641,7 +4641,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4659,7 +4659,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4677,7 +4677,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4695,7 +4695,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4713,7 +4713,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4731,7 +4731,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4749,7 +4749,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4767,7 +4767,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4785,7 +4785,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4803,7 +4803,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4821,7 +4821,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4839,7 +4839,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4857,7 +4857,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4875,7 +4875,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4893,7 +4893,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4911,7 +4911,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4929,7 +4929,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4947,7 +4947,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4965,7 +4965,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -4983,7 +4983,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5001,7 +5001,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5019,7 +5019,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5037,7 +5037,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5055,7 +5055,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5073,7 +5073,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5091,7 +5091,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5109,7 +5109,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5127,7 +5127,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5145,7 +5145,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5163,7 +5163,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5181,7 +5181,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5199,7 +5199,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5217,7 +5217,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5235,7 +5235,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5253,7 +5253,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5271,7 +5271,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5289,7 +5289,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5307,7 +5307,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5325,7 +5325,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5343,7 +5343,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5361,7 +5361,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5379,7 +5379,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5397,7 +5397,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5415,7 +5415,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5433,7 +5433,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5451,7 +5451,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5469,7 +5469,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5487,7 +5487,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5505,7 +5505,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5523,7 +5523,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5541,7 +5541,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5559,7 +5559,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5577,7 +5577,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5595,7 +5595,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5613,7 +5613,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5631,7 +5631,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5649,7 +5649,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5667,7 +5667,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5685,7 +5685,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5703,7 +5703,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5721,7 +5721,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5739,7 +5739,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5757,7 +5757,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5775,7 +5775,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5793,7 +5793,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5811,7 +5811,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5829,7 +5829,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5847,7 +5847,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5865,7 +5865,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5883,7 +5883,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5901,7 +5901,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5919,7 +5919,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5937,7 +5937,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5955,7 +5955,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5973,7 +5973,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -5991,7 +5991,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6009,7 +6009,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6027,7 +6027,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6045,7 +6045,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6063,7 +6063,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6081,7 +6081,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6099,7 +6099,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6117,7 +6117,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6135,7 +6135,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6153,7 +6153,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6171,7 +6171,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6189,7 +6189,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6225,7 +6225,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -6279,7 +6279,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6297,7 +6297,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -6315,7 +6315,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -6333,7 +6333,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6351,7 +6351,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6369,7 +6369,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6387,7 +6387,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6405,7 +6405,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6423,7 +6423,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6441,7 +6441,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6459,7 +6459,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6477,7 +6477,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6495,7 +6495,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6513,7 +6513,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6531,7 +6531,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6549,7 +6549,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6567,7 +6567,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6585,7 +6585,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6603,7 +6603,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6621,7 +6621,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6639,7 +6639,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6657,7 +6657,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6675,7 +6675,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6693,7 +6693,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6711,7 +6711,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6729,7 +6729,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6747,7 +6747,7 @@ export const generatedArticles: Article[] = [
     "cityName": "大船渡市",
     "prefecture": "岩手県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "終了",
     "targets": [
       "企業"
     ],
@@ -6891,7 +6891,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "政策",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [],
     "publishedAt": "2026-08-19",
     "deadline": "2026-08-25",
@@ -6912,7 +6912,7 @@ export const generatedArticles: Article[] = [
     "cityName": "盛岡市",
     "prefecture": "岩手県",
     "category": "政策",
-    "status": "募集中",
+    "status": "終了",
     "targets": [],
     "publishedAt": "2026-08-19",
     "deadline": "2026-08-10",

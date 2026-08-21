@@ -16,6 +16,7 @@ import { maxAgeDays } from "./config.mjs"
 import { classifyItem } from "./filter.mjs"
 import { inspectPage } from "./page.mjs"
 import { promoteAdopted } from "./promote.mjs"
+import { expireOverdue } from "./expire.mjs"
 
 /** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
 const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
@@ -210,8 +211,12 @@ export async function runCollection({ dryRun = false } = {}) {
   // 収集箱で採用にした項目を articles へ移す
   const promotion = await promoteAdopted()
 
+  // 締切を過ぎた記事を「終了」に落とす
+  const expiry = await expireOverdue()
+
   return {
     promotion,
+    expiry,
     ok: true,
     origin,
     startedAt,

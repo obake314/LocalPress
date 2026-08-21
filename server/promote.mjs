@@ -14,6 +14,7 @@
 import { serviceId, apiKey, endpoint, headers } from "./config.mjs"
 import { getAll, createContent } from "./microcms.mjs"
 import { inspectPage } from "./page.mjs"
+import { statusByDeadline } from "./expire.mjs"
 import { decodeBody, parseFeed } from "./feed.mjs"
 import { readFileSync } from "node:fs"
 
@@ -151,7 +152,8 @@ export async function promoteAdopted({ dryRun = false } = {}) {
       cityName: item.cityName,
       prefecture: item.prefecture || PREF_BY_CODE[String(item.cityCode ?? "").slice(0, 2)] || "岩手県",
       category: [category],
-      status: ["募集中"],
+      // 締切が過ぎた案件を「募集中」で登録しないよう、締切から状態を決める
+      status: [statusByDeadline("募集中", page.deadline) ?? "募集中"],
       targets: TARGETS[category] ?? ["個人"],
       summary: (clean(item.rawSummary) || page.summary || item.title).slice(0, 200),
       body: (page.text ? clean(page.text) : clean(item.rawSummary)).slice(0, 2000),
