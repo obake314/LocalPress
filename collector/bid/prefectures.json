@@ -11,32 +11,50 @@
     {
       "code": "02",
       "name": "青森県",
-      "url": "https://pub.pref.aomori.lg.jp/kouji/"
+      "url": "https://pub.pref.aomori.lg.jp/kouji/",
+      "region": "東北",
+      "variant": "aomori-portal",
+      "note": "県のポータルサイト。入札情報は別ページに分かれている。要追加調査"
     },
     {
       "code": "03",
       "name": "岩手県",
-      "url": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600"
+      "url": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600",
+      "region": "東北",
+      "variant": "epi-cloud",
+      "note": "実装済み。工事/コンサル/物品の3区分。県・盛岡・北上・大船渡の4機関"
     },
     {
       "code": "04",
       "name": "宮城県",
-      "url": "https://miyagi.efftis.jp/04000/PPI/Public/Server/"
+      "url": "https://miyagi.efftis.jp/04000/PPI/Public/Server/",
+      "region": "東北",
+      "variant": "efftis",
+      "note": "実装済み（efftis.mjs）。onSearchCount('ReceiptingEntry') で申請受付中だけに絞り、onNext() でページ送りする。建設工事66件。建設関連は現在公告なし。案件番号・工種等級・公告日・申請締切日・開札予定日・発注課まで取れる"
     },
     {
       "code": "05",
       "name": "秋田県",
-      "url": "https://cals05.pref.akita.lg.jp/ecydeen/do/PPI/koukokuSearch"
+      "url": "https://cals05.pref.akita.lg.jp/ecydeen/do/PPI/koukokuSearch",
+      "region": "東北",
+      "variant": "ecydeen",
+      "note": "保留。同じ efftis 系だが公開画面が別物で、375件ヒットと出ても明細が2〜3行しか描画されない（表示されるのは訂正有りの案件のみ）。ページャが無く、絞り込みセレクトの選択肢も空で返る。koukokuTurn へ渡すパラメータの特定が要る"
     },
     {
       "code": "06",
       "name": "山形県",
-      "url": "https://ppi.cals.pref.yamagata.jp/PPI/JS03-01.shtml"
+      "url": "https://ppi.cals.pref.yamagata.jp/PPI/JS03-01.shtml",
+      "region": "東北",
+      "variant": "yamagata-ppi",
+      "note": "公表事項の選択画面。入札公告へ進む導線を要特定"
     },
     {
       "code": "07",
       "name": "福島県",
-      "url": "https://densieturan1.pref.fukushima.jp/juchu/JK01-01.shtml"
+      "url": "https://densieturan1.pref.fukushima.jp/juchu/JK01-01.shtml",
+      "region": "東北",
+      "variant": "fukushima-juchu",
+      "note": "入札公告一覧へ進むが明細が出ず。ログインが要る可能性"
     },
     {
       "code": "08",

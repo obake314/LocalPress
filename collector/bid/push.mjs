@@ -65,13 +65,51 @@ function mapNiigata(item) {
   }
 }
 
+/**
+ * efftis 型（宮城など）。取得時に項目名で拾ってあるので、そのまま組み立てる
+ */
+function mapEfftis(item) {
+  const notice = toIso(item.noticeDate)
+  const apply = toIso(item.applyDeadline)
+  const open = toIso(item.openDate)
+  const agency = item.dept || item.prefName
+  const summary = [
+    item.bidType ? `入札方式: ${item.bidType}` : null,
+    item.workType ? `工種: ${item.workType}` : null,
+    open ? `開札日: ${open}` : null,
+    `課所: ${agency}`,
+    apply ? `申請締切日: ${apply}` : null,
+    item.caseNo ? `案件番号: ${item.caseNo}` : null,
+  ].filter(Boolean).join(" / ")
+
+  return {
+    cityName: agency,
+    title: item.title,
+    summary,
+    // 事業者が動く期限は申請の締切。無ければ開札日で代える
+    deadline: apply ?? open,
+    published: notice,
+    // 案件IDが一意なので、そのまま鍵に使う
+    key: item.projectId || `${item.prefName}/${agency}/${item.title}`,
+  }
+}
+
 const dir = new URL("./output/", import.meta.url)
-const files = readdirSync(dir).filter((f) => f.startsWith("ebid-")).sort()
-if (files.length === 0) {
+
+/** 系統ごとに、いちばん新しい取得結果を使う */
+function latest(prefix) {
+  const f = readdirSync(dir).filter((x) => x.startsWith(prefix) && x.endsWith(".json")).sort().at(-1)
+  return f ? JSON.parse(readFileSync(new URL(f, dir), "utf8")).items ?? [] : []
+}
+
+const items = [
+  ...latest("ebid-").map((x) => ({ ...x, variant: "ebid" })),
+  ...latest("efftis-").map((x) => ({ ...x, variant: "efftis" })),
+]
+if (items.length === 0) {
   console.log("取得結果がありません")
   process.exit(0)
 }
-const { items } = JSON.parse(readFileSync(new URL(files.at(-1), dir), "utf8"))
 
 // 既存のURLを集めて重複を防ぐ
 const known = new Set()
@@ -88,7 +126,7 @@ const PREFS = JSON.parse(readFileSync(new URL("./prefectures.json", import.meta.
 
 let created = 0, skipped = 0, failed = 0
 for (const item of items) {
-  const m = mapNiigata(item)
+  const m = item.variant === "efftis" ? mapEfftis(item) : mapNiigata(item)
   if (!m.title) continue
 
   const entry = PREFS.find((p) => p.code === item.prefCode)?.url ?? ""
@@ -101,8 +139,11 @@ for (const item of items) {
     cityName: m.cityName,
     title: m.title.slice(0, 200),
     url,
-    // 締切日が無い案件があるため、値があるときだけ送る（null は 400 になる）
-    ...(m.deadline ? { publishedDate: `${m.deadline}T00:00:00.000Z` } : {}),
+    // 日付が無い案件があるため、値があるときだけ送る（null は 400 になる）
+    // 公告日が取れていればそれを、無ければ締切日を掲載日に使う
+    ...(m.published || m.deadline
+      ? { publishedDate: `${m.published ?? m.deadline}T00:00:00.000Z` }
+      : {}),
     rawSummary: m.summary.slice(0, 1000),
     state: ["採用"],
   }

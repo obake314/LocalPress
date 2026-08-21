@@ -1,0 +1,68 @@
+# 都道府県の入札情報公開システムから発注情報を取得する。
+#
+# 岩手（collector/epi）とは別系統で、共同利用型と efftis 型を扱う。
+#   ebid.mjs    ebidPPIPublish 型（新潟・福井・兵庫・愛媛・宮崎・鹿児島）
+#   efftis.mjs  efftis 型（宮城）
+#
+# どちらもフレーム構成で JavaScript 経由でしか操作できないため実ブラウザが要る。
+# Render の無料プランには Chromium が載らないので、ここで動かして
+# microCMS の収集箱へ直接書き込む。昇格は収集サービス側が行う。
+#
+# 必要な Secrets:
+#   MICROCMS_SERVICE_DOMAIN / MICROCMS_API_KEY
+
+name: bid
+
+on:
+  schedule:
+    # 1日1回（UTC 21:30 = JST 6:30）。入札公告の更新は日次で足りる
+    - cron: "30 21 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: bid
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 依存とブラウザを入れる
+        working-directory: collector/bid
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      # 片方が落ちても、もう片方の結果は登録したいので continue-on-error
+      - name: 共同利用型から取得する
+        working-directory: collector/bid
+        continue-on-error: true
+        run: node ebid.mjs
+
+      - name: efftis 型から取得する
+        working-directory: collector/bid
+        continue-on-error: true
+        run: node efftis.mjs
+
+      - name: microCMS へ登録する
+        working-directory: collector/bid
+        env:
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+        run: node push.mjs
+
+      - name: 取得結果を残す
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bid-output
+          path: collector/bid/output/
+          retention-days: 14

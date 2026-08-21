@@ -17,7 +17,16 @@ export interface BidSpec {
 }
 
 /** 画面に出す順番と、日付として扱う項目 */
-const ORDER = ["入札方式", "工種", "開札日", "課所", "場所", "契約管理番号"]
+const ORDER = [
+  "入札方式",
+  "工種",
+  "開札日",
+  "申請締切日",
+  "課所",
+  "場所",
+  "案件番号",
+  "契約管理番号",
+]
 const DATE_FIELDS = new Set(["開札日"])
 
 /** 「ラベル: 値」を / 区切りで並べた文字列を項目に分解する */
@@ -42,7 +51,10 @@ export function parseBidSpec(summary: string | undefined): BidSpec[] {
 }
 
 /** 指定したラベルの値だけ取り出す（一覧で開札日を出すときなどに使う） */
-export function bidSpecValue(summary: string | undefined, label: string): string | null {
+export function bidSpecValue(
+  summary: string | undefined,
+  label: string,
+): string | null {
   return parseBidSpec(summary).find((s) => s.label === label)?.value ?? null
 }
 

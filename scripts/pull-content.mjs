@@ -156,6 +156,29 @@ const municipalityCode = (v) => {
   return /^\d{1,5}$/.test(raw) ? raw.padStart(5, "0") : raw
 }
 
+/** 全国地方公共団体コードの先頭2桁（JIS X 0401）→ 都道府県名 */
+const PREF_BY_CODE = {
+  "01": "北海道", "02": "青森県", "03": "岩手県", "04": "宮城県", "05": "秋田県",
+  "06": "山形県", "07": "福島県", "08": "茨城県", "09": "栃木県", "10": "群馬県",
+  "11": "埼玉県", "12": "千葉県", "13": "東京都", "14": "神奈川県", "15": "新潟県",
+  "16": "富山県", "17": "石川県", "18": "福井県", "19": "山梨県", "20": "長野県",
+  "21": "岐阜県", "22": "静岡県", "23": "愛知県", "24": "三重県", "25": "滋賀県",
+  "26": "京都府", "27": "大阪府", "28": "兵庫県", "29": "奈良県", "30": "和歌山県",
+  "31": "鳥取県", "32": "島根県", "33": "岡山県", "34": "広島県", "35": "山口県",
+  "36": "徳島県", "37": "香川県", "38": "愛媛県", "39": "高知県", "40": "福岡県",
+  "41": "佐賀県", "42": "長崎県", "43": "熊本県", "44": "大分県", "45": "宮崎県",
+  "46": "鹿児島県", "47": "沖縄県",
+}
+
+/**
+ * 所属県を決める。
+ *
+ * microCMS の prefecture はセレクトで、選択肢は管理画面からしか増やせない。
+ * 岩手県以外を扱い始めた今は未選択のレコードが出るため、団体コードから補う。
+ */
+const prefectureOf = (value, code) =>
+  text(value) || PREF_BY_CODE[municipalityCode(code).slice(0, 2)] || "岩手県"
+
 function mapMunicipality(c) {
   // area は「地方区分（東北など）」に変更されたため、面積とは別項目として扱う
   const areaValue = text(c.area)
@@ -164,7 +187,7 @@ function mapMunicipality(c) {
   return {
     code: municipalityCode(c.code),
     name: text(c.name),
-    prefecture: text(c.prefecture) || "岩手県",
+    prefecture: prefectureOf(c.prefecture, c.code),
     ...(isRegion ? { region: areaValue } : {}),
     population: num(c.population),
     area: isRegion ? num(c.areaKm2) : num(c.area),
@@ -179,7 +202,10 @@ function mapArticle(c) {
     title: text(c.title),
     cityCode: municipalityCode(c.cityCode ?? c.municipality?.code),
     cityName: text(c.cityName ?? c.municipality?.name),
-    prefecture: text(c.prefecture ?? c.municipality?.prefecture) || "岩手県",
+    prefecture: prefectureOf(
+      c.prefecture ?? c.municipality?.prefecture,
+      c.cityCode ?? c.municipality?.code
+    ),
     category: one(c.category, CATEGORIES, "政策", { field: "category", title: text(c.title) }),
     status: one(c.status, STATUSES, "募集中", { field: "status", title: text(c.title) }),
     targets: many(c.targets, TARGETS),

@@ -55,6 +55,22 @@ async function categoryByUrl() {
 
 const clean = (s) => (s ?? "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim()
 
+/**
+ * 入札の概要文から締切日を読む。
+ *
+ * 入札情報公開サービスの案件は元ページを取りに行けないため、push 側で組んだ
+ * 「申請締切日: 2026-08-31 / 開札日: 2026-09-03」から拾う。
+ * 事業者が動く期限は申請の締切なので、それを優先し、無ければ開札日で代える。
+ */
+function bidDeadline(summary) {
+  const s = summary ?? ""
+  for (const label of ["申請締切日", "締切日", "開札日"]) {
+    const m = new RegExp(`${label}\\s*[:：]\\s*(\\d{4}-\\d{2}-\\d{2})`).exec(s)
+    if (m) return m[1]
+  }
+  return null
+}
+
 /** 都道府県コード（JIS X 0401）→ 県名。収集箱の cityCode 先頭2桁から引く */
 const PREF_BY_CODE = {
   "01": "北海道", "02": "青森県", "03": "岩手県", "04": "宮城県", "05": "秋田県",
@@ -109,7 +125,7 @@ export async function promoteAdopted({ dryRun = false } = {}) {
     }
 
     // 入札情報公開サービス由来のものは分野が確定している
-    const fromBidPortal = /epi-cloud\.fwd\.ne\.jp|ebidPPIPublish|ep-bis\.pref/.test(item.url ?? "")
+    const fromBidPortal = /epi-cloud\.fwd\.ne\.jp|ebidPPIPublish|ep-bis\.pref|efftis\.jp/.test(item.url ?? "")
 
     const category = fromBidPortal
       ? "入札・公募"
@@ -125,8 +141,8 @@ export async function promoteAdopted({ dryRun = false } = {}) {
     }
 
     // 元ページから締切と概要を補う。入札情報公開サービスはセッションが要り
-    // 直リンクできないので取りに行かない
-    const page = fromBidPortal ? {} : await inspectPage(item.url)
+    // 直リンクできないので取りに行かない。代わりに概要文から締切を読む
+    const page = fromBidPortal ? { deadline: bidDeadline(item.rawSummary) } : await inspectPage(item.url)
     if (!fromBidPortal) await sleep(400)
 
     const body = {
