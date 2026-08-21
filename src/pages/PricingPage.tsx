@@ -183,10 +183,9 @@ export default function PricingPage({ onNavigate }: NavProps) {
   return (
     <div>
       {/* ヘッダー */}
-      <section className="bg-ink-bg py-16 md:py-20">
+      <section className="bg-muted py-16 md:py-20">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               { label: "料金・プラン" },
@@ -194,10 +193,10 @@ export default function PricingPage({ onNavigate }: NavProps) {
           />
           <div className="mt-6 max-w-2xl">
             <div className="mb-6 flex items-center gap-4">
-              <p className="eyebrow text-accent">Pricing</p>
+              <p className="eyebrow text-primary">Pricing</p>
             </div>
-            <h1 className="text-h1 text-white">無料で探せる。</h1>
-            <p className="mt-6 text-lead text-white/70">
+            <h1 className="text-h1 text-foreground">無料で探せる。</h1>
+            <p className="mt-6 text-lead text-muted-foreground">
               一般に開かれた情報の検索と閲覧は、すべて無料です。通知・変更履歴・案件管理といった、仕事の成果に直結する機能を有料プランで提供します。
             </p>
           </div>
@@ -413,16 +412,16 @@ export default function PricingPage({ onNavigate }: NavProps) {
       </section>
 
       {/* CTA */}
-      <section className="bg-ink-bg py-20 md:py-28">
+      <section className="bg-muted py-20 md:py-28">
         <Container>
           <div className="flex flex-col items-center gap-10 text-center">
             <div className="flex items-center gap-4">
               <PlanTag plan="無料" />
-              <span className="text-sm text-white/60">
+              <span className="text-sm text-muted-foreground">
                 登録なしで今すぐ使えます
               </span>
             </div>
-            <h2 className="max-w-2xl text-h2 text-white">
+            <h2 className="max-w-2xl text-h2 text-foreground">
               まずは無料で、情報の量を確かめてください。
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
@@ -434,7 +433,7 @@ export default function PricingPage({ onNavigate }: NavProps) {
                 無料で情報を探す
               </Button>
               <Button
-                variant="inverse"
+                variant="outline"
                 size="lg"
                 onClick={() => onNavigate("for-business")}
               >

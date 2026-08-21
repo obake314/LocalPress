@@ -39,10 +39,9 @@ export default function EventsPage({
   return (
     <div>
       {/* ヘッダー */}
-      <section className="bg-ink-bg py-16 md:py-20">
+      <section className="bg-muted py-16 md:py-20">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               {
@@ -57,24 +56,24 @@ export default function EventsPage({
           <div className="mt-6 flex flex-wrap items-end justify-between gap-8">
             <div className="max-w-2xl">
               <div className="mb-6 flex items-center gap-4">
-                <p className="eyebrow text-accent">Events & Life</p>
+                <p className="eyebrow text-primary">Events & Life</p>
                 <PlanTag plan="無料" />
               </div>
-              <h1 className="text-h1 text-white">
+              <h1 className="text-h1 text-foreground">
                 {activeCity
                   ? `${activeCity.name}のイベント・生活情報`
                   : "イベント・生活"}
               </h1>
-              <p className="mt-6 text-lead text-white/70">
+              <p className="mt-6 text-lead text-muted-foreground">
                 {activeCity
                   ? activeCity.summary ||
                     `${activeCity.name}が公開しているイベント・文化・子育て・募集の情報です。`
                   : "地域の催し、文化、子育て支援、各種募集。暮らしに関わる情報をまとめて探せます。すべて無料で閲覧できます。"}
               </p>
             </div>
-            <p className="font-mono text-h1 text-white">
+            <p className="font-mono text-h1 text-foreground">
               {list.length}
-              <span className="ml-2 text-lead font-normal text-white/60">
+              <span className="ml-2 text-lead font-normal text-muted-foreground">
                 件
               </span>
             </p>

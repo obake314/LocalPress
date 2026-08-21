@@ -29,17 +29,16 @@ export default function MyPage({ onNavigate }: NavProps) {
 
   return (
     <div>
-      <section className="bg-ink-bg py-16 md:py-20">
+      <section className="bg-muted py-16 md:py-20">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               { label: "マイページ" },
             ]}
           />
-          <h1 className="mt-8 text-h1 text-white">マイページ</h1>
-          <p className="mt-6 max-w-2xl text-lead text-white/70">
+          <h1 className="mt-8 text-h1 text-foreground">マイページ</h1>
+          <p className="mt-6 max-w-2xl text-lead text-muted-foreground">
             保存した条件と案件、通知の設定をまとめて管理します。ログインするとご利用いただけます。
           </p>
         </Container>

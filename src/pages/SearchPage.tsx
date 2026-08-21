@@ -290,7 +290,7 @@ export default function SearchPage({
   return (
     <div>
       {/* 検索バー */}
-      <section className="border-b border-border bg-ink-bg py-12 md:py-16">
+      <section className="border-b border-border bg-muted py-12 md:py-16">
         <Container>
           <div className="flex flex-col gap-3 bg-card p-3 sm:flex-row sm:items-center">
             <div className="relative flex-1">

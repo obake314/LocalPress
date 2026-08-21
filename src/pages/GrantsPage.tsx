@@ -66,10 +66,9 @@ export default function GrantsPage({
 
     return (
       <div>
-        <section className="bg-ink-bg py-16 md:py-20">
+        <section className="bg-muted py-16 md:py-20">
           <Container>
             <Breadcrumb
-              inverse
               items={[
                 { label: "ホーム", onClick: () => onNavigate("top") },
                 { label: "補助金・助成", onClick: () => onNavigate("grants") },
@@ -80,7 +79,7 @@ export default function GrantsPage({
               <PlanTag plan="無料" />
               <StatusBadge status={detail.status} size="xs" />
             </div>
-            <h1 className="mt-6 max-w-4xl text-h1 text-white">
+            <h1 className="mt-6 max-w-4xl text-h1 text-foreground">
               {detail.title}
             </h1>
           </Container>
@@ -152,21 +151,20 @@ export default function GrantsPage({
   /* ─── 制度検索 ─── */
   return (
     <div>
-      <section className="bg-ink-bg py-16 md:py-20">
+      <section className="bg-muted py-16 md:py-20">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               { label: "補助金・助成" },
             ]}
           />
           <div className="mt-6 flex items-center gap-4">
-            <p className="eyebrow text-accent">Grants</p>
+            <p className="eyebrow text-primary">Grants</p>
             <PlanTag plan="無料" />
           </div>
-          <h1 className="mt-6 text-h1 text-white">補助金・助成を探す</h1>
-          <p className="mt-6 max-w-2xl text-lead text-white/70">
+          <h1 className="mt-6 text-h1 text-foreground">補助金・助成を探す</h1>
+          <p className="mt-6 max-w-2xl text-lead text-muted-foreground">
             対象・上限額・締切・申請先を揃えて掲載しています。締切が近い順に並びます。
           </p>
 

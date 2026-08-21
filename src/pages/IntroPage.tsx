@@ -112,19 +112,18 @@ export default function IntroPage({ audience, onNavigate }: IntroPageProps) {
 
   return (
     <div>
-      <section className="bg-ink-bg py-16 md:py-24">
+      <section className="bg-muted py-16 md:py-24">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               { label: copy.breadcrumb },
             ]}
           />
           <div className="mt-8 max-w-3xl">
-            <p className="eyebrow mb-8 text-accent">{copy.eyebrow}</p>
-            <h1 className="mt-6 text-h1 text-white">{copy.title}</h1>
-            <p className="mt-8 text-lead text-white/70">{copy.lead}</p>
+            <p className="eyebrow mb-8 text-primary">{copy.eyebrow}</p>
+            <h1 className="mt-6 text-h1 text-foreground">{copy.title}</h1>
+            <p className="mt-8 text-lead text-muted-foreground">{copy.lead}</p>
             <div className="mt-12 flex flex-wrap justify-between">
               <Button
                 variant="accent"
@@ -134,7 +133,7 @@ export default function IntroPage({ audience, onNavigate }: IntroPageProps) {
                 無料で情報を探す
               </Button>
               <Button
-                variant="inverse"
+                variant="outline"
                 size="lg"
                 onClick={() => onNavigate(copy.ctaPage)}
               >

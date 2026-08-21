@@ -46,10 +46,9 @@ export default function CityPage({ cityCode, onNavigate }: CityPageProps) {
   return (
     <div>
       {/* 自治体ヘッダー */}
-      <section className="bg-ink-bg py-16 md:py-20">
+      <section className="bg-muted py-16 md:py-20">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               {
@@ -63,19 +62,19 @@ export default function CityPage({ cityCode, onNavigate }: CityPageProps) {
 
           <div className="mt-8 flex flex-col gap-12 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="eyebrow mb-6 text-accent">
+              <p className="eyebrow mb-6 text-primary">
                 {city.region ? `${city.region}・${city.prefecture}` : city.prefecture}
               </p>
-              <h1 className="text-h1 text-white">{city.name}</h1>
+              <h1 className="text-h1 text-foreground">{city.name}</h1>
               {city.summary && (
-                <p className="mt-6 text-lead text-white/70">{city.summary}</p>
+                <p className="mt-6 text-lead text-muted-foreground">{city.summary}</p>
               )}
               <div className="mt-10">
                 <a
                   href={city.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border-b border-white/30 pb-1 text-sm text-white/80 transition-colors hover:border-accent hover:text-accent"
+                  className="inline-flex items-center gap-2 border-b border-border-strong pb-1 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
                 >
                   公式サイトを開く
                   <svg
@@ -98,12 +97,12 @@ export default function CityPage({ cityCode, onNavigate }: CityPageProps) {
             {/* 人口・面積は未登録のことがあるため、値があるときだけ出す */}
             <div className="flex shrink-0 gap-10">
               {city.population > 0 && (
-                <Stat inverse label="人口" value={city.population.toLocaleString()} unit="人" />
+                <Stat label="人口" value={city.population.toLocaleString()} unit="人" />
               )}
               {city.area > 0 && (
-                <Stat inverse label="面積" value={city.area.toLocaleString()} unit="km²" />
+                <Stat label="面積" value={city.area.toLocaleString()} unit="km²" />
               )}
-              <Stat inverse label="掲載" value={String(cityArticles.length)} unit="件" />
+              <Stat label="掲載" value={String(cityArticles.length)} unit="件" />
             </div>
           </div>
         </Container>

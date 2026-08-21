@@ -267,12 +267,12 @@ export default function TopPage({ onNavigate }: NavProps) {
       </section>
 
       {/* ══ 検索バー（仕様：サイトの中心は「検索」） ══ */}
-      <section className="bg-ink-bg py-12 md:py-14">
+      <section className="bg-muted py-12 md:py-14">
         <Container>
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-12">
             <div className="shrink-0">
-              <p className="eyebrow mb-2 text-accent">Search</p>
-              <p className="text-h3 text-white">横断検索</p>
+              <p className="eyebrow mb-2 text-primary">Search</p>
+              <p className="text-h3 text-foreground">横断検索</p>
             </div>
             <form onSubmit={submit} className="flex flex-1 flex-col gap-3 sm:flex-row">
               <input
@@ -292,12 +292,12 @@ export default function TopPage({ onNavigate }: NavProps) {
             </form>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <span className="eyebrow mr-2 text-white/40">よく見られる分野</span>
+            <span className="eyebrow mr-2 text-faint-foreground">よく見られる分野</span>
             {fieldCards.slice(0, 5).map(({ category }) => (
               <button
                 key={category}
                 onClick={() => onNavigate("search", { category })}
-                className="border border-white/20 px-5 py-2 text-sm text-white/80 transition-colors hover:border-accent hover:text-accent"
+                className="border border-border-strong px-5 py-2 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
               >
                 {category}
               </button>

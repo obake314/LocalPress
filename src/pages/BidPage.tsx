@@ -67,6 +67,7 @@ function PaidLock({
 
 export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
   const [openOnly, setOpenOnly] = useState(false)
+  const [pref, setPref] = useState("")
 
   const detail = bidId ? getArticleById(bidId) : undefined
 
@@ -77,10 +78,9 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
 
     return (
       <div>
-        <section className="bg-ink-bg py-16 md:py-20">
+        <section className="bg-muted py-16 md:py-20">
           <Container>
             <Breadcrumb
-              inverse
               items={[
                 { label: "ホーム", onClick: () => onNavigate("top") },
                 { label: "入札・公募", onClick: () => onNavigate("bid") },
@@ -96,22 +96,35 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                 </span>
               )}
             </div>
-            <h1 className="mt-6 max-w-4xl text-h1 text-white">
+            <h1 className="mt-6 max-w-4xl text-h1 text-foreground">
               {detail.title}
             </h1>
 
             {/* 発注情報の仕様。入札情報公開サービスから取得したもの */}
-            <div className="mt-12 border-t border-white/10 pt-10">
+            <div className="mt-12 border-t border-border pt-10">
               <BidSpecTable
-                inverse
                 specs={[
-                  { label: "発注者", value: `${detail.prefecture} ${detail.cityName}` },
+                  {
+                    label: "発注者",
+                    value: `${detail.prefecture} ${detail.cityName}`,
+                  },
                   ...parseBidSpec(detail.summary),
                   ...(detail.deadline
-                    ? [{ label: "提出期限", value: detail.deadline, emphasis: true }]
+                    ? [
+                        {
+                          label: "提出期限",
+                          value: detail.deadline,
+                          emphasis: true,
+                        },
+                      ]
                     : []),
                   ...(days !== null
-                    ? [{ label: "残り", value: days >= 0 ? `${days} 日` : "受付終了" }]
+                    ? [
+                        {
+                          label: "残り",
+                          value: days >= 0 ? `${days} 日` : "受付終了",
+                        },
+                      ]
                     : []),
                 ]}
               />
@@ -242,27 +255,39 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
   }
 
   /* ─── 案件検索（見出しまでは無料） ─── */
-  const list = bids().filter((b) =>
+  const open = bids().filter((b) =>
     openOnly ? b.status === "募集中" || b.status === "締切間近" : true,
   )
+  const list = open.filter((b) => (pref ? b.prefecture === pref : true))
+
+  // 都道府県の並びは団体コード順（北から南へ）。件数は募集中の切替を反映する
+  const prefs = [...new Set(bids().map((b) => b.prefecture))]
+    .map((name) => ({
+      name,
+      code:
+        bids()
+          .find((b) => b.prefecture === name)
+          ?.cityCode.slice(0, 2) ?? "99",
+      count: open.filter((b) => b.prefecture === name).length,
+    }))
+    .sort((a, b) => a.code.localeCompare(b.code))
 
   return (
     <div>
-      <section className="bg-ink-bg py-16 md:py-20">
+      <section className="bg-muted py-16 md:py-20">
         <Container>
           <Breadcrumb
-            inverse
             items={[
               { label: "ホーム", onClick: () => onNavigate("top") },
               { label: "入札・公募" },
             ]}
           />
           <div className="mt-6 flex items-center gap-4">
-            <p className="eyebrow text-accent">Bids & RFPs</p>
+            <p className="eyebrow text-primary">Bids & RFPs</p>
             {PAID_FEATURES && <PlanTag plan="法人" />}
           </div>
-          <h1 className="mt-6 text-h1 text-white">入札・公募</h1>
-          <p className="mt-6 max-w-2xl text-lead text-white/70">
+          <h1 className="mt-6 text-h1 text-foreground">入札・公募</h1>
+          <p className="mt-6 max-w-2xl text-lead text-muted-foreground">
             案件の一覧は無料で確認できます。仕様・参加資格・条件変更の履歴、および通知と案件管理は法人プランの機能です。
           </p>
         </Container>
@@ -277,6 +302,39 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
             actionLabel={openOnly ? "すべての案件を表示" : "募集中のみ表示"}
             onAction={() => setOpenOnly(!openOnly)}
           />
+
+          {/* 都道府県で絞る。収録県が増えるとそのまま選択肢に並ぶ */}
+          <div className="mb-10 flex flex-wrap gap-3">
+            <button
+              onClick={() => setPref("")}
+              className={`border px-5 py-2.5 text-sm transition-colors ${
+                pref === ""
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+              }`}
+            >
+              すべて
+              <span className="ml-2 font-mono text-eyebrow opacity-60">
+                {open.length}
+              </span>
+            </button>
+            {prefs.map((p) => (
+              <button
+                key={p.name}
+                onClick={() => setPref(pref === p.name ? "" : p.name)}
+                className={`border px-5 py-2.5 text-sm transition-colors ${
+                  pref === p.name
+                    ? "border-primary bg-primary text-primary-foreground"
+                    : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+                }`}
+              >
+                {p.name}
+                <span className="ml-2 font-mono text-eyebrow opacity-60">
+                  {p.count}
+                </span>
+              </button>
+            ))}
+          </div>
 
           <div className="overflow-hidden border border-border bg-card">
             {list.map((b, i) => {
@@ -299,7 +357,7 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                     <div className="mb-4 flex flex-wrap items-center gap-3">
                       <StatusBadge status={b.status} size="xs" />
                       <span className="font-mono text-eyebrow text-faint-foreground">
-                        {b.publishedAt} ／ {b.cityName}
+                        {b.publishedAt} ／ {b.prefecture} {b.cityName}
                       </span>
                       {method && (
                         <span className="bg-muted px-2.5 py-1 text-eyebrow text-muted-foreground">
@@ -348,6 +406,23 @@ export default function BidPage({ bidId = "", onNavigate }: BidPageProps) {
                 </button>
               )
             })}
+
+            {list.length === 0 && (
+              <div className="px-8 py-20 text-center">
+                <p className="text-lead text-muted-foreground">
+                  条件に合う案件がありません。
+                </p>
+                <button
+                  onClick={() => {
+                    setPref("")
+                    setOpenOnly(false)
+                  }}
+                  className="mt-6 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
+                >
+                  絞り込みを解除する
+                </button>
+              </div>
+            )}
           </div>
         </Container>
       </section>
