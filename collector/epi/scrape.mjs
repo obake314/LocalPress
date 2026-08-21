@@ -41,8 +41,12 @@ async function scrapeOrg(page, org, supply) {
   await page.goto(`${ORGS.base}?name1=${org.name1}`, { waitUntil: "domcontentloaded" })
   await page.waitForTimeout(1200)
 
-  // 業務区分 → 発注情報の検索
-  await page.click(`span.ATYPE:has-text("${supply.label}")`)
+  // 業務区分 → 発注情報の検索。
+  // 区分を扱わない団体（町村や企業団に多い）はタブ自体が無い。
+  // 既定の30秒を待たずに、無ければ空で返す
+  const tab = page.locator(`span.ATYPE:has-text("${supply.label}")`)
+  if ((await tab.count()) === 0) return null
+  await tab.first().click({ timeout: 8000 })
   await page.waitForTimeout(2200)
 
   const menu = frame(page, "koukai_main")
@@ -89,6 +93,10 @@ for (const org of ORGS.orgs) {
   for (const supply of SUPPLY_TYPES) {
     try {
       const rows = await scrapeOrg(page, org, supply)
+      if (rows === null) {
+        console.log(`  ${org.name.padEnd(8, "　")} ${supply.category.padEnd(7, "　")} 区分なし`)
+        continue
+      }
       for (const { cells, id } of rows) {
         all.push({
           cityCode: org.cityCode,

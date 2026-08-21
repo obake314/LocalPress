@@ -17,6 +17,7 @@ import { classifyItem } from "./filter.mjs"
 import { inspectPage } from "./page.mjs"
 import { promoteAdopted } from "./promote.mjs"
 import { expireOverdue } from "./expire.mjs"
+import { syncMunicipalities } from "./sync-municipalities.mjs"
 
 /** 収集箱のエンドポイント名。microCMS 側の実体は小文字の feeditems */
 const ITEMS_ENDPOINT = process.env.MICROCMS_ITEMS_ENDPOINT?.trim() || "feeditems"
@@ -214,9 +215,13 @@ export async function runCollection({ dryRun = false } = {}) {
   // 締切を過ぎた記事を「終了」に落とす
   const expiry = await expireOverdue()
 
+  // 新しく現れた市区町村のレコードを作る（無いと自治体ページへの導線が切れる）
+  const municipalities = await syncMunicipalities()
+
   return {
     promotion,
     expiry,
+    municipalities,
     ok: true,
     origin,
     startedAt,

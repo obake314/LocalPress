@@ -94,6 +94,15 @@ function mapEfftis(item) {
   }
 }
 
+/** 今日（日本時間）を YYYY-MM-DD で返す */
+const todayJst = () => new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
+
+/**
+ * 締切が過ぎた案件は登録しない。
+ * 応募できない案件を収集箱に流しても、採否の判断を増やすだけで用がない。
+ */
+const expired = (deadline) => Boolean(deadline) && String(deadline).slice(0, 10) < todayJst()
+
 const dir = new URL("./output/", import.meta.url)
 
 /** 系統ごとに、いちばん新しい取得結果を使う */
@@ -124,10 +133,11 @@ console.log(`収集箱の既存 ${known.size} 件`)
 
 const PREFS = JSON.parse(readFileSync(new URL("./prefectures.json", import.meta.url), "utf8")).prefectures
 
-let created = 0, skipped = 0, failed = 0
+let created = 0, skipped = 0, failed = 0, overdue = 0
 for (const item of items) {
   const m = item.variant === "efftis" ? mapEfftis(item) : mapNiigata(item)
   if (!m.title) continue
+  if (expired(m.deadline)) { overdue++; continue }
 
   const entry = PREFS.find((p) => p.code === item.prefCode)?.url ?? ""
   const url = `${entry}#${encodeURIComponent(m.key)}`
@@ -154,4 +164,4 @@ for (const item of items) {
   await sleep(180)
 }
 
-console.log(`登録 ${created} 件 / 既存 ${skipped} 件 / 失敗 ${failed} 件`)
+console.log(`登録 ${created} 件 / 既存 ${skipped} 件 / 締切済み ${overdue} 件 / 失敗 ${failed} 件`)

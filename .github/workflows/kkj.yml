@@ -1,0 +1,64 @@
+# 官公需情報ポータルサイト（kkj.go.jp）から発注情報を取る。
+#
+# 国の機関から市区町村まで同じ形で返る唯一の情報源で、収集の主軸。
+# ブラウザが要らない素のHTTPなので、他の収集より軽く速い。
+#
+# 対象の県は fetch.mjs の DEFAULT_CODES で決まる。広げるときは
+# PREFECTURES に県コードを並べるか --all を渡す。
+#
+# 必要な Secrets:
+#   MICROCMS_SERVICE_DOMAIN / MICROCMS_API_KEY
+
+name: kkj
+
+on:
+  schedule:
+    # 1日1回（UTC 21:00 = JST 6:00）。公告は平日の日中に出る
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      prefectures:
+        description: "県コード（空なら既定の県、--all で全国）"
+        required: false
+        default: ""
+      days:
+        description: "公告日を何日ぶん遡るか"
+        required: false
+        default: "60"
+
+concurrency:
+  group: kkj
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 発注情報を取得する
+        working-directory: collector/kkj
+        env:
+          DAYS: ${{ inputs.days || '60' }}
+        run: node fetch.mjs ${{ inputs.prefectures }}
+
+      - name: microCMS へ登録する
+        working-directory: collector/kkj
+        env:
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+        run: node push.mjs
+
+      - name: 取得結果を残す
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kkj-output
+          path: collector/kkj/output/
+          retention-days: 14

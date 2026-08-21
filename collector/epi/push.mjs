@@ -50,14 +50,42 @@ console.log(`収集箱の既存 ${known.size} 件`)
  * 明細ページのURL。doEdit の引数が案件IDで、詳細は POST 遷移のため
  * 直リンクできない。一覧の入口URLを控えて、そこから辿れるようにする。
  */
-const ORGS = JSON.parse(readFileSync(new URL("./orgs.json", import.meta.url), "utf8"))
-const entryOf = (cityCode) =>
-  `${ORGS.base}?name1=${ORGS.orgs.find((o) => o.cityCode === cityCode)?.name1 ?? ""}`
+/** 今日（日本時間）を YYYY-MM-DD で返す */
+const todayJst = () => new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
 
-let created = 0, skipped = 0, failed = 0
+/**
+ * 締切が過ぎた案件は登録しない。
+ * 応募できない案件を収集箱に流しても、採否の判断を増やすだけで用がない。
+ */
+const expired = (deadline) => Boolean(deadline) && String(deadline).slice(0, 10) < todayJst()
+
+const ORGS = JSON.parse(readFileSync(new URL("./orgs.json", import.meta.url), "utf8"))
+
+/**
+ * 機関の入口URL。
+ * 団体コードは一意ではない（岩手中部水道企業団は県と同じ 03000 を使う）ため、
+ * 機関名で引く。名前で引けないときだけ団体コードに落とす。
+ */
+const entryOf = (cityName, cityCode) => {
+  const org =
+    ORGS.orgs.find((o) => o.name === cityName) ?? ORGS.orgs.find((o) => o.cityCode === cityCode)
+  return `${ORGS.base}?name1=${org?.name1 ?? ""}`
+}
+
+/**
+ * 案件を一意にする鍵。
+ * ふだんは契約管理番号を使うが、北上市と西和賀町はこれを ***** で伏せており、
+ * そのままだと全件が同じURLに潰れる。伏字のときは明細の案件IDで代える。
+ * 既に登録済みの案件のURLを変えないよう、伏字のときだけ切り替える。
+ */
+const keyOf = (i) => (!i.contractNo || /^\*+$/.test(i.contractNo) ? i.detailId : i.contractNo)
+
+let created = 0, skipped = 0, failed = 0, overdue = 0
 for (const i of items) {
-  // 契約管理番号を含めて一意にする
-  const url = `${entryOf(i.cityCode)}#${i.contractNo}`
+  // 開札が済んだ案件は登録しない（この一覧に締切は無く、開札日が期限にあたる）
+  if (expired(i.openingDate)) { overdue++; continue }
+
+  const url = `${entryOf(i.cityName, i.cityCode)}#${keyOf(i)}`
   if (known.has(url)) { skipped++; continue }
 
   const summary = [
@@ -84,4 +112,4 @@ for (const i of items) {
   await sleep(180)
 }
 
-console.log(`登録 ${created} 件 / 既存 ${skipped} 件 / 失敗 ${failed} 件`)
+console.log(`登録 ${created} 件 / 既存 ${skipped} 件 / 開札済み ${overdue} 件 / 失敗 ${failed} 件`)

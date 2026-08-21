@@ -125,8 +125,11 @@ export async function promoteAdopted({ dryRun = false } = {}) {
       continue
     }
 
-    // 入札情報公開サービス由来のものは分野が確定している
-    const fromBidPortal = /epi-cloud\.fwd\.ne\.jp|ebidPPIPublish|ep-bis\.pref|efftis\.jp/.test(item.url ?? "")
+    // 入札情報公開サービス由来のものは分野が確定している。
+    // 官公需情報ポータル（kkj）由来は発注元のサイトを直に指すため、
+    // URL のホスト名では判別できない。push 側が付けた #kkj: の印で見分ける
+    const fromBidPortal =
+      /epi-cloud\.fwd\.ne\.jp|ebidPPIPublish|ep-bis\.pref|efftis\.jp|#kkj:/.test(item.url ?? "")
 
     const category = fromBidPortal
       ? "入札・公募"

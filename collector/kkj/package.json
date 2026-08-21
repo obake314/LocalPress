@@ -1,0 +1,11 @@
+{
+  "name": "localpress-kkj-collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "官公需情報ポータルサイトのAPIから入札・公募情報を取る。ブラウザ不要で素のHTTPだけで動く",
+  "scripts": {
+    "fetch": "node fetch.mjs",
+    "push": "node push.mjs"
+  }
+}

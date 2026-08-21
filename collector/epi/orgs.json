@@ -1,11 +1,18 @@
 {
-  "$comment": "入札情報公開サービス（電子入札コアシステム）の調達機関。name1 は入口URLのクエリ値。KF001ShowAction?name1=… で開く。連番を走査して見つけたもの。",
-  "checkedAt": "2026-08-20",
+  "$comment": "入札情報公開サービス（電子入札コアシステム）の調達機関。name1 は入口URLのクエリ値で、KF001ShowAction?name1=… で開く。岩手県内で電子入札を導入しているのはこの8団体だけで、残る27市町村はそもそもこのシステムに参加していない（日本電子認証の導入団体一覧および各団体サイトで確認）。",
+  "checkedAt": "2026-08-21",
   "base": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction",
   "orgs": [
     { "cityCode": "03000", "name": "岩手県",   "orgCode": "1030ZZZZZZ", "name1": "0620060006600600" },
     { "cityCode": "03201", "name": "盛岡市",   "orgCode": "1032ZZZZZZ", "name1": "0620060006600640" },
+    { "cityCode": "03205", "name": "花巻市",   "orgCode": "1036ZZZZZZ", "name1": "06200600066006C0" },
     { "cityCode": "03206", "name": "北上市",   "orgCode": "1034ZZZZZZ", "name1": "0620060006600680" },
-    { "cityCode": "03203", "name": "大船渡市", "orgCode": "1039ZZZZZZ", "name1": "0620060006600720" }
+    { "cityCode": "03209", "name": "一関市",   "orgCode": "1037ZZZZZZ", "name1": "06200600066006E0" },
+    { "cityCode": "03203", "name": "大船渡市", "orgCode": "1039ZZZZZZ", "name1": "0620060006600720" },
+    { "cityCode": "03366", "name": "西和賀町", "orgCode": "3038ZZZZZZ", "name1": "0660060006600700" },
+    { "cityCode": "03000", "name": "岩手中部水道企業団", "orgCode": "5360ZZZZZZ", "name1": "06A0066006C00600" }
+  ],
+  "$excluded": [
+    { "name": "東日本高速道路株式会社", "orgCode": "7030ZZZZZZ", "name1": "06E0060006600600", "why": "同じテナントに載っているが全国の発注で岩手の情報ではない" }
   ]
 }
