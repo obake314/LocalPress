@@ -18,6 +18,7 @@ export interface BidSpec {
 
 /** 画面に出す順番と、日付として扱う項目 */
 const ORDER = [
+  "区分",
   "入札方式",
   "工種",
   "開札日",

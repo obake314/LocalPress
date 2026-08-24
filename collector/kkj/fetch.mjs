@@ -11,6 +11,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs"
 import { collect, KEYWORDS } from "./kkj.mjs"
+import { classifyCategory, isUsableTitle, isProcurement } from "./classify.mjs"
 
 const PREFS = JSON.parse(readFileSync(new URL("./prefectures.json", import.meta.url), "utf8"))
   .prefectures
@@ -33,6 +34,9 @@ console.log(`公告日 ${from} 以降 / ${codes.length} 県 / 検索語 ${KEYWOR
 
 const all = []
 const summary = []
+let skippedKoji = 0
+let skippedTitle = 0
+let skippedDoc = 0
 
 for (const code of codes) {
   const pref = PREFS.find((p) => p.code === code)
@@ -40,10 +44,22 @@ for (const code of codes) {
     const items = await collect({ lgCode: code, from })
 
     // 公告本文は1件あたり数千字あり、全国ぶんを抱えたままだとメモリが尽きる。
-    // 締切はこの時点で読み終えているので、本文は落として長さだけ残す
+    // 締切と区分はこの時点で読み終えているので、本文は落として長さだけ残す
     for (const it of items) {
       const { description, ...rest } = it
-      all.push({ ...rest, descriptionLength: (description ?? "").length })
+      const category = classifyCategory(it)
+
+      // 工事は扱わない。工種の細分化が激しく運用が重くなるうえ、
+      // 公共工事には前払金保証という別の資金の受け皿がある
+      if (category === "工事") { skippedKoji++; continue }
+
+      // 題名が PDF のファイル名や表の断片のまま入っている record は掲載できない
+      if (!isUsableTitle(it.title)) { skippedTitle++; continue }
+
+      // 様式・契約書案・結果一覧など、案件に付随する書類は応募対象ではない
+      if (!isProcurement(it.title)) { skippedDoc++; continue }
+
+      all.push({ ...rest, category, descriptionLength: (description ?? "").length })
     }
 
     const open = items.filter((i) => i.deadline && i.deadline >= today).length
@@ -66,4 +82,11 @@ writeFileSync(
 )
 
 const open = all.filter((i) => i.deadline && i.deadline >= today).length
-console.log(`\n合計 ${all.length} 件 / うち締切前 ${open} 件 → output/kkj-${today}.json`)
+const cats = {}
+for (const i of all) cats[i.category ?? "区分不明"] = (cats[i.category ?? "区分不明"] ?? 0) + 1
+console.log(
+  `\n合計 ${all.length} 件 / うち締切前 ${open} 件` +
+    `（除外: 工事 ${skippedKoji} / 題名が使えない ${skippedTitle} / 案件でない書類 ${skippedDoc}）`
+)
+console.log("  区分:", Object.entries(cats).map(([k, v]) => `${k} ${v}`).join(" / "))
+console.log(`  → output/kkj-${today}.json`)
