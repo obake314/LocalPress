@@ -2,7 +2,7 @@
  * microCMS から取得したコンテンツ（生成物・手で編集しないこと）。
  * 更新するには pnpm content:pull を実行する。
  * 取得元: https://localpress.microcms.io/api/v1/
- * 生成日時: 2026-08-23T07:25:07.373Z
+ * 生成日時: 2026-08-24T02:41:37.767Z
  */
 
 import type { Article, Municipality } from "./mockData"
@@ -683,6 +683,42 @@ export const generatedMunicipalities: Municipality[] = [
 ]
 
 export const generatedArticles: Article[] = [
+  {
+    "id": "k2yoq1vrb",
+    "title": "一級河川砂鉄川筋流矢地区護岸修正測量設計業務委託",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-24",
+    "deadline": "2026-09-16",
+    "summary": "区分: 役務 / 入札方式: 一般競争入札 / 工種: 土木関係建設コンサルタント / 開札日: 2026-09-16 / 課所: 知事部局 県南広域振興局 一関審査指導監 / 一関市大東町摺沢字流矢地内",
+    "body": "入札方式: 一般競争入札 / 工種: 土木関係建設コンサルタント / 開札日: 2026-09-16 / 課所: 知事部局 県南広域振興局 一関審査指導監 / 一関市大東町摺沢字流矢地内",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-4-4005-00026",
+    "tags": []
+  },
+  {
+    "id": "lxhzvhvobb4",
+    "title": "農業農村整備事業調査城内地区第２号業務委託",
+    "cityCode": "03000",
+    "cityName": "岩手県",
+    "prefecture": "岩手県",
+    "category": "入札・公募",
+    "status": "募集中",
+    "targets": [
+      "企業"
+    ],
+    "publishedAt": "2026-08-24",
+    "deadline": "2026-09-16",
+    "summary": "区分: 役務 / 入札方式: 一般競争入札 / 工種: 測量 / 開札日: 2026-09-16 / 課所: 知事部局 県北広域振興局 久慈審査指導監 / 九戸郡洋野町種市地内",
+    "body": "入札方式: 一般競争入札 / 工種: 測量 / 開札日: 2026-09-16 / 課所: 知事部局 県北広域振興局 久慈審査指導監 / 九戸郡洋野町種市地内",
+    "sourceUrl": "https://www.epi-cloud.fwd.ne.jp/koukai/do/KF001ShowAction?name1=0620060006600600#2026-4-7013-00012",
+    "tags": []
+  },
   {
     "id": "6l18k3icfw",
     "title": "【入札公告】国民スポーツ大会（青森県）セーリング競技参加艇輸送業務",
@@ -3894,7 +3930,7 @@ export const generatedArticles: Article[] = [
     "cityName": "多賀城市",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4974,7 +5010,7 @@ export const generatedArticles: Article[] = [
     "cityName": "仙台市",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -4992,7 +5028,7 @@ export const generatedArticles: Article[] = [
     "cityName": "国土交通省",
     "prefecture": "宮城県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -5478,7 +5514,7 @@ export const generatedArticles: Article[] = [
     "cityName": "長岡市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -6198,7 +6234,7 @@ export const generatedArticles: Article[] = [
     "cityName": "新潟市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],
@@ -6864,7 +6900,7 @@ export const generatedArticles: Article[] = [
     "cityName": "新潟市",
     "prefecture": "新潟県",
     "category": "入札・公募",
-    "status": "募集中",
+    "status": "締切間近",
     "targets": [
       "企業"
     ],

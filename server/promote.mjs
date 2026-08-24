@@ -14,6 +14,11 @@
 import { serviceId, apiKey, endpoint, headers } from "./config.mjs"
 import { getAll, createContent } from "./microcms.mjs"
 import { inspectPage } from "./page.mjs"
+import {
+  classifyCategory,
+  isProcurement,
+  isUsableTitle,
+} from "../collector/kkj/classify.mjs"
 import { statusByDeadline } from "./expire.mjs"
 import { decodeBody, parseFeed } from "./feed.mjs"
 import { readFileSync } from "node:fs"
@@ -111,13 +116,37 @@ export async function promoteAdopted({ dryRun = false } = {}) {
   )
   const urlCategory = itemHasCategory ? new Map() : await categoryByUrl()
 
-  let promoted = 0, skipped = 0, failed = 0
+  let promoted = 0, skipped = 0, failed = 0, excluded = 0, excludedKoji = 0
   const unknown = []
 
   for (const item of targets) {
     // 既に articles にあるものは、収集箱から消して重複を残さない
     if (existing.has(item.url)) {
       skipped++
+      if (!dryRun) {
+        await fetch(`${endpoint(ITEMS)}/${item.id}`, { method: "DELETE", headers: headers() })
+        await sleep(150)
+      }
+      continue
+    }
+
+    // 扱うのは役務・物品だけ。工事は工種の細分化が激しく運用が重いうえ、
+    // 公共工事には前払金保証という別の資金の受け皿があり狙う層とずれる。
+    //
+    // 判定は収集元ごとではなくここで一度だけ行う。収集スクリプトは
+    // 岩手のEPI・宮城のefftis・新潟のebidと複数あり、そのすべてに同じ除外を
+    // 書くと必ず抜ける（実際、kkj 側にだけ入れて他から工事が戻った）。
+    // articles になる経路はここ1本なので、ここで止めるのが確実。
+    if (!isUsableTitle(item.title) || !isProcurement(item.title)) {
+      excluded++
+      if (!dryRun) {
+        await fetch(`${endpoint(ITEMS)}/${item.id}`, { method: "DELETE", headers: headers() })
+        await sleep(150)
+      }
+      continue
+    }
+    if (classifyCategory({ title: item.title, description: item.rawSummary, category: "" }) === "工事") {
+      excludedKoji++
       if (!dryRun) {
         await fetch(`${endpoint(ITEMS)}/${item.id}`, { method: "DELETE", headers: headers() })
         await sleep(150)
@@ -189,6 +218,8 @@ export async function promoteAdopted({ dryRun = false } = {}) {
     promoted,
     skipped,
     failed,
+    excludedKoji,
+    excludedNotProject: excluded,
     unknownCategory: unknown.length,
     unknownTitles: unknown.slice(0, 5),
     publishedDateSupported: hasPublishedDate,
