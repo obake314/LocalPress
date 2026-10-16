@@ -28,6 +28,8 @@ concurrency:
 
 jobs:
   collect:
+    # 一時停止中。再開時はこの条件を削除する。
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
