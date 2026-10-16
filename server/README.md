@@ -27,7 +27,13 @@ microCMS: articles → pnpm content:pull → サイト
 | GET | `/` | 稼働状況と直近の実行結果 |
 | GET | `/healthz` | 死活確認（Render のヘルスチェック用） |
 
-Webhook は待たせずに `202` を返し、収集は裏で走る。実行中に再度叩かれた場合は `409` を返して二重起動を防ぐ。
+通常、Webhook は待たせずに `202` を返し、収集は裏で走る。実行中に再度叩かれた場合は `409` を返して二重起動を防ぐ。
+
+## 一時停止中
+
+現在 `index.mjs` の `COLLECT_PAUSED` が `true` のため、認証済みの `/webhook/microcms` と `/collect` は収集を開始しない。Webhook は再送を避けるため `200` と `paused: true` を返し、手動の `/collect` は `503` と `paused: true` を返す。`GET /` の `paused` でも状態を確認できる。
+
+再開時は `COLLECT_PAUSED` を `false` に戻し、[GitHub Actions の停止条件](../.github/workflows/collect.yml)も削除する。
 
 ## 環境変数
 

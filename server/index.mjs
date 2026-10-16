@@ -16,6 +16,8 @@ import { runCollection } from "./collect.mjs"
 import { webhookSecret, manualToken } from "./config.mjs"
 
 const PORT = process.env.PORT || 10000
+// 収集を一時停止中。再開時は false に戻す。
+const COLLECT_PAUSED = true
 
 /** 直近の実行結果をメモリに保持する（再起動で消えるが状況確認には足りる） */
 const state = { running: false, startedAt: null, last: null, history: [] }
@@ -59,6 +61,7 @@ function verifySignature(raw, signature) {
 }
 
 async function startCollection(trigger) {
+  if (COLLECT_PAUSED) return { accepted: false, paused: true, reason: "収集は一時停止中です" }
   if (state.running) return { accepted: false, reason: "すでに実行中です" }
 
   state.running = true
@@ -92,6 +95,7 @@ const server = createServer(async (req, res) => {
   if (req.method === "GET" && url.pathname === "/") {
     return json(res, 200, {
       service: "LocalPress collector",
+      paused: COLLECT_PAUSED,
       running: state.running,
       startedAt: state.startedAt,
       last: state.last,
@@ -113,7 +117,8 @@ const server = createServer(async (req, res) => {
     }
 
     const started = await startCollection("microcms-webhook")
-    return json(res, started.accepted ? 202 : 409, started)
+    // 署名済みWebhookは受理して再送を避けるが、停止中は収集しない。
+    return json(res, started.paused ? 200 : started.accepted ? 202 : 409, started)
   }
 
   if (req.method === "POST" && url.pathname === "/collect") {
@@ -124,7 +129,7 @@ const server = createServer(async (req, res) => {
     }
 
     const started = await startCollection("manual")
-    return json(res, started.accepted ? 202 : 409, started)
+    return json(res, started.paused ? 503 : started.accepted ? 202 : 409, started)
   }
 
   json(res, 404, { error: "not found" })
